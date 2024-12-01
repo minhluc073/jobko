@@ -1,0 +1,23 @@
+.category-select {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--primary);
+    padding: 8px 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid var(--primary);
+    .icon {
+        font-weight: 600;
+        transform: rotate(90deg);
+    }
+}
+.box-heart {
+    &.active {
+        .icon {
+            color: var(--primary) !important;
+        }
+    }
+}

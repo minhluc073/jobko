@@ -1,0 +1,24 @@
+// .dz-tree .jstree-open > a .jstree-themeicon:after {
+//     content: "\e930";
+//     font-weight: 700;
+//     color: var(--warning);
+//     font-family: $fontIcon;
+//     font-size: 20px;
+// }
+
+// .dz-tree .jstree-themeicon {
+//     background-image: none;
+//     font-style: unset;
+// }
+.jstree-default {
+    li,
+    a {
+        font-weight: 500;
+    }
+    .jstree-clicked,
+    .jstree-wholerow-clicked {
+        border-radius: 0;
+        box-shadow: unset;
+        background: none;
+    }
+}

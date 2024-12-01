@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+
+    <title>Search not found</title>
+</head>
+
+<body>
+    
+    <div class="header fixed-top">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-arrow-right"></i></a>
+        </div>
+        <h3>Search</h3>
+        <div class="right">
+            <a href="javascript:void(0);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#1A1528" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.9965 12H16.0054" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.9955 12H12.0045" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99451 12H8.00349" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            </a>
+        </div>
+    </div>
+
+    <div class="app-content style-3">
+        <div class="tf-container">
+            <div class="search-box">
+                <span class="icon-left">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                        <path d="M9.58317 17.4993C13.9554 17.4993 17.4998 13.9549 17.4998 9.58268C17.4998 5.21043 13.9554 1.66602 9.58317 1.66602C5.21092 1.66602 1.6665 5.21043 1.6665 9.58268C1.6665 13.9549 5.21092 17.4993 9.58317 17.4993Z" stroke="#1A1528" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3332 18.3327L16.6665 16.666" stroke="#1A1528" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>                                    
+                </span>
+                <input type="text" class="search-field" placeholder="Search NFT, creator, collection, ..." value="3D Art">
+                <span class="right-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.60851 13.8269H3.35791" stroke="#7F52FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.9507 5.75072H16.2013" stroke="#7F52FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.27207 5.70521C7.27207 4.6255 6.39027 3.75 5.30278 3.75C4.2153 3.75 3.3335 4.6255 3.3335 5.70521C3.3335 6.78492 4.2153 7.66042 5.30278 7.66042C6.39027 7.66042 7.27207 6.78492 7.27207 5.70521Z" stroke="#7F52FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6666 13.7951C16.6666 12.7153 15.7855 11.8398 14.698 11.8398C13.6098 11.8398 12.728 12.7153 12.728 13.7951C12.728 14.8748 13.6098 15.7503 14.698 15.7503C15.7855 15.7503 16.6666 14.8748 16.6666 13.7951Z" stroke="#7F52FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                </span>
+            </div>
+            <div class="tab-slide wrapper-tab mt-24">
+                <ul class="nav nav-tabs tab-1" role="tablist" >
+                    <li class="item-slide-effect"></li>
+                    <li class="nav-item active" role="presentation">   
+                        <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#collections">Collections</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#creators">Creators</button>
+                    </li> 
+                </ul>
+            </div>
+            <div class="banner-empty-search text-center mt-100">
+                <img src="images/background/empty-2.png" alt="">
+                <h4 class="mt-48">Not Found</h4>
+                <p class="mt-12 body-3 text-dark-2 px-24">Sorry, the keyword you entered cannot be found, please check again or search with another keyword.</p>
+            </div>
+            
+        </div>
+    </div>
+  
+
+    
+    
+    
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/countto.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

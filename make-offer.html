@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jqueryui.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+
+    <title>Make an offer</title>
+
+</head>
+
+<body>
+    
+    <div class="header fixed-top">
+        <div class="left">
+          <a href="javascript:void(0);" class="icon back-btn"><i class="icon-arrow-right"></i></a>
+        </div>
+        <h3>Make an Offer</h3>
+        
+    </div>
+    <div class="app-content style-2">
+        <div class="tf-container">
+            <div class="top mb-24">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4>Offer Amount</h4>
+                    <span class="body-3 text-dark-2 fw-5">Balance: 652.497 ETH</span>
+                </div>
+                <div class="mt-20 nice-select tf-select-v3 icon" tabindex="0"><span class="current">ETH</span>
+                    <svg class="icon icon-eth" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.74998 7.58294L9.72494 5.81628C9.89994 5.74128 10.1 5.74128 10.2666 5.81628L14.2416 7.58294C14.5916 7.74128 14.9166 7.31628 14.6749 7.01628L10.5083 1.92461C10.2249 1.57461 9.75829 1.57461 9.47495 1.92461L5.30829 7.01628C5.07495 7.31628 5.39998 7.74128 5.74998 7.58294Z" fill="#1A1528"/>
+                        <path d="M5.75006 12.4171L9.73336 14.1837C9.90836 14.2587 10.1084 14.2587 10.2751 14.1837L14.2584 12.4171C14.6084 12.2587 14.9334 12.6837 14.6917 12.9837L10.525 18.0754C10.2417 18.4254 9.77505 18.4254 9.49171 18.0754L5.32505 12.9837C5.07505 12.6837 5.39172 12.2587 5.75006 12.4171Z" fill="#1A1528"/>
+                        <path d="M9.81672 7.90898L6.37505 9.62565C6.06672 9.77565 6.06672 10.2173 6.37505 10.3673L9.81672 12.084C9.93339 12.1423 10.075 12.1423 10.1917 12.084L13.6333 10.3673C13.9417 10.2173 13.9417 9.77565 13.6333 9.62565L10.1917 7.90898C10.0667 7.85065 9.93339 7.85065 9.81672 7.90898Z" fill="#1A1528"/>
+                    </svg>
+                    <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6 7.45898L11.1667 12.8923C10.525 13.534 9.47503 13.534 8.83336 12.8923L3.40002 7.45898" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                           
+                    <ul class="list">  
+                        <li data-value="last-month" class="option selected">ETH</li>                                                        
+                        <li data-value="last-week" class="option">Polygon</li>
+                        <li data-value="last-week" class="option">Klaytn</li>
+                        <li data-value="last-week" class="option">Solana</li>
+                        <li data-value="last-week" class="option">USDT</li>
+                        <li data-value="last-week" class="option">USDC</li>
+                    </ul>
+                </div>
+                <div class="mt-20">
+                    <input type="text" class="form-control" value="139.637">
+                </div>
+                <p class="mt-20 body-4 text-dark-2 text-center fw-5">Total Offer Amount: 139.637 ETH ($226075.79 USD)</p>
+            </div>
+            <div class="bottom">
+                <h4>Offer Expiration</h4>
+                <div class="mt-20 nice-select tf-select-v3" tabindex="0"><span class="current">4 Days</span>
+                    <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6 7.45898L11.1667 12.8923C10.525 13.534 9.47503 13.534 8.83336 12.8923L3.40002 7.45898" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <ul class="list">  
+                        <li data-value="last-month" class="option selected">4 Days</li>                                                        
+                        <li data-value="last-week" class="option">5 Days</li>
+                        <li data-value="last-week" class="option">7 Days</li>
+                    </ul>
+                </div>
+                <div class="box-field-datetime mt-20">
+                    <input id="datepicker1" class="ip-datepicker form-control" >
+                    <span class="val-time button-2 fw-6"></span>
+                    <span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                        <path d="M6.66663 1.66602V4.16602" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3334 1.66602V4.16602" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.91663 7.57422H17.0833" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.5 7.08268V14.166C17.5 16.666 16.25 18.3327 13.3333 18.3327H6.66667C3.75 18.3327 2.5 16.666 2.5 14.166V7.08268C2.5 4.58268 3.75 2.91602 6.66667 2.91602H13.3333C16.25 2.91602 17.5 4.58268 17.5 7.08268Z" stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.079 11.4167H13.0864" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.079 13.9167H13.0864" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.9962 11.4167H10.0037" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.9962 13.9167H10.0037" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.91197 11.4167H6.91945" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.91197 13.9167H6.91945" stroke="#1A1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="btn-fixed">
+        <a href="approve-currency.html" class="tf-btn primary"> Make Offer</a>
+
+    </div>
+
+   
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/countto.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/jqueryui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

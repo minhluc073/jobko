@@ -1,0 +1,173 @@
+.tf-divider {
+    position: relative;
+    width: 100%;
+    border-color: var(--primary);
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    z-index: 1;
+    span {
+        top: -14px;
+    }
+    .icon {
+        width: 25px;
+        height: 25px;
+        color: --white;
+        background-color: var(--primary);
+        border-radius: 50%;
+        @include flex(center, center);
+        font-size: 14px;
+    }
+    &.success {
+        border-color: var(--success);
+        .icon,
+        .text {
+            background-color: var(--success);
+        }
+    }
+    &.warning {
+        border-color: var(--warning);
+        .icon,
+        .text {
+            background-color: var(--warning);
+        }
+    }
+    &.danger {
+        border-color: var(--danger);
+        .icon,
+        .text {
+            background-color: var(--danger);
+        }
+    }
+    &.info {
+        border-color: var(--info);
+        .icon,
+        .text {
+            background-color: var(--info);
+        }
+    }
+    &.light {
+        border-color: var(--light);
+        .icon,
+        .text {
+            background-color: var(--light);
+        }
+    }
+    &.dark {
+        border-color: var(--dark);
+        .icon,
+        .text {
+            background-color: var(--dark);
+        }
+    }
+    &.disable {
+        border-color: var(--disable);
+        .icon,
+        .text {
+            background-color: var(--disable);
+        }
+    }
+
+    &.left {
+        span {
+            position: absolute;
+            left: 0;
+        }
+    }
+    &.left-1 {
+        span {
+            position: absolute;
+            left: 20%;
+        }
+    }
+    &.left-2 {
+        span {
+            position: absolute;
+            left: 30%;
+        }
+    }
+    &.left-3 {
+        span {
+            position: absolute;
+            left: 10%;
+        }
+    }
+    &.right {
+        span {
+            position: absolute;
+            right: 5%;
+        }
+    }
+    &.right-1 {
+        span {
+            position: absolute;
+            right: 35%;
+        }
+    }
+    &.right-2 {
+        span {
+            position: absolute;
+            right: 30%;
+        }
+    }
+
+    .text {
+        padding: 5px 10px;
+        border-radius: 8px;
+        background-color: var(--primary);
+        color: --white;
+        top: -18px;
+    }
+    &.transparent {
+        .text {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        &.success {
+            .text {
+                color: var(--success);
+            }
+        }
+        &.warning {
+            .text {
+                color: var(--warning);
+            }
+        }
+    }
+    &.b-width {
+        border-width: 1px 0 0 0;
+    }
+    &.dashed {
+        border-style: dashed;
+    }
+    &.dotted {
+        border-style: dotted;
+    }
+}
+
+.divider-task {
+    position: relative;
+    width: 100%;
+    border-color: rgba(203, 205, 248, 1);
+    border-width: 1.5px 0 0 0;
+    border-style: solid;
+    z-index: 1;
+    .icon {
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(203, 205, 248, 1);
+        border-radius: 50%;
+        position: relative;
+        left: 0;
+        top: -7px;
+        @include flex(center, center);
+        background-color: --white;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: --primary;
+            border-radius: 50%;
+        }
+    }
+}

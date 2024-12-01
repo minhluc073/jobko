@@ -1,0 +1,7 @@
+.apexcharts-legend {
+    padding: 0 !important;
+}
+.apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+    flex-wrap: wrap;
+    gap: 10px !important;
+}

@@ -1,0 +1,278 @@
+// more
+.box-profile {
+    padding: 32px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .avatar {
+        position: relative;
+        .icon {
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 2px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background-color: #787982;
+        }
+    }
+}
+
+.box-result-help {
+    padding: 45px 0px 40px;
+    .image {
+        max-width: 154px;
+        height: 154px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.value-field-wallet {
+    position: relative;
+    padding: 12px;
+    border: 1px solid var(--line-2);
+    gap: 12px;
+    @include flex(center, space-between);
+    max-width: 250px;
+    border-radius: 16px;
+    img {
+        width: 28px;
+        height: 28px;
+    }
+    input {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    svg {
+        opacity: 0.6;
+        flex-shrink: 0;
+    }
+}
+.box-service {
+    display: flex;
+    gap: 34px;
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        .box-icon {
+            background-color: var(--rgba-primary);
+            color: var(--primary);
+        }
+    }
+}
+
+// profile
+.counter-box {
+    background: linear-gradient(286.17deg, #7f2dff 0%, #9958ff 100%);
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    .count-number {
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .title-count {
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    &.count-2 {
+        background: linear-gradient(119.35deg, #ff51ee 4.36%, #ff2cea 98.86%);
+    }
+    &.count-3 {
+        background: linear-gradient(128.93deg, #4fc0ff 5.29%, #00a4ff 95.1%);
+    }
+    &.count-4 {
+        background: linear-gradient(110.65deg, #5786ff 2.98%, #2d68ff 100%);
+    }
+
+    &.count-style-2 {
+        padding: 6px 12px;
+        .icon {
+            font-size: 24px;
+        }
+    }
+
+    &.favourites {
+        background: linear-gradient(286.17deg, rgba(255, 77, 103, 0.12) 0%, rgba(255, 138, 155, 0.12) 100%);
+
+        .title-count,
+        .count-number,
+        .icon {
+            background: var(--red-linear);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &.edition {
+        background: linear-gradient(286.17deg, rgba(127, 45, 255, 0.12) 0%, rgba(153, 88, 255, 0.12) 100%);
+        .title-count,
+        .count-number,
+        .icon {
+            background: var(--violet-linear);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &.owner {
+        background: linear-gradient(128.93deg, rgba(79, 192, 255, 0.12) 5.29%, rgba(0, 164, 255, 0.12) 95.1%);
+        .title-count,
+        .count-number,
+        .icon {
+            background: var(--sky-blue-linear);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &.visitor {
+        background: linear-gradient(110.65deg, rgba(87, 134, 255, 0.12) 2.98%, rgba(45, 104, 255, 0.12) 100%);
+        .title-count,
+        .count-number,
+        .icon {
+            background: var(--blue-linear);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.dropdown-profile {
+    &::after {
+        content: none !important;
+    }
+    .dropdown-menu {
+        padding: 22px 20px;
+        min-width: 190px;
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+    .dropdown-item {
+        padding: 0px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        &:not(:last-child) {
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+        }
+    }
+}
+
+.box-empty {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 248px;
+        margin: auto;
+    }
+}
+// chart
+.wrap-chart {
+    border-radius: 16px;
+    box-shadow: var(--shadow-5);
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+#area-chart {
+    max-width: 650px;
+    // margin: 35px auto;
+}
+.box-countdown-2 {
+    .countdown__timer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        .countdown__item {
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--rgba-black-4);
+        }
+        .countdown__value {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+            color: var(--rgba-black-1);
+        }
+        .countdown__label {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #fff;
+            background-color: var(--primary);
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.box-field-datetime {
+    position: relative;
+    .form-control {
+        position: relative;
+        z-index: 1;
+    }
+    .icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+        display: inline-flex;
+    }
+    .val-time {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 98px;
+    }
+}
+
+.banner-empty-search {
+    img {
+        width: 142px;
+    }
+}
+.banner-boarding-section {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.banner-choose-wallet{
+    img{
+        width: 145px;
+    }
+}
+.logo-dark{
+    display: none;
+}

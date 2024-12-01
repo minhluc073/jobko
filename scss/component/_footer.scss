@@ -1,0 +1,153 @@
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--white);
+
+    &.button {
+        padding: 20px 24px 24px;
+    }
+    &.st-1 {
+        z-index: 1046;
+    }
+}
+.menubar-footer {
+    display: flex;
+    padding: 12px 32px;
+    box-shadow: 0px -4px 60px 0px #1a152814;
+
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 72px;
+    overflow: hidden;
+    .inner-bar {
+        width: 100%;
+        display: flex;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            a {
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    
+                }
+            }
+            &.active {
+                position: relative;
+                // svg path{
+                //     fill: var(--primary);
+                //     stroke: var(--primary)
+                
+                // }
+                .text {
+                    position: absolute;
+                    bottom: -12px;
+                    font-size: 8px;
+                    line-height: 9.6px;
+                    color: var(--black);
+                    font-weight: 600;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: var(--primary);
+                    bottom: -66px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .action-add-wallet {
+            a {
+                @include flex(center, center);
+                border-radius: 9999px;
+                width: 48px;
+                height: 48px;
+                background-color: var(--primary);
+
+                i {
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &.style-1 {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &.style-2 {
+        padding: 14px 19px 19px;
+        border-radius: 16px;
+        li {
+            width: 25%;
+        }
+    }
+    &.red {
+        li {
+            &.active {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -18px;
+                    left: 50%;
+                    width: 56px;
+                    height: 4px;
+                    background: var(--primary-btn);
+                    border-radius: 20px 20px 0px 0px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    &.style-3 {
+        padding: 18px 19px;
+        border-radius: 16px;
+        li {
+            width: 25%;
+        }
+    }
+    &.style-4 {
+        padding: 18px 19px;
+        border-radius: 16px;
+        li {
+            width: 20%;
+        }
+    }
+    &.style-5 {
+        padding: 18px 19px;
+        border-radius: 16px;
+    }
+}
+
+
+
+.btn-fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    z-index: 20;
+    background-color: var(--white);
+    &.style-2{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+}
