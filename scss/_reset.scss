@@ -333,14 +333,14 @@ input[type="submit"] {
     padding: 16px;
     border-radius: 15px;
     @include flex(center, center);
-    font-size: $fz-btn;
     font-weight: 700;
-    line-height: $lh-btn;
     background-color: var(--primary);
     color: var(--black);
     width: 100%;
     @include transition3;
     border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 24px;
     &:hover {
         background-color: var(--primary);
     }
@@ -364,9 +364,9 @@ input[type="tel"],
 input[type="color"] {
     width: 100%;
     font-size: 14px;
-    font-weight: 600;
     line-height: 24px;
-    padding: 14px 16px;
+    padding: 14px 20px;
+    font-weight: 500;
     border-radius: 16px;
     border: 1px solid var(--line);
     color: var(--black);
@@ -407,13 +407,13 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: var(--line);
+    border-color: var(--black);
     background-color: var(--white);
 }
 
 textarea::placeholder,
 input::placeholder {
-    color: var(--black);
+    color: var(--rgba-black-3);
     font-weight: 500;
 }
 
@@ -493,16 +493,12 @@ select {
 }
 
 .app-content {
-    padding: 70px 0px 100px;
-    &.style-1 {
-        padding-bottom: 24px;
-    }
+    padding: 80x 0px 100px;
     &.style-2 {
-        padding-bottom: 110px;
+        padding-top: 88px;
     }
-    &.style-3 {
-        padding-bottom: 30px;
-    }
+
+
     &.style-4 {
     }
     &.style-5 {
@@ -603,10 +599,16 @@ select {
     color: var(--black) !important;
 }
 .text-dark-2 {
-    color: var(--rgba-black-3);
+    color: var(--black-2);
 }
 .text-dark-3 {
-    color: var(--rgba-black-7);
+    color: var(--rgba-black);
+}
+.text-dark-4 {
+    color: var(--rgba-black-2);
+}
+.text-dark-5 {
+    color: var(--rgba-black-3);
 }
 .text-primary {
     color: var(--primary) !important;

@@ -2,39 +2,43 @@
 $font-main-family: "Urbanist", serif;
 $font-2: "Saira", sans-serif;
 $fontIcon: "icomoon";
-$fz-btn: 16px;
-$lh-btn: 24px;
 
 :root {
     // primary
-    --blue: #2869FE;
-    --blue-2: #5387FE;
-    --blue-3: #7EA5FE;
-    --blue-4: #A9C3FF;
-    --blue-5: #D4E1FF;
-    --violet: #7C66FF;
-    --pest-2: #9685FF;
-    --pest-3: #B0A3FF;
-    --pest-4: #CAC2FF;
-    --pest-5: #E5E0FF;
+    --blue: #2869fe;
+    --blue-2: #5387fe;
+    --blue-3: #7ea5fe;
+    --blue-4: #a9c3ff;
+    --blue-5: #d4e1ff;
+    --violet: #7c66ff;
+    --pest-2: #9685ff;
+    --pest-3: #b0a3ff;
+    --pest-4: #cac2ff;
+    --pest-5: #e5e0ff;
     // secondary
-    --violet: #A55FFF;
-    --bright-green: #5FCF80;
-    --green: #00CC9A;
-    --pink: #FF5FBF;
-    --yellow: #FFC24A;
-    --red: #FA4848;
-    --gray: #D2D2D2;
-    --dark-blue: #063EBC;
-    // state 
-    --info: #2F80ED;
-    --success: #27AE60;
-    --warning: #E2B93B;
-    --error: #EB5757;
+    --violet: #a55fff;
+    --bright-green: #5fcf80;
+    --green: #00cc9a;
+    --pink: #ff5fbf;
+    --yellow: #ffc24a;
+    --red: #fa4848;
+    --gray: #d2d2d2;
+    --dark-blue: #063ebc;
+    // state
+    --info: #2f80ed;
+    --success: #27ae60;
+    --warning: #e2b93b;
+    --error: #eb5757;
     // text
     --black: #121927;
-    --black-2: #111D39;
-    --white: #FFFFFF;
+    --black-2: #111d39;
+    --white: #ffffff;
 
+    --rgba-black: rgb(18, 25, 39, 0.8);
+    --rgba-black-2: rgb(18, 25, 39, 0.6);
+    --rgba-black-3: rgb(18, 25, 39, 0.5);
+    --line: rgb(18, 25, 39, 0.12);
 
+    // bg
+    --bg-black: rgb(18, 25, 39, 0.04);
 }

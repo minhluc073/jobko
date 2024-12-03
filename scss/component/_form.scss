@@ -338,30 +338,22 @@
     width: 100%;
     .right-icon {
         position: absolute;
-        color: var(--black);
-        top: 14px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 20px;
     }
     .icon-left {
         position: absolute;
-        color: var(--black);
-        top: 14px;
+        top: 50%;
+        transform: translateY(-50%);
         left: 20px;
     }
     .search-field {
-        padding: 14px;
         padding-left: 52px;
-        padding-right: 74px;
-        border-radius: 12px;
-        border: 1px solid rgba(49, 57, 79, 0.1);
+        padding-right: 52px;
         color: var(--black);
-        background-color: var(--white);
-        &::placeholder {
-            color: rgba(49, 57, 79, 0.6);
-        }
-        &:focus {
-            background-color: var(--white);
-        }
+       
+
     }
 }
 

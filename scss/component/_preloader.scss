@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--primary);
+    background: var(--white);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -15,7 +15,7 @@
     z-index: 99999999999;
     @include flex(center, center);
     overflow: hidden;
-   
+
     .spinner-circle {
         position: fixed;
         left: 50%;
@@ -87,26 +87,25 @@
     }
 }
 
-.preload-style-2{
+.preload-style-2 {
     background: var(--white);
     .spinner-circle {
-        
         .spinner-child {
             &::before {
                 background-color: var(--primary);
             }
         }
     }
-    svg{
+    svg {
         .text {
             fill: var(--black);
         }
-        rect{
+        rect {
             fill: var(--primary);
         }
-        path:not(.text){
+        path:not(.text) {
             fill: var(--white);
             stroke: var(--primary);
         }
-    } 
+    }
 }

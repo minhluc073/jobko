@@ -66,29 +66,51 @@
         }
     }
 }
-.header-style2 {
+.header-avt {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px;
     padding-top: 20px;
-    height: 70px;
     position: relative;
-    .logo {
-        img {
-            width: 108px;
+    gap: 12px;
+    .box-avt {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .avt {
+            border-radius: 10px;
+            border: 1px solid var(--blue);
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+        }
+        .content {
+            display: grid;
+            gap: 2px;
+            .name {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
         }
     }
     .right {
         display: flex;
         align-items: center;
-        gap: 16px;
-
-        .icon {
-            color: rgb(49, 57, 79, 0.5);
-            font-size: 20px;
-            width: 24px;
-            height: 24px;
+        gap: 10px;
+    }
+    .box-icon {
+        width: 40px;
+        height: 40px;
+        background-color: var(--bg-black);
+        border-radius: 10px;
+        @include transition3;
+        &:hover{
+            background-color: var(--blue-2);
+            svg path{
+                stroke: var(--white);
+            }
         }
     }
 }
