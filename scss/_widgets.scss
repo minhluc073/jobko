@@ -1,39 +1,15 @@
-.category-select {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 600;
-    color: var(--primary);
-    padding: 8px 16px;
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    border-radius: 12px;
-    border: 1px solid var(--primary);
-    .icon {
-        font-weight: 600;
-        transform: rotate(90deg);
-    }
-}
-.box-heart {
-    &.active {
-        .icon {
-            color: var(--primary) !important;
-        }
-    }
-}
-
 .banner-box {
     background-color: var(--green);
     border-radius: 18px;
     overflow: hidden;
     padding: 20px;
+    padding-bottom: 24px;
     position: relative;
-    height: 152px;
     .circle {
-        right: -100px;
-        bottom: -140px;
-        width: 260px;
-        height: 260px;
+        right: -160px;
+        bottom: -160px;
+        width: 300px;
+        height: 300px;
     }
     .img-box {
         position: absolute;
@@ -41,6 +17,18 @@
         right: 20px;
         top: 19px;
         z-index: 10;
+    }
+    .title {
+        margin-bottom: 23px;
+    }
+    .btn-more {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--white);
+        padding: 7px 14px;
+        border-radius: 8px;
+        background-color: var(--rgba-green);
     }
 }
 
@@ -56,7 +44,7 @@
 .circle {
     position: absolute;
 
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     transform: scale(0.5);
     opacity: 0;
@@ -91,5 +79,34 @@
     100% {
         transform: scale(1.5);
         opacity: 0;
+    }
+}
+
+.category-job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    .box-img {
+        border-radius: 16px;
+        padding: 9px;
+        border: 1px solid var(--rgba-black-4);
+        img {
+            width: 46px;
+            height: 46px;
+        }
+    }
+    .title {
+        color: var(--rgba-black);
+    }
+    &.active,
+    &:hover{
+        .box-img{
+            border-color: var(--blue);
+        }
+        .title {
+            color: var(--blue);
+            font-weight: 500;
+        }
     }
 }

@@ -34,11 +34,14 @@ $fontIcon: "icomoon";
     --black-2: #111d39;
     --white: #ffffff;
 
-    --rgba-black: rgb(18, 25, 39, 0.8);
-    --rgba-black-2: rgb(18, 25, 39, 0.6);
-    --rgba-black-3: rgb(18, 25, 39, 0.5);
-    --line: rgb(18, 25, 39, 0.12);
+    --rgba-black: rgba(18, 25, 39, 0.8);
+    --rgba-black-2: rgba(18, 25, 39, 0.6);
+    --rgba-black-3: rgba(18, 25, 39, 0.5);
+    --rgba-black-4: rgba(18, 25, 39, 0.1);
+    --line: rgba(18, 25, 39, 0.12);
+
+    --rgba-green: rgba(26, 21, 40, 0.32);
 
     // bg
-    --bg-black: rgb(18, 25, 39, 0.04);
+    --bg-black: rgba(18, 25, 39, 0.04);
 }
