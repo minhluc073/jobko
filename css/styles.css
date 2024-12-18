@@ -324,6 +324,7 @@ body {
   width: 100%;
   font-style: normal;
   font-optical-sizing: auto;
+  color: var(--rgba-black-2);
 }
 
 a {
@@ -589,10 +590,13 @@ select {
 }
 
 .app-content {
-  padding: 80px 0px 100px;
+  padding: 70px 0px 100px;
 }
 .app-content.style-2 {
   padding-top: 88px;
+}
+.app-content.style-3 {
+  padding-bottom: 110px;
 }
 .body-1 {
   font-size: 16px;
@@ -1663,20 +1667,23 @@ select {
 /*------------ button ---------------- */
 .tf-btn {
   padding: 16px;
-  border-radius: 15px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
+  line-height: auto;
+  font-weight: 700;
   border: 1px solid transparent;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  text-transform: capitalize;
+  height: 60px;
+  box-shadow: 0px 6px 22px 0px rgba(40, 105, 254, 0.4);
 }
 .tf-btn.inline {
   width: auto;
@@ -1694,11 +1701,11 @@ select {
   border-radius: 12px;
 }
 .tf-btn.primary {
-  background-color: var(--primary);
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 .tf-btn.primary:hover {
-  background-color: var(--primary);
+  background-color: var(--blue-2);
 }
 .tf-btn.disabled-primary {
   background-color: rgba(127, 82, 255, 0.1);
@@ -1993,17 +2000,6 @@ select {
   color: var(--white);
 }
 
-.btn-add {
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-}
-.btn-add .icon {
-  font-size: 22px;
-}
-
 #button-background {
   position: relative;
   background-image: radial-gradient(circle at 100% 46%, #21d2a3, #15adaf 102%);
@@ -2083,6 +2079,15 @@ select {
 .box-boarding-fixed .button-1 {
   color: #fff;
   margin-left: 80px;
+}
+
+.fixed-button {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  background-color: var(--white);
 }
 
 /*------------ dropdown ---------------- */
@@ -5194,6 +5199,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 56px;
   border-radius: 50%;
   border: 8px solid var(--rgba-white-2);
+}
+
+.list-skill .item-skill {
+  padding-left: 20px;
+  position: relative;
+}
+.list-skill .item-skill:not(:last-child) {
+  margin-bottom: 12px;
+}
+.list-skill .item-skill::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background-color: var(--green);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

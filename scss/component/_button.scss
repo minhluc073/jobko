@@ -1,13 +1,16 @@
 .tf-btn {
     padding: 16px;
-    border-radius: 15px;
+    border-radius: 16px;
     @include flex(center, center);
     width: 100%;
-    font-weight: 600;
     font-size: 16px;
-    line-height: 24px;
+    line-height: auto;
+    font-weight: 700;
     border: 1px solid transparent;
     @include transition3;
+    text-transform: capitalize;
+    height: 60px;
+    box-shadow: 0px 6px 22px 0px rgba(40, 105, 254, 0.4);
     &.inline {
         width: auto;
     }
@@ -27,10 +30,10 @@
     }
     // color
     &.primary {
-        background-color: var(--primary);
-        color: #fff;
+        background-color: var(--blue);
+        color: var(--white);
         &:hover {
-            background-color: var(--primary);
+            background-color: var(--blue-2);
         }
     }
     &.disabled-primary {
@@ -356,65 +359,53 @@
     }
 }
 
-.btn-add {
-    border-radius: 10px;
-    @include flex(center, center);
-    height: 50px;
-    .icon {
-        font-size: 22px;
-    }
-}
-
-
-
 $bgColor: #3a3d55;
-$slideBgColor: rgba(255,255,255,0.3);
+$slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: white;
 $slideBallIconColor: black;
 $slideTextColor: #ffffff;
 
-
 @mixin center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin nonselect {
-	-webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-	cursor: default;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
-
 #button-background {
-	position: relative;
-	background-image: radial-gradient(circle at 100% 46%, #21d2a3, #15adaf 102%);
-	width: 335px;
-  height: 54px;
-	border: white;
-	border-radius: 40px;
-  @include center;
-	&.bg-converted {
-		background: white;
-	}
+    position: relative;
+    background-image: radial-gradient(circle at 100% 46%, #21d2a3, #15adaf 102%);
+    width: 335px;
+    height: 54px;
+    border: white;
+    border-radius: 40px;
+    @include center;
+    &.bg-converted {
+        background: white;
+    }
 }
 
 .btn-swipe {
-	transition: width 0.3s,
-		border-radius 0.3s,
-		height 0.3s;
-	position: absolute;
-	left: 8px;
-	background-color: $slideBallColor;
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
-	@include center;
+    transition:
+        width 0.3s,
+        border-radius 0.3s,
+        height 0.3s;
+    position: absolute;
+    left: 8px;
+    background-color: $slideBallColor;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    @include center;
 }
 
 .box-boarding-fixed {
@@ -429,10 +420,10 @@ $slideTextColor: #ffffff;
         padding-right: 40px;
         color: #fff;
     }
-    .desc{
-       margin-bottom: 30px; 
-       color: #fff;
-       opacity: 0.6;
+    .desc {
+        margin-bottom: 30px;
+        color: #fff;
+        opacity: 0.6;
     }
     .btn-start {
         position: relative;
@@ -470,8 +461,17 @@ $slideTextColor: #ffffff;
             @include flex(center, center);
         }
     }
-    .button-1{
+    .button-1 {
         color: #fff;
         margin-left: 80px;
     }
+}
+
+.fixed-button {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px;
+    background-color: var(--white);
 }
