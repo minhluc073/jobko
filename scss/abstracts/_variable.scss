@@ -40,6 +40,12 @@ $fontIcon: "icomoon";
     --rgba-black-2: rgba(18, 25, 39, 0.6);
     --rgba-black-3: rgba(18, 25, 39, 0.5);
     --rgba-black-4: rgba(18, 25, 39, 0.1);
+    --rgba-black-5: rgba(18, 25, 39, 0.7);
+    --rgba-black-6: rgba(18, 25, 39, 0.08);
+    --rgba-black-7: rgba(18, 25, 39, 0.06);
+
+
+
 
     --rgba-white: rgba(255, 255, 255, 0.6);
     --rgba-white-2: rgba(255, 255, 255, 0.16);
@@ -51,4 +57,7 @@ $fontIcon: "icomoon";
 
     // bg
     --bg-black: rgba(18, 25, 39, 0.04);
+
+    --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
+    --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
 }

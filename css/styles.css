@@ -76,12 +76,17 @@
   --rgba-black-2: rgba(18, 25, 39, 0.6);
   --rgba-black-3: rgba(18, 25, 39, 0.5);
   --rgba-black-4: rgba(18, 25, 39, 0.1);
+  --rgba-black-5: rgba(18, 25, 39, 0.7);
+  --rgba-black-6: rgba(18, 25, 39, 0.08);
+  --rgba-black-7: rgba(18, 25, 39, 0.06);
   --rgba-white: rgba(255, 255, 255, 0.6);
   --rgba-white-2: rgba(255, 255, 255, 0.16);
   --rgba-white-3: rgba(255, 255, 255, 0.9);
   --line: rgba(18, 25, 39, 0.12);
   --rgba-green: rgba(26, 21, 40, 0.32);
   --bg-black: rgba(18, 25, 39, 0.04);
+  --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
+  --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
 }
 
 /*---------- Reset css styles ----------- */
@@ -358,37 +363,37 @@ strong {
   font-weight: 700;
 }
 
-h1 {
+h1, .h1 {
   font-size: 28px;
   line-height: 40px;
   font-weight: 700;
 }
 
-h2 {
+h2, .h2 {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
 
-h3 {
+h3, .h3 {
   font-size: 20px;
   line-height: auto;
   font-weight: 700;
 }
 
-h4 {
+h4, .h4 {
   font-size: 18px;
   line-height: auto;
   font-weight: 700;
 }
 
-h5 {
+h5, .h5 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
 }
 
-h6 {
+h6, .h6 {
   font-size: 16px;
   line-height: auto;
   font-weight: 700;
@@ -630,7 +635,7 @@ select {
 
 .body-6 {
   font-size: 10px;
-  line-height: auto;
+  line-height: 12px;
   font-weight: 500;
 }
 
@@ -728,6 +733,10 @@ select {
 
 .text-dark-5 {
   color: var(--rgba-black-3);
+}
+
+.text-dark-6 {
+  color: var(--rgba-black-5);
 }
 
 .text-primary {
@@ -5084,7 +5093,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 12px;
   border-radius: 20px;
   background-color: var(--white);
-  box-shadow: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
+  box-shadow: var(--shadow-1);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -5220,6 +5229,121 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
+}
+
+.list-company .item-company {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.list-company .item-company .icon {
+  width: 20px;
+  height: 20px;
+}
+.list-company .item-company .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.list-company .item-company:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.progress-container {
+  position: relative;
+  width: 37px;
+  height: 37px;
+}
+
+.progress-ring {
+  transform: rotate(120deg);
+  width: 100%;
+  height: 100%;
+}
+
+.progress-background {
+  fill: none;
+  stroke: var(--rgba-black-6);
+  stroke-width: 8;
+  stroke-dasharray: 126;
+  stroke-dashoffset: 18;
+}
+
+.progress-circle {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 8;
+  stroke-dasharray: 126;
+  stroke-dashoffset: 40;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.progress-container::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--blue);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  top: 50%;
+  left: 75%;
+  transition: transform 1s ease-out;
+}
+
+.card-review {
+  background-color: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow-2);
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.card-review .content-left .top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.card-review .rate-title .count {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black);
+}
+.card-review .list-rate {
+  display: flex;
+  gap: 4px;
+  margin-top: 12px;
+}
+.card-review .list-rate .icon {
+  font-size: 24px;
+  color: var(--yellow);
+}
+.card-review .content-rate {
+  width: 50%;
+}
+.card-review .rating-bar {
+  display: flex;
+  align-items: center;
+}
+.card-review .rating-bar:not(:last-child) {
+  margin-bottom: 10px;
+}
+.card-review .bar {
+  flex: 1;
+  height: 8px;
+  background: var(--rgba-black-7);
+  border-radius: 10px;
+  margin-left: 8px;
+  position: relative;
+}
+.card-review .progress-rate {
+  height: 100%;
+  background: var(--yellow);
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
