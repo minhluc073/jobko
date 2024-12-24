@@ -273,35 +273,41 @@ strong {
     font-weight: 700;
 }
 
-h1,.h1 {
+h1,
+.h1 {
     font-size: 28px;
     line-height: 40px;
     font-weight: 700;
 }
 
-h2,.h2 {
+h2,
+.h2 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
 }
 
-h3,.h3 {
+h3,
+.h3 {
     font-size: 20px;
     line-height: auto;
     font-weight: 700;
 }
-h4,.h4 {
+h4,
+.h4 {
     font-size: 18px;
     line-height: auto;
     font-weight: 700;
 }
-h5,.h5 {
+h5,
+.h5 {
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
 }
 
-h6,.h6 {
+h6,
+.h6 {
     font-size: 16px;
     line-height: auto;
     font-weight: 700;
@@ -615,7 +621,7 @@ select {
 .text-dark-5 {
     color: var(--rgba-black-3);
 }
-.text-dark-6{
+.text-dark-6 {
     color: var(--rgba-black-5);
 }
 .text-primary {

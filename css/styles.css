@@ -79,6 +79,8 @@
   --rgba-black-5: rgba(18, 25, 39, 0.7);
   --rgba-black-6: rgba(18, 25, 39, 0.08);
   --rgba-black-7: rgba(18, 25, 39, 0.06);
+  --rgba-black-8: rgba(18, 25, 39, 0.25);
+  --rgba-black-9: rgba(18, 25, 39, 0.02);
   --rgba-white: rgba(255, 255, 255, 0.6);
   --rgba-white-2: rgba(255, 255, 255, 0.16);
   --rgba-white-3: rgba(255, 255, 255, 0.9);
@@ -363,37 +365,43 @@ strong {
   font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 28px;
   line-height: 40px;
   font-weight: 700;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 20px;
   line-height: auto;
   font-weight: 700;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 18px;
   line-height: auto;
   font-weight: 700;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 16px;
   line-height: auto;
   font-weight: 700;
@@ -2669,62 +2677,33 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .select-wrapper {
   position: relative;
   min-width: 120px;
+  display: flex;
+  align-items: center;
 }
-.select-wrapper .icon {
+.select-wrapper .icon-left {
   position: absolute;
-  top: 12px;
-  left: 15px;
+  top: 3px;
+  left: 0;
+}
+.select-wrapper .icon-right {
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 .select-wrapper .tf-select {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 500;
-  color: rgba(49, 57, 79, 0.8);
+  color: var(--black);
+  border: none;
   padding: 12px;
-  padding-left: 40px;
-  padding-right: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   z-index: 10;
   background-color: transparent;
-}
-.select-wrapper::after {
-  content: "\e91a";
-  position: absolute;
-  font-family: "icomoon";
-  font-size: 16px;
-  top: 13px;
-  right: 14px;
-  z-index: 8;
-  color: rgba(49, 57, 79, 0.6);
-}
-.select-wrapper.style-1 {
-  background-color: var(--white);
-  border-radius: 12px;
-}
-.select-wrapper.style-1 .icon {
-  left: 20px;
-  top: 10px;
-}
-.select-wrapper.style-1 .tf-select {
-  padding: 14px;
-  padding-left: 48px;
-  padding-right: 20px;
-}
-.select-wrapper.style-1::after {
-  content: "\e91d";
-  transform: rotate(270deg);
-  font-size: 12px;
-  right: 20px;
-  top: 12px;
-}
-.select-wrapper.style-2 {
-  min-width: 85px;
-}
-.select-wrapper.style-2 .tf-select {
-  padding-left: 20px;
-}
-.select-wrapper.style-3 .tf-select {
-  padding-left: 15px;
 }
 
 .uploadfile .add-file {
@@ -5313,15 +5292,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 700;
   color: var(--black);
 }
-.card-review .list-rate {
-  display: flex;
-  gap: 4px;
-  margin-top: 12px;
-}
-.card-review .list-rate .icon {
-  font-size: 24px;
-  color: var(--yellow);
-}
 .card-review .content-rate {
   width: 50%;
 }
@@ -5344,6 +5314,73 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 100%;
   background: var(--yellow);
   border-radius: 10px;
+}
+.card-review .list-rate {
+  margin-top: 12px;
+}
+
+.list-rate {
+  display: flex;
+  gap: 4px;
+}
+.list-rate .icon {
+  font-size: 24px;
+  color: var(--yellow);
+}
+.list-rate .icon:last-child {
+  color: var(--rgba-black-8);
+}
+.list-rate.full .icon {
+  color: var(--yellow);
+}
+
+.list-review .review-item {
+  padding: 12px;
+  border-radius: 18px;
+  background-color: var(--rgba-black-9);
+}
+.list-review .review-item .top {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-review .review-item .box-avt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.list-review .review-item .box-avt img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.list-review .review-item .info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.list-review .review-item .info .name {
+  color: var(--black);
+}
+.list-review .review-item .info .dot {
+  background-color: var(--green);
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.list-review .review-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.list-review .review-item .list-rate .icon {
+  font-size: 16px;
+}
+.list-review .review-item .text-review {
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--rgba-black-2);
 }
 
 /*# sourceMappingURL=styles.css.map */

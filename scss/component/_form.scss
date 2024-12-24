@@ -352,71 +352,38 @@
         padding-left: 52px;
         padding-right: 52px;
         color: var(--black);
-       
-
     }
 }
 
 .select-wrapper {
     position: relative;
     min-width: 120px;
-    .icon {
+    display: flex;
+    align-items: center;
+    .icon-left {
         position: absolute;
-        top: 12px;
-        left: 15px;
+        top: 3px;
+        left: 0;
+    }
+    .icon-right {
+        position: absolute;
+        top: 5px;
+        right: 0;
     }
     .tf-select {
         font-size: 14px;
-        line-height: 16px;
+        line-height: 24px;
         font-weight: 500;
-        color: rgba(49, 57, 79, 0.8);
+        color: var(--black);
+        border: none;
         padding: 12px;
-        padding-left: 40px;
-        padding-right: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         position: relative;
         z-index: 10;
         background-color: transparent;
-    }
-    &::after {
-        content: "\e91a";
-        position: absolute;
-        font-family: $fontIcon;
-        font-size: 16px;
-        top: 13px;
-        right: 14px;
-        z-index: 8;
-        color: rgb(49, 57, 79, 0.6);
-    }
-    &.style-1 {
-        background-color: var(--white);
-        border-radius: 12px;
-        .icon {
-            left: 20px;
-            top: 10px;
-        }
-        .tf-select {
-            padding: 14px;
-            padding-left: 48px;
-            padding-right: 20px;
-        }
-        &::after {
-            content: "\e91d";
-            transform: rotate(270deg);
-            font-size: 12px;
-            right: 20px;
-            top: 12px;
-        }
-    }
-    &.style-2 {
-        min-width: 85px;
-        .tf-select {
-            padding-left: 20px;
-        }
-    }
-    &.style-3 {
-        .tf-select {
-            padding-left: 15px;
-        }
     }
 }
 .uploadfile {

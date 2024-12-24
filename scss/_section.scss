@@ -380,52 +380,51 @@
     }
 }
 
-
 .progress-container {
     position: relative;
     width: 37px;
     height: 37px;
-  }
+}
 
-  .progress-ring {
-    transform: rotate(120deg); 
+.progress-ring {
+    transform: rotate(120deg);
     width: 100%;
     height: 100%;
-  }
+}
 
-  .progress-background {
+.progress-background {
     fill: none;
-    stroke: var(--rgba-black-6); 
-    stroke-width: 8;
-    stroke-dasharray: 126; 
-    stroke-dashoffset: 18; 
-  }
-
-  .progress-circle {
-    fill: none;
-    stroke: var(--green); 
+    stroke: var(--rgba-black-6);
     stroke-width: 8;
     stroke-dasharray: 126;
-    stroke-dashoffset: 40; 
-    transition: stroke-dashoffset 1s ease-out;
-  }
+    stroke-dashoffset: 18;
+}
 
-  .progress-container::after {
-    content: '';
+.progress-circle {
+    fill: none;
+    stroke: var(--green);
+    stroke-width: 8;
+    stroke-dasharray: 126;
+    stroke-dashoffset: 40;
+    transition: stroke-dashoffset 1s ease-out;
+}
+
+.progress-container::after {
+    content: "";
     position: absolute;
     width: 10px;
     height: 10px;
-    background: var(--blue); 
-    border: 2px solid var(--white); 
+    background: var(--blue);
+    border: 2px solid var(--white);
     border-radius: 50%;
     border: 3px solid var(--white);
     border-radius: 50%;
     top: 50%;
     left: 75%;
     transition: transform 1s ease-out;
-  }
+}
 
-.card-review{
+.card-review {
     background-color: var(--white);
     border-radius: 18px;
     box-shadow: var(--shadow-2);
@@ -433,51 +432,115 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    .content-left{
-        .top{
+    .content-left {
+        .top {
             display: flex;
-        gap: 16px;
-        align-items: center;
+            gap: 16px;
+            align-items: center;
         }
     }
     .rate-title {
-        .count{
+        .count {
             font-size: 36px;
             font-weight: 700;
             color: var(--black);
         }
     }
-    .list-rate{
-        display: flex;
-        gap: 4px;
-        margin-top: 12px;
-        .icon{
-            font-size: 24px;
-            color: var(--yellow);
-        }
-    }
-    .content-rate{
+    .content-rate {
         width: 50%;
     }
     .rating-bar {
         display: flex;
         align-items: center;
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 10px;
         }
-      }
+    }
 
-      .bar {
+    .bar {
         flex: 1;
         height: 8px;
-        background: var( --rgba-black-7);
+        background: var(--rgba-black-7);
         border-radius: 10px;
         margin-left: 8px;
         position: relative;
-      }
-      .progress-rate {
+    }
+    .progress-rate {
         height: 100%;
         background: var(--yellow);
         border-radius: 10px;
-      }
-}  
+    }
+    .list-rate {
+        margin-top: 12px;
+    }
+}
+
+.list-rate {
+    display: flex;
+    gap: 4px;
+    .icon {
+        font-size: 24px;
+        color: var(--yellow);
+        &:last-child {
+            color: var(--rgba-black-8);
+        }
+    }
+    &.full {
+        .icon {
+            color: var(--yellow);
+        }
+    }
+}
+
+.list-review {
+    .review-item {
+        padding: 12px;
+        border-radius: 18px;
+        background-color: var(--rgba-black-9);
+        .top {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .box-avt {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+            }
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            .name {
+                color: var(--black);
+            }
+            .dot {
+                background-color: var(--green);
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        .list-rate {
+            .icon {
+                font-size: 16px;
+            }
+        }
+        .text-review{
+            font-size: 11px;
+            line-height: 20px;
+            font-weight: 500;
+            color: var( --rgba-black-2);
+        }
+    }
+}
