@@ -81,11 +81,15 @@
   --rgba-black-7: rgba(18, 25, 39, 0.06);
   --rgba-black-8: rgba(18, 25, 39, 0.25);
   --rgba-black-9: rgba(18, 25, 39, 0.02);
+  --rgba-violet: rgba(165, 95, 255, 0.1);
+  --rgba-pink: rgba(255, 95, 191, 0.1);
+  --rgba-green: rgb(0, 204, 154);
   --rgba-white: rgba(255, 255, 255, 0.6);
   --rgba-white-2: rgba(255, 255, 255, 0.16);
   --rgba-white-3: rgba(255, 255, 255, 0.9);
   --line: rgba(18, 25, 39, 0.12);
   --rgba-green: rgba(26, 21, 40, 0.32);
+  --rgba-green-2: rgb(0, 204, 154, 0.1);
   --bg-black: rgba(18, 25, 39, 0.04);
   --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
   --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
@@ -370,6 +374,7 @@ h1,
   font-size: 28px;
   line-height: 40px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 h2,
@@ -377,6 +382,7 @@ h2,
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 h3,
@@ -384,6 +390,7 @@ h3,
   font-size: 20px;
   line-height: auto;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 h4,
@@ -391,6 +398,7 @@ h4,
   font-size: 18px;
   line-height: auto;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 h5,
@@ -398,6 +406,7 @@ h5,
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 h6,
@@ -405,6 +414,7 @@ h6,
   font-size: 16px;
   line-height: auto;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .h7 {
@@ -715,6 +725,18 @@ select {
   background-color: var(--rgba-sky-blue);
 }
 
+.bg-rgba-violet {
+  background-color: var(--rgba-violet);
+}
+
+.bg-rgba-pink {
+  background-color: var(--rgba-pink);
+}
+
+.bg-rgba-green-2 {
+  background-color: var(--rgba-green-2);
+}
+
 .text-white {
   color: var(--white) !important;
 }
@@ -748,11 +770,19 @@ select {
 }
 
 .text-primary {
-  color: var(--primary) !important;
+  color: var(--blue) !important;
 }
 
-.text-secondary-1 {
-  color: var(--sky-blue);
+.text-secondary-violet {
+  color: var(--violet);
+}
+
+.text-secondary-pink {
+  color: var(--pink);
+}
+
+.text-secondary-green {
+  color: var(--green);
 }
 
 .text-red {
@@ -839,6 +869,10 @@ select {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-22 {
+  margin-top: 22px;
 }
 
 .mt-24 {
@@ -1513,6 +1547,14 @@ select {
   font-size: 20px;
   font-weight: 700;
   color: var(--black);
+}
+.header .icon-noline {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 .header.absolute {
   position: absolute;
@@ -5381,6 +5423,36 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: 20px;
   font-weight: 500;
   color: var(--rgba-black-2);
+}
+
+.box-profile .avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  border: 1px solid var(--blue);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+.box-profile .content .name {
+  margin-bottom: 8px;
+}
+
+.wrap-count {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.wrap-count .box-count {
+  padding: 13px 36px;
+  border-radius: 16px;
+}
+.wrap-count .count-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -536,11 +536,44 @@
                 font-size: 16px;
             }
         }
-        .text-review{
+        .text-review {
             font-size: 11px;
             line-height: 20px;
             font-weight: 500;
-            color: var( --rgba-black-2);
+            color: var(--rgba-black-2);
         }
+    }
+}
+
+.box-profile {
+    .avatar {
+        width: 84px;
+        height: 84px;
+        border-radius: 16px;
+        border: 1px solid var(--blue);
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+    }
+    .content {
+        .name {
+            margin-bottom: 8px;
+        }
+    }
+}
+.wrap-count {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    .box-count {
+        padding: 13px 36px;
+        border-radius: 16px;
+    }
+    .count-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
     }
 }

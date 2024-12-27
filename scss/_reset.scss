@@ -278,6 +278,7 @@ h1,
     font-size: 28px;
     line-height: 40px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 h2,
@@ -285,6 +286,8 @@ h2,
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
+    margin-bottom: 0;
+
 }
 
 h3,
@@ -292,18 +295,24 @@ h3,
     font-size: 20px;
     line-height: auto;
     font-weight: 700;
+    margin-bottom: 0;
+
 }
 h4,
 .h4 {
     font-size: 18px;
     line-height: auto;
     font-weight: 700;
+    margin-bottom: 0;
+
 }
 h5,
 .h5 {
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
+    margin-bottom: 0;
+
 }
 
 h6,
@@ -311,6 +320,8 @@ h6,
     font-size: 16px;
     line-height: auto;
     font-weight: 700;
+    margin-bottom: 0;
+
 }
 .h7 {
     font-size: 15px;
@@ -599,6 +610,17 @@ select {
 .bg-rgba-blue {
     background-color: var(--rgba-sky-blue);
 }
+.bg-rgba-violet{
+    background-color: var(--rgba-violet);
+}
+.bg-rgba-pink{
+    background-color: var(--rgba-pink);
+}
+.bg-rgba-green-2{
+    background-color: var(--rgba-green-2);
+}
+
+
 
 .text-white {
     color: var(--white) !important;
@@ -625,11 +647,18 @@ select {
     color: var(--rgba-black-5);
 }
 .text-primary {
-    color: var(--primary) !important;
+    color: var(--blue) !important;
 }
-.text-secondary-1 {
-    color: var(--sky-blue);
+.text-secondary-violet{
+    color: var(--violet);
 }
+.text-secondary-pink{
+    color: var(--pink);
+}
+.text-secondary-green{
+    color: var(--green);
+}
+
 .text-red {
     color: var(--red);
 }
@@ -642,6 +671,8 @@ select {
 .text-orange {
     color: var(--orange);
 }
+
+
 
 .text-gradient-1 {
     background: var(--violet-linear);
@@ -698,6 +729,9 @@ select {
 }
 .mt-20 {
     margin-top: 20px;
+}
+.mt-22{
+    margin-top: 22px;
 }
 .mt-24 {
     margin-top: 24px;

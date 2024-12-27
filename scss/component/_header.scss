@@ -21,7 +21,6 @@
         left: 24px;
         top: 16px;
         .icon {
-            
         }
         .icon-close {
             display: flex;
@@ -47,6 +46,14 @@
         // .icon-home {
         //     font-size: 24px;
         // }
+    }
+    .icon-noline {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
     }
     &.absolute {
         position: absolute;
@@ -106,9 +113,9 @@
         background-color: var(--bg-black);
         border-radius: 10px;
         @include transition3;
-        &:hover{
+        &:hover {
             background-color: var(--blue-2);
-            svg path{
+            svg path {
                 stroke: var(--white);
             }
         }
