@@ -436,7 +436,7 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   padding: 16px;
-  border-radius: 15px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -621,6 +621,10 @@ select {
 .app-content.style-3 {
   padding-bottom: 110px;
 }
+.app-content.style-4 {
+  padding-bottom: 30px;
+}
+
 .body-1 {
   font-size: 16px;
   line-height: 28px;
@@ -2389,7 +2393,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: 24px;
   color: var(--black);
   font-weight: 600;
-  border: 1px solid var(--line-2) !important;
   border-radius: 16px;
   padding: 14px 16px;
 }
@@ -2409,16 +2412,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .input-icon .form-control {
   padding-left: 52px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-radius: 12px;
-  font-size: 13px;
-  line-height: 22px;
-  color: rgba(49, 57, 79, 0.9);
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .input-icon .icon {
   position: absolute;
-  top: 16px;
+  top: 15px;
   left: 20px;
   font-size: 20px;
   color: rgba(49, 57, 79, 0.6);
@@ -2840,6 +2839,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   left: 12px;
   top: 12px;
   bottom: 12px;
+}
+
+.logo-account {
+  width: 117px;
+  height: 32px;
+}
+
+.form-field .label {
+  padding-left: 12px;
 }
 
 /*------------ footer ---------------- */

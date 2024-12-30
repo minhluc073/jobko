@@ -6,12 +6,10 @@
     line-height: 24px;
     color: var(--black);
     font-weight: 600;
-    border: 1px solid var(--line-2) !important;
     border-radius: 16px;
     padding: 14px 16px;
     &:focus {
         color: var(--black);
-
         box-shadow: unset;
         border-color: var(--line);
         background-color: transparent;
@@ -27,16 +25,12 @@
 
     .form-control {
         padding-left: 52px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 12px;
-        font-size: 13px;
-        line-height: 22px;
-        color: rgba(49, 57, 79, 0.9);
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
     .icon {
         position: absolute;
-        top: 16px;
+        top: 15px;
         left: 20px;
         font-size: 20px;
         color: rgba(49, 57, 79, 0.6);
@@ -477,5 +471,15 @@
         left: 12px;
         top: 12px;
         bottom: 12px;
+    }
+}
+
+.logo-account{
+    width: 117px;
+    height: 32px;
+}
+.form-field{
+    .label{
+        padding-left: 12px;
     }
 }

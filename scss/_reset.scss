@@ -349,7 +349,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     padding: 16px;
-    border-radius: 15px;
+    border-radius: 16px;
     @include flex(center, center);
     font-weight: 700;
     background-color: var(--primary);
@@ -515,11 +515,11 @@ select {
     &.style-2 {
         padding-top: 88px;
     }
-
     &.style-3 {
         padding-bottom: 110px;
     }
-    &.style-5 {
+    &.style-4 {
+        padding-bottom: 30px;
     }
 }
 
