@@ -226,7 +226,7 @@
         }
         .icon-pass {
             font-size: 20px;
-            color: rgba(49, 57, 79, 0.6);
+            opacity: 0.5;
         }
         &.active {
             .icon-view {
@@ -474,12 +474,68 @@
     }
 }
 
-.logo-account{
+.logo-account {
     width: 117px;
     height: 32px;
 }
-.form-field{
-    .label{
+.form-field {
+    .label {
         padding-left: 12px;
+    }
+}
+
+.box-check-remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    label {
+        margin-bottom: 0;
+    }
+}
+
+.auth-line {
+    margin: 35px 0px;
+    position: relative;
+    @include flex(center, center);
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 30%;
+        background: var(--rgba-black-4);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 30%;
+        height: 1px;
+        background: var(--rgba-black-4);
+    }
+}
+
+.btn-social-icon {
+    width: 80px;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    @include flex(center, center);
+    .img-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+.cb-signup {
+    display: flex;
+    gap: 12px;
+    input {
+        flex-shrink: 0;
+        border-radius: 2px;
+    }
+    label {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 0;
     }
 }

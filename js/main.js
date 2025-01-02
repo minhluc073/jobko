@@ -20,6 +20,27 @@
 (function ($) {
   "use strict";
 
+  /* show pass
+  ------------------------------------------------------------------------------------- */
+  var showPass = function () {
+    $(".show-pass").on("click", function () {
+      $(this).toggleClass("active");
+      if ($(".password-field").attr("type") == "password") {
+        $(".password-field").attr("type", "text");
+      } else if ($(".password-field").attr("type") == "text") {
+        $(".password-field").attr("type", "password");
+      }
+    });
+
+    $(".show-pass2").on("click", function () {
+      $(this).toggleClass("active");
+      if ($(".password-field2").attr("type") == "password") {
+        $(".password-field2").attr("type", "text");
+      } else if ($(".password-field2").attr("type") == "text") {
+        $(".password-field2").attr("type", "password");
+      }
+    });
+  };
 
   /* delete Item 
   ------------------------------------------------------------------------------------- */
@@ -48,7 +69,6 @@
     });
   };
 
- 
   /* handle time
   ------------------------------------------------------------------------------------- */
   var handleTime = function () {
@@ -221,7 +241,6 @@
     }
   };
 
-
   /* tab slide 
   ------------------------------------------------------------------------------------- */
   var tabSlide = function () {
@@ -256,6 +275,7 @@
   };
 
   $(function () {
+    showPass();
     delItem();
     backPage();
     activeSuggest();
