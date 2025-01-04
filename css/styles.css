@@ -2680,22 +2680,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 12px;
 }
 .digit-group input {
-  width: 56px;
-  height: 56px;
+  width: 55px;
+  height: 55px;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 36px;
   color: var(--black);
   text-align: center;
-  background: rgb(248, 250, 252);
-  border-color: transparent;
+  background: var(--white);
+  border-color: var(--rgba-black-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 .digit-group input:focus {
   color: var(--black);
 }
 .digit-group input:valid {
-  border-color: var(--primary);
+  border-color: var(--black);
 }
 
 .search-box {
@@ -2853,6 +2857,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .form-field .label {
   padding-left: 12px;
+}
+.form-field.form-2 .label {
+  position: relative;
+  display: inline-block;
+}
+.form-field.form-2 .label::after {
+  content: "*";
+  position: absolute;
+  right: -8px;
+  top: 0;
+  color: var(--red);
 }
 
 .box-check-remember {
