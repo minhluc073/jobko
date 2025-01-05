@@ -567,7 +567,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     .box-count {
-        padding: 13px 36px;
+        padding: 13px 32px;
         border-radius: 16px;
     }
     .count-item {
@@ -575,5 +575,56 @@
         flex-direction: column;
         align-items: center;
         gap: 6px;
+    }
+}
+
+.wrapper-box {
+    background: var(--gradient);
+    padding: 32px 24px 0px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    .list-profile {
+        padding-bottom: 116px;
+    }
+    .menubar-footer {
+        .action-add {
+            background-color: #7c66ff;
+        }
+    }
+}
+.list-profile {
+    li {
+        &:not(:last-child) {
+            .item {
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            }
+        }
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .box-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            @include flex(center, center);
+            background-color: rgba(255, 255, 255, 0.12);
+            .icon {
+                color: $white;
+                font-size: 24px;
+            }
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title {
+                color: $white;
+            }
+        }
     }
 }

@@ -94,12 +94,14 @@
   --bg-black: rgba(18, 25, 39, 0.04);
   --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
   --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
+  --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
 }
 
 /*---------- Reset css styles ----------- */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -334,6 +336,7 @@ body {
   font-weight: 500;
   background-color: var(--white);
   width: 100%;
+  height: 100%;
   font-style: normal;
   font-optical-sizing: auto;
   color: var(--rgba-black-2);
@@ -1097,6 +1100,13 @@ select {
 
 .shadow-7 {
   box-shadow: var(--shadow-7);
+}
+
+.app-fullheight {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 /*------------ Settings ----------------- */
@@ -5534,7 +5544,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 12px;
 }
 .wrap-count .box-count {
-  padding: 13px 36px;
+  padding: 13px 32px;
   border-radius: 16px;
 }
 .wrap-count .count-item {
@@ -5542,6 +5552,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex-direction: column;
   align-items: center;
   gap: 6px;
+}
+
+.wrapper-box {
+  background: var(--gradient);
+  padding: 32px 24px 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.wrapper-box .list-profile {
+  padding-bottom: 116px;
+}
+.wrapper-box .menubar-footer .action-add {
+  background-color: #7c66ff;
+}
+
+.list-profile li:not(:last-child) .item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.list-profile .item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.list-profile .item .box-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.list-profile .item .box-icon .icon {
+  color: #ffffff;
+  font-size: 24px;
+}
+.list-profile .item .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-profile .item .content .title {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
