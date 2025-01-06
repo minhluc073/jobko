@@ -290,7 +290,6 @@ h2,
     line-height: 36px;
     font-weight: 700;
     margin-bottom: 0;
-
 }
 
 h3,
@@ -299,7 +298,6 @@ h3,
     line-height: auto;
     font-weight: 700;
     margin-bottom: 0;
-
 }
 h4,
 .h4 {
@@ -307,7 +305,6 @@ h4,
     line-height: auto;
     font-weight: 700;
     margin-bottom: 0;
-
 }
 h5,
 .h5 {
@@ -315,7 +312,6 @@ h5,
     line-height: 26px;
     font-weight: 600;
     margin-bottom: 0;
-
 }
 
 h6,
@@ -324,7 +320,6 @@ h6,
     line-height: auto;
     font-weight: 700;
     margin-bottom: 0;
-
 }
 .h7 {
     font-size: 15px;
@@ -598,6 +593,10 @@ select {
 .bg-white {
     background-color: var(--white);
 }
+.bg-rgba-white-default {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .bg-dark {
     background-color: var(--black);
 }
@@ -613,17 +612,25 @@ select {
 .bg-rgba-blue {
     background-color: var(--rgba-sky-blue);
 }
-.bg-rgba-violet{
+.bg-rgba-violet {
     background-color: var(--rgba-violet);
 }
-.bg-rgba-pink{
+.bg-rgba-pink {
     background-color: var(--rgba-pink);
 }
-.bg-rgba-green-2{
+.bg-rgba-green-2 {
     background-color: var(--rgba-green-2);
 }
+.bg-gradient-1 {
+    background: var(--gradient);
+}
 
-
+.text-white-default {
+    color: $white;
+}
+.text-white-default2 {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 .text-white {
     color: var(--white) !important;
@@ -652,13 +659,13 @@ select {
 .text-primary {
     color: var(--blue) !important;
 }
-.text-secondary-violet{
+.text-secondary-violet {
     color: var(--violet);
 }
-.text-secondary-pink{
+.text-secondary-pink {
     color: var(--pink);
 }
-.text-secondary-green{
+.text-secondary-green {
     color: var(--green);
 }
 
@@ -674,8 +681,6 @@ select {
 .text-orange {
     color: var(--orange);
 }
-
-
 
 .text-gradient-1 {
     background: var(--violet-linear);
@@ -733,7 +738,7 @@ select {
 .mt-20 {
     margin-top: 20px;
 }
-.mt-22{
+.mt-22 {
     margin-top: 22px;
 }
 .mt-24 {
@@ -748,7 +753,7 @@ select {
 .mt-32 {
     margin-top: 32px;
 }
-.mt-35{
+.mt-35 {
     margin-top: 35px;
 }
 .mt-40 {
@@ -913,8 +918,7 @@ select {
     box-shadow: var(--shadow-7);
 }
 
-
-.app-fullheight{
+.app-fullheight {
     display: flex;
     flex-direction: column;
     height: 100%;

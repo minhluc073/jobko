@@ -72,6 +72,14 @@
             }
         }
     }
+    &.header-white{
+        .icon{
+            border-color: $white;
+        }
+        .title{
+            color: $white;
+        }
+    }
 }
 .header-avt {
     display: flex;
