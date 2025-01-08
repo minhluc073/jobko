@@ -14,6 +14,7 @@
         height: 30px;
         border-radius: 10px;
         border: 2px solid var(--black);
+        font-size: 8px;
     }
 
     .left {
@@ -75,6 +76,7 @@
     &.header-white{
         .icon{
             border-color: $white;
+            color: $white;
         }
         .title{
             color: $white;
