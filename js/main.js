@@ -157,35 +157,18 @@
     }
   };
 
-  /* active Suggestions
-  ------------------------------------------------------------------------------------- */
-  var activeSuggest = function () {
-    if ($(".check-list").length > 0) {
-      $(".item").on("click", function () {
+    /* Check Active 
+  -------------------------------------------------------------------------*/
+  var checkClick = function () {
+    $(".flat-check-list").on("click", ".check-item", function () {
         $(this)
-          .parents(".check-list")
-          .find(".item.active")
-          .removeClass("active");
+            .closest(".flat-check-list")
+            .find(".check-item")
+            .removeClass("active");
         $(this).addClass("active");
-      });
-    }
+    });
+};
 
-    $(".act-suggest").click(function () {
-      $(".act-suggest.active").removeClass("active");
-      $(this).toggleClass("active");
-    });
-    $(".act-suggest2").click(function () {
-      $(".act-suggest2.active").removeClass("active");
-      $(this).toggleClass("active");
-    });
-    $(".act-suggest3").click(function () {
-      $(".act-suggest3.active").removeClass("active");
-      $(this).toggleClass("active");
-    });
-    $(".press-toggle").on("click", function () {
-      $(this).toggleClass("active");
-    });
-  };
 
   if ($(".nice-select").length > 0) {
     $(".select_js").niceSelect();
@@ -324,11 +307,11 @@
     otpInput();
     delItem();
     backPage();
-    activeSuggest();
     touchSpin();
     changeValue();
     resetCheck();
     clickModalSecond();
+    checkClick();
     tabSlide();
     flatCounter();
     handleTime();
