@@ -70,7 +70,7 @@
   --black: #121927;
   --black-2: #111d39;
   --white: #ffffff;
-  --pest-6: #CBC2FD;
+  --pest-6: #cbc2fd;
   --rgba-blue: rgba(40, 105, 254, 0.08);
   --rgba-blue-2: rgba(40, 105, 254, 0.9);
   --rgba-black: rgba(18, 25, 39, 0.8);
@@ -96,6 +96,7 @@
   --bg-black: rgba(18, 25, 39, 0.04);
   --shadow-1: 0px 6px 44px 0px rgba(18, 25, 39, 0.05);
   --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
+  --shadow-3: 0px 6px 42px 0px rgba(18, 25, 39, 0.06);
   --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
 }
 
@@ -1130,6 +1131,27 @@ select {
   justify-content: space-between;
 }
 
+.app-fullheight2 {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+  gap: 32px;
+}
+.app-fullheight2 .group-btn {
+  display: grid;
+  gap: 20px;
+}
+
 /*------------ Settings ----------------- */
 /*------------ theme settings -------------- */
 .modal-themes-color {
@@ -1815,11 +1837,11 @@ select {
   background-color: var(--blue-2);
 }
 .tf-btn.disabled-primary {
-  background-color: rgba(127, 82, 255, 0.1);
-  color: var(--primary);
+  background-color: rgba(40, 105, 254, 0.15);
+  color: var(--blue);
 }
 .tf-btn.disabled-primary:hover {
-  background-color: var(--primary);
+  background-color: var(--blue);
   color: var(--white);
 }
 .tf-btn.white {
@@ -5796,6 +5818,19 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-answer.active .radio span {
   background-color: var(--bright-green);
+}
+
+.box-success {
+  padding: 16px 32px 32px;
+  display: grid;
+  gap: 15px;
+  background-color: var(--white);
+  border-radius: 32px;
+  box-shadow: var(--shadow-3);
+}
+.box-success img {
+  max-width: 220px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

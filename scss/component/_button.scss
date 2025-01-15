@@ -37,10 +37,10 @@
         }
     }
     &.disabled-primary {
-        background-color: rgb(127, 82, 255, 0.1);
-        color: var(--primary);
+        background-color: rgba(40, 105, 254, 0.15);
+        color: var(--blue);
         &:hover {
-            background-color: var(--primary);
+            background-color: var(--blue);
             color: var(--white);
         }
     }
