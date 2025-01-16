@@ -48,6 +48,12 @@
         //     font-size: 24px;
         // }
     }
+    .search-box {
+        border-color: transparent;
+        width: 34px;
+        height: 34px;
+        background-color: var(--rgba-black-11);
+    }
     .icon-noline {
         height: 30px;
         display: flex;
@@ -73,12 +79,12 @@
             }
         }
     }
-    &.header-white{
-        .icon{
+    &.header-white {
+        .icon {
             border-color: $white;
             color: $white;
         }
-        .title{
+        .title {
             color: $white;
         }
     }
