@@ -42,7 +42,7 @@
     });
   };
 
-   /* otp input
+  /* otp input
   ------------------------------------------------------------------------------------- */
   var otpInput = function () {
     if ($(".digit-group").length > 0) {
@@ -84,8 +84,6 @@
         });
     }
   };
-
-
 
   /* delete Item 
   ------------------------------------------------------------------------------------- */
@@ -157,18 +155,20 @@
     }
   };
 
-    /* Check Active 
+  /* Check Active 
   -------------------------------------------------------------------------*/
   var checkClick = function () {
     $(".flat-check-list").on("click", ".check-item", function () {
-        $(this)
-            .closest(".flat-check-list")
-            .find(".check-item")
-            .removeClass("active");
-        $(this).addClass("active");
+      $(this)
+        .closest(".flat-check-list")
+        .find(".check-item")
+        .removeClass("active");
+      $(this).addClass("active");
     });
-};
-
+    $(".flat-cb-list").on("click", ".cb-item", function () {
+      $(this).toggleClass("active");
+    });
+  };
 
   if ($(".nice-select").length > 0) {
     $(".select_js").niceSelect();

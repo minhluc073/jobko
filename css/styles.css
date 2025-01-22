@@ -99,6 +99,7 @@
   --shadow-2: 0px 6px 36px 0px rgba(18, 25, 39, 0.05);
   --shadow-3: 0px 6px 42px 0px rgba(18, 25, 39, 0.06);
   --shadow-4: 0px 5px 40px 0px rgba(18, 25, 39, 0.05);
+  --shadow-5: 0px 2px 32px 0px rgba(18, 25, 39, 0.05);
   --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
 }
 
@@ -718,7 +719,7 @@ select {
 }
 
 .bg-white {
-  background-color: var(--white);
+  background: var(--white) !important;
 }
 
 .bg-rgba-white-default {
@@ -1003,6 +1004,10 @@ select {
 
 .p-20 {
   padding: 20px;
+}
+
+.pb-113 {
+  padding-bottom: 113px !important;
 }
 
 .px-16 {
@@ -5706,6 +5711,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-recent-searches {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
 .box-recent-searches .box-icon {
   flex-shrink: 0;
@@ -5848,6 +5854,47 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-answer.active .radio span {
   background-color: var(--bright-green);
+}
+
+.list-interest .box-interest:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.box-interest {
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-5);
+}
+.box-interest .check {
+  opacity: 0.25;
+}
+.box-interest .title {
+  flex-grow: 1;
+}
+.box-interest .icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid var(--rgba-black-4);
+}
+.box-interest.active .check {
+  opacity: 1;
+}
+.box-interest.active .check path {
+  fill: var(--bright-green);
+  stroke: var(--white);
 }
 
 .box-success {

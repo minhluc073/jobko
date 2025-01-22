@@ -654,6 +654,7 @@
 .box-recent-searches {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
     .box-icon {
         flex-shrink: 0;
         width: 40px;
@@ -782,6 +783,44 @@
     }
 }
 
+.list-interest {
+    .box-interest:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+.box-interest {
+    padding: 16px;
+    @include transition3;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow-5);
+    .check {
+        opacity: 0.25;
+    }
+    .title {
+        flex-grow: 1;
+    }
+    .icon {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        @include flex(center, center);
+        border-radius: 10px;
+        border: 1px solid var(--rgba-black-4);
+    }
+    &.active {
+        .check {
+            opacity: 1;
+            path {
+                fill: var(--bright-green);
+                stroke: var(--white);
+            }
+        }
+    }
+}
+
 .box-success {
     padding: 16px 32px 32px;
     display: grid;
@@ -845,7 +884,7 @@
             border-radius: 50%;
         }
     }
-    .check-disable{
+    .check-disable {
         opacity: 0.4;
     }
 }

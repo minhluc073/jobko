@@ -519,7 +519,7 @@ select {
     &.style-4 {
         padding-bottom: 30px;
     }
-    &.style-5{
+    &.style-5 {
         padding-bottom: 60px;
     }
 }
@@ -594,7 +594,7 @@ select {
     background-color: var(--violet) !important;
 }
 .bg-white {
-    background-color: var(--white);
+    background: var(--white) !important;
 }
 .bg-rgba-white-default {
     background-color: rgba(255, 255, 255, 0.2);
@@ -821,6 +821,9 @@ select {
 .p-20 {
     padding: 20px;
 }
+.pb-113{
+    padding-bottom: 113px !important;
+}
 
 .px-16 {
     padding-left: 16px;
@@ -927,7 +930,7 @@ select {
     height: 100%;
     justify-content: space-between;
 }
-.app-fullheight2{
+.app-fullheight2 {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -942,7 +945,7 @@ select {
     justify-content: space-between;
     overflow: auto;
     gap: 32px;
-    .group-btn{
+    .group-btn {
         display: grid;
         gap: 20px;
     }
