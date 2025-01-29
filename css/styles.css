@@ -73,6 +73,7 @@
   --pest-6: #cbc2fd;
   --rgba-blue: rgba(40, 105, 254, 0.08);
   --rgba-blue-2: rgba(40, 105, 254, 0.9);
+  --rgba-blue-3: rgba(40, 105, 254, 0.1);
   --rgba-black: rgba(18, 25, 39, 0.8);
   --rgba-black-2: rgba(18, 25, 39, 0.6);
   --rgba-black-3: rgba(18, 25, 39, 0.5);
@@ -86,7 +87,7 @@
   --rgba-black-11: rgba(18, 25, 39, 0.04);
   --rgba-violet: rgba(165, 95, 255, 0.1);
   --rgba-pink: rgba(255, 95, 191, 0.1);
-  --rgba-green: rgb(0, 204, 154);
+  --rgba-red: rgba(250, 72, 72, 0.06);
   --rgba-white: rgba(255, 255, 255, 0.6);
   --rgba-white-2: rgba(255, 255, 255, 0.16);
   --rgba-white-3: rgba(255, 255, 255, 0.9);
@@ -101,6 +102,7 @@
   --shadow-4: 0px 5px 40px 0px rgba(18, 25, 39, 0.05);
   --shadow-5: 0px 2px 32px 0px rgba(18, 25, 39, 0.05);
   --shadow-6: 0px 5px 40px 0px rgba(18, 25, 39, 0.04);
+  --shadow-7: 0px 8px 44px 0px rgba(18, 25, 39, 0.05);
   --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
 }
 
@@ -776,7 +778,7 @@ select {
 }
 
 .text-white-2 {
-  color: var(--rgba-white);
+  color: var(--rgba-white) !important;
 }
 
 .text-dark {
@@ -784,23 +786,23 @@ select {
 }
 
 .text-dark-2 {
-  color: var(--black-2);
+  color: var(--black-2) !important;
 }
 
 .text-dark-3 {
-  color: var(--rgba-black);
+  color: var(--rgba-black) !important;
 }
 
 .text-dark-4 {
-  color: var(--rgba-black-2);
+  color: var(--rgba-black-2) !important;
 }
 
 .text-dark-5 {
-  color: var(--rgba-black-3);
+  color: var(--rgba-black-3) !important;
 }
 
 .text-dark-6 {
-  color: var(--rgba-black-5);
+  color: var(--rgba-black-5) !important;
 }
 
 .text-primary {
@@ -808,31 +810,35 @@ select {
 }
 
 .text-secondary-violet {
-  color: var(--violet);
+  color: var(--violet) !important;
 }
 
 .text-secondary-pink {
-  color: var(--pink);
+  color: var(--pink) !important;
 }
 
 .text-secondary-green {
-  color: var(--green);
+  color: var(--green) !important;
+}
+
+.text-secondary-yellow {
+  color: var(--yellow) !important;
 }
 
 .text-red {
-  color: var(--red);
+  color: var(--red) !important;
 }
 
 .text-green {
-  color: var(--green);
+  color: var(--green) !important;
 }
 
 .text-blue {
-  color: var(--blue);
+  color: var(--blue) !important;
 }
 
 .text-orange {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 .text-gradient-1 {
@@ -1623,6 +1629,12 @@ select {
   border-color: transparent;
   width: 34px;
   height: 34px;
+  background-color: var(--rgba-black-11);
+}
+.header .noti-box {
+  border-color: transparent;
+  width: 40px;
+  height: 40px;
   background-color: var(--rgba-black-11);
 }
 .header .icon-noline {
@@ -6018,6 +6030,78 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-noti .dot.away {
   background-color: var(--yellow);
+}
+
+.list-app .box-app:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.box-app {
+  box-shadow: var(--shadow-7);
+  border-radius: 18px;
+  background-color: var(--white);
+  padding: 16px;
+}
+.box-app .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--rgba-black-10);
+  flex-shrink: 0;
+}
+.box-app .logo img {
+  width: 24px;
+  height: 24px;
+}
+.box-app .info-box {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.box-app .dot {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--bright-green);
+  margin: 2px 6px;
+}
+.box-app .box-map-date {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.box-app .box-map-date .icon {
+  font-size: 12px;
+}
+.box-app .box-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.box-app .btn-app {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 12px;
+  color: var(--black);
+  background-color: var(--rgba-black-7);
+}
+.box-app .btn-app.on-way {
+  color: var(--green);
+  background-color: var(--rgba-green-2);
+}
+.box-app .btn-app.view-app {
+  color: var(--blue);
+  background-color: var(--rgba-blue-3);
+}
+.box-app .btn-app.canel {
+  color: var(--red);
+  background-color: var(--rgba-red);
 }
 
 /*# sourceMappingURL=styles.css.map */

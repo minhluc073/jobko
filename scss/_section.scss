@@ -945,3 +945,74 @@
         }
     }
 }
+
+.list-app {
+    .box-app:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+.box-app {
+    box-shadow: var(--shadow-7);
+    border-radius: 18px;
+    background-color: var(--white);
+    padding: 16px;
+    .logo {
+        @include flex(center, center);
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--rgba-black-10);
+        flex-shrink: 0;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .info-box {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    .dot {
+        width: 4px;
+        height: 4px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: var(--bright-green);
+        margin: 2px 6px;
+    }
+    .box-map-date {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .icon {
+            font-size: 12px;
+        }
+    }
+    .box-btn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .btn-app {
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+        border-radius: 12px;
+        color: var(--black);
+        background-color: var(--rgba-black-7);
+        &.on-way {
+            color: var(--green);
+            background-color: var(--rgba-green-2);
+        }
+        &.view-app {
+            color: var(--blue);
+            background-color: var(--rgba-blue-3);
+        }
+        &.canel {
+            color: var(--red);
+            background-color: var(--rgba-red);
+        }
+    }
+}

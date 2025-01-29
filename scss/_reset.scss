@@ -639,50 +639,53 @@ select {
     color: var(--white) !important;
 }
 .text-white-2 {
-    color: var(--rgba-white);
+    color: var(--rgba-white) !important;
 }
 .text-dark {
     color: var(--black) !important;
 }
 .text-dark-2 {
-    color: var(--black-2);
+    color: var(--black-2) !important;
 }
 .text-dark-3 {
-    color: var(--rgba-black);
+    color: var(--rgba-black) !important;
 }
 .text-dark-4 {
-    color: var(--rgba-black-2);
+    color: var(--rgba-black-2) !important;
 }
 .text-dark-5 {
-    color: var(--rgba-black-3);
+    color: var(--rgba-black-3) !important;
 }
 .text-dark-6 {
-    color: var(--rgba-black-5);
+    color: var(--rgba-black-5) !important;
 }
 .text-primary {
     color: var(--blue) !important;
 }
 .text-secondary-violet {
-    color: var(--violet);
+    color: var(--violet) !important;
 }
 .text-secondary-pink {
-    color: var(--pink);
+    color: var(--pink) !important;
 }
 .text-secondary-green {
-    color: var(--green);
+    color: var(--green) !important;
+}
+.text-secondary-yellow {
+    color: var(--yellow) !important;
 }
 
 .text-red {
-    color: var(--red);
+    color: var(--red) !important;
 }
 .text-green {
-    color: var(--green);
+    color: var(--green) !important;
 }
 .text-blue {
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 .text-orange {
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 .text-gradient-1 {
