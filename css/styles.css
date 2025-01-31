@@ -5667,7 +5667,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .wrapper-box-2 {
-  background: #ffffff;
+  background: var(--white);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding: 100px 40px 113px;
@@ -6102,6 +6102,78 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-app .btn-app.canel {
   color: var(--red);
   background-color: var(--rgba-red);
+}
+.box-app.box-head-app .info-box {
+  margin-bottom: 0;
+  gap: 12px;
+}
+
+.wrapper-track-app {
+  padding: 24px;
+  background: var(--white);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.wrapper-track-app .head-track {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rgba-black-4);
+}
+
+.timeline-track .timeline-item:not(:last-child) {
+  padding-bottom: 23px;
+}
+.timeline-track .timeline-item {
+  padding-left: 37px;
+  position: relative;
+  border-left: 3px solid var(--bright-green);
+}
+.timeline-track .timeline-item.offer {
+  border-left: 2px dashed var(--rgba-black-4);
+  margin-left: 1px;
+}
+.timeline-track .timeline-item .icon {
+  position: absolute;
+  left: -12px;
+  top: 0px;
+}
+.timeline-track .timeline-item .icon-cup {
+  font-size: 24px;
+}
+.timeline-track .timeline-item .round-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid var(--bright-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  box-sizing: content-box;
+}
+.timeline-track .timeline-item .round-circle span {
+  width: 14px;
+  height: 14px;
+  background-color: var(--bright-green);
+  border-radius: 50%;
+}
+.timeline-track .timeline-item .icon-tick {
+  width: 20px;
+  height: 20px;
+  background-color: var(--bright-green);
+  font-size: 10px;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.timeline-track .timeline-item .box-date-time {
+  display: flex;
+  gap: 28px;
+}
+.timeline-track .timeline-item .title {
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
