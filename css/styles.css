@@ -6176,4 +6176,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 8px;
 }
 
+.list-recent-search .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.list-recent-search .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */

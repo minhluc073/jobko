@@ -1093,3 +1093,14 @@
         }
     }
 }
+
+.list-recent-search{
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
+}
