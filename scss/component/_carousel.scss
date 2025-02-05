@@ -1,4 +1,3 @@
-
 .dots-tes {
     .swiper-pagination-bullet {
         margin: 0px 2px !important;
@@ -18,7 +17,7 @@
     }
 }
 .swiper {
-    &.sw-auto  {
+    &.sw-auto {
         .swiper-slide {
             width: auto;
         }
@@ -27,7 +26,7 @@
 .img-banner-slider {
     width: 275px;
     height: 275px;
-    display: inred-block;
+    display: inline-block;
     border-radius: 20px;
     overflow: hidden;
     &.style-2 {
@@ -52,9 +51,27 @@
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background-color: --white;
+    background-color: var(--white);
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0px 6px;
+    margin: 0px 4px;
+}
+.line-tes {
+    position: unset;
+    margin-top: 30px;
+    display: inline-flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        @include transition3;
+        width: 32px;
+        height: 6px;
+        display: block;
+        background-color: var(--rgba-black-4);
+        opacity: 1;
+        border-radius: 5px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: var(--blue);
+    }
 }

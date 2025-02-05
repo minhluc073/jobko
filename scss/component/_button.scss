@@ -44,6 +44,15 @@
             color: var(--white);
         }
     }
+    &.disabled-primary2 {
+        background-color: rgba(40, 105, 254, 0.10);
+        color: var(--blue);
+        box-shadow: var(--shadow-8);
+        &:hover {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+    }
     &.white {
         background-color: var(--white);
         color: var(--primary);
@@ -408,64 +417,7 @@ $slideTextColor: #ffffff;
     @include center;
 }
 
-.box-boarding-fixed {
-    position: fixed;
-    background-color: var(--primary);
-    border-radius: 32px 32px 0px 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 28px 24px 32px;
-    .title {
-        padding-right: 40px;
-        color: #fff;
-    }
-    .desc {
-        margin-bottom: 30px;
-        color: #fff;
-        opacity: 0.6;
-    }
-    .btn-start {
-        position: relative;
-        background-clip: padding-box;
-        border: 2px solid transparent;
-        background-color: #a281ff;
-        border-radius: 34.5px;
-        height: 68px;
-        display: flex;
-        align-items: center;
-        gap: 34px;
-        padding: 8px;
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            margin: -2px;
-            background-image: radial-gradient(
-                131.5% 3432.86% at -27.22% 50%,
-                #e60404 0%,
-                #fb15f2 21.3%,
-                #e1e1e1 44.73%,
-                #17ffd5 63.48%,
-                #73f90a 83.27%,
-                #efdb22 100%
-            );
-            border-radius: inherit;
-        }
-        .icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: #fff;
-            @include flex(center, center);
-        }
-    }
-    .button-1 {
-        color: #fff;
-        margin-left: 80px;
-    }
-}
+
 
 .fixed-button {
     position: fixed;
@@ -474,4 +426,8 @@ $slideTextColor: #ffffff;
     bottom: 0;
     padding: 24px;
     background-color: var(--white);
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
 }

@@ -103,6 +103,7 @@
   --shadow-5: 0px 2px 32px 0px rgba(18, 25, 39, 0.05);
   --shadow-6: 0px 5px 40px 0px rgba(18, 25, 39, 0.04);
   --shadow-7: 0px 8px 44px 0px rgba(18, 25, 39, 0.05);
+  --shadow-8: 0px 6px 22px 0px rgba(18, 25, 39, 0.04);
   --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
 }
 
@@ -1870,6 +1871,15 @@ select {
   background-color: var(--blue);
   color: var(--white);
 }
+.tf-btn.disabled-primary2 {
+  background-color: rgba(40, 105, 254, 0.1);
+  color: var(--blue);
+  box-shadow: var(--shadow-8);
+}
+.tf-btn.disabled-primary2:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
 .tf-btn.white {
   background-color: var(--white);
   color: var(--primary);
@@ -2183,59 +2193,6 @@ select {
   justify-content: center;
 }
 
-.box-boarding-fixed {
-  position: fixed;
-  background-color: var(--primary);
-  border-radius: 32px 32px 0px 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 28px 24px 32px;
-}
-.box-boarding-fixed .title {
-  padding-right: 40px;
-  color: #fff;
-}
-.box-boarding-fixed .desc {
-  margin-bottom: 30px;
-  color: #fff;
-  opacity: 0.6;
-}
-.box-boarding-fixed .btn-start {
-  position: relative;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-  background-color: #a281ff;
-  border-radius: 34.5px;
-  height: 68px;
-  display: flex;
-  align-items: center;
-  gap: 34px;
-  padding: 8px;
-}
-.box-boarding-fixed .btn-start::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  margin: -2px;
-  background-image: radial-gradient(131.5% 3432.86% at -27.22% 50%, #e60404 0%, #fb15f2 21.3%, #e1e1e1 44.73%, #17ffd5 63.48%, #73f90a 83.27%, #efdb22 100%);
-  border-radius: inherit;
-}
-.box-boarding-fixed .btn-start .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.box-boarding-fixed .button-1 {
-  color: #fff;
-  margin-left: 80px;
-}
-
 .fixed-button {
   position: fixed;
   left: 0;
@@ -2243,6 +2200,10 @@ select {
   bottom: 0;
   padding: 24px;
   background-color: var(--white);
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }
 
 /*------------ dropdown ---------------- */
@@ -3186,7 +3147,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .img-banner-slider {
   width: 275px;
   height: 275px;
-  display: inred-block;
+  display: inline-block;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -3208,12 +3169,35 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: --white;
+  background-color: var(--white);
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0px 6px;
+  margin: 0px 4px;
+}
+
+.line-tes {
+  position: unset;
+  margin-top: 30px;
+  display: inline-flex;
+  justify-content: center;
+}
+.line-tes .swiper-pagination-bullet {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 32px;
+  height: 6px;
+  display: block;
+  background-color: var(--rgba-black-4);
+  opacity: 1;
+  border-radius: 5px;
+}
+.line-tes .swiper-pagination-bullet-active {
+  background-color: var(--blue);
 }
 
 /*------------ alert ---------------- */
@@ -6183,6 +6167,39 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .list-recent-search .item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.boarding-img {
+  max-width: 311px;
+  height: 311px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: var(--blue);
+  padding: 20px;
+}
+.boarding-img .img {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.content-boarding {
+  margin-top: 36px;
+  display: grid;
+  gap: 12px;
+}
+.content-boarding .desc {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.group-btn-boarding .tf-btn:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.boarding-sec {
+  padding-top: 32px;
+  padding-bottom: 192px;
 }
 
 /*# sourceMappingURL=styles.css.map */

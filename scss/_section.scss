@@ -1104,3 +1104,34 @@
         }
     }
 }
+.boarding-img{
+    max-width: 311px;
+    height: 311px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: var(--blue);
+    padding: 20px;
+    .img{
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+    }
+}
+.content-boarding{
+    margin-top: 36px;
+    display: grid;
+    gap: 12px;
+    .desc{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+.group-btn-boarding{
+    .tf-btn:not(:last-child){
+        margin-bottom: 24px;
+    }
+}
+.boarding-sec{
+    padding-top: 32px;
+    padding-bottom: 192px;
+}
