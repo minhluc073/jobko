@@ -2979,6 +2979,34 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 0;
 }
 
+.box-uploadfile {
+  position: relative;
+  padding: 18px;
+  text-align: center;
+  border-radius: 16px;
+  border: 1px dashed var(--rgba-black-4);
+}
+.box-uploadfile .uploadfile {
+  margin-bottom: 0;
+}
+.box-uploadfile .ip-file {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+.box-uploadfile .text {
+  margin-top: 16px;
+}
+.box-uploadfile .file {
+  margin-top: 2px;
+}
+
 /*------------ footer ---------------- */
 .footer-fixed {
   position: fixed;

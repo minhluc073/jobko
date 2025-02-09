@@ -555,3 +555,31 @@
         margin-bottom: 0;
     }
 }
+
+.box-uploadfile {
+    position: relative;
+    padding: 18px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px dashed var(--rgba-black-4);
+    .uploadfile {
+        margin-bottom: 0;
+    }
+    .ip-file {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+    }
+    .text{
+        margin-top: 16px;
+    }
+    .file{
+        margin-top: 2px;
+    }
+}
