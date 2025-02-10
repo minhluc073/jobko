@@ -547,8 +547,8 @@
 
 .box-profile {
     .avatar {
-        width: 84px;
-        height: 84px;
+        width: 82px;
+        height: 82px;
         border-radius: 16px;
         border: 1px solid var(--blue);
         overflow: hidden;
@@ -562,6 +562,43 @@
         }
     }
 }
+.box-profile-setup {
+    .avatar {
+        width: 82px;
+        height: 82px;
+        border-radius: 16px;
+        border: 1px solid var(--rgba-black-6);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+        position: relative;
+        background-color: var(--rgba-black-6);
+        @include flex(center, center);
+        .icon {
+            font-size: 56px;
+            color: var(--rgba-black-12);
+        }
+        .upload-box {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 1px solid var(--white);
+            @include flex(center, center);
+            background-color: var(--blue);
+            font-size: 10px;
+            color: var(--white);
+        }
+    }
+    .head-profile{
+        padding-bottom: 24px;
+        border-bottom: 1px solid var( --rgba-black-4);
+    }
+}
+
 .wrap-count {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1094,44 +1131,44 @@
     }
 }
 
-.list-recent-search{
-    .item{
+.list-recent-search {
+    .item {
         display: flex;
         align-items: center;
         gap: 12px;
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 16px;
         }
     }
 }
-.boarding-img{
+.boarding-img {
     max-width: 311px;
     height: 311px;
     margin: auto;
     border-radius: 30px;
     background-color: var(--blue);
     padding: 20px;
-    .img{
+    .img {
         border-radius: 20px;
         overflow: hidden;
         background-color: rgb(255, 255, 255);
     }
 }
-.content-boarding{
+.content-boarding {
     margin-top: 36px;
     display: grid;
     gap: 12px;
-    .desc{
+    .desc {
         font-size: 16px;
         line-height: 28px;
     }
 }
-.group-btn-boarding{
-    .tf-btn:not(:last-child){
+.group-btn-boarding {
+    .tf-btn:not(:last-child) {
         margin-bottom: 24px;
     }
 }
-.boarding-sec{
+.boarding-sec {
     padding-top: 32px;
     padding-bottom: 192px;
 }

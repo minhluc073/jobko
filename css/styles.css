@@ -85,6 +85,7 @@
   --rgba-black-9: rgba(18, 25, 39, 0.02);
   --rgba-black-10: rgba(18, 25, 39, 0.2);
   --rgba-black-11: rgba(18, 25, 39, 0.04);
+  --rgba-black-12: rgba(18, 25, 39, 0.32);
   --rgba-violet: rgba(165, 95, 255, 0.1);
   --rgba-pink: rgba(255, 95, 191, 0.1);
   --rgba-red: rgba(250, 72, 72, 0.06);
@@ -5636,8 +5637,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .box-profile .avatar {
-  width: 84px;
-  height: 84px;
+  width: 82px;
+  height: 82px;
   border-radius: 16px;
   border: 1px solid var(--blue);
   overflow: hidden;
@@ -5647,6 +5648,45 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-profile .content .name {
   margin-bottom: 8px;
+}
+
+.box-profile-setup .avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 16px;
+  border: 1px solid var(--rgba-black-6);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  position: relative;
+  background-color: var(--rgba-black-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-profile-setup .avatar .icon {
+  font-size: 56px;
+  color: var(--rgba-black-12);
+}
+.box-profile-setup .avatar .upload-box {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  font-size: 10px;
+  color: var(--white);
+}
+.box-profile-setup .head-profile {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rgba-black-4);
 }
 
 .wrap-count {

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+
+    <title>Set Up Profile</title>
+</head>
+
+<body class="counter-scroll">
+
+    <div class="header fixed-top justify-content-between">
+        <div class="h-left">
+            <a href="javascript:void(0);" class="icon back-btn">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.88986 12.2951L1.60986 7.00008L6.88986 1.70508" stroke="#121927" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <h3>Set Up Profile</h3>
+        <div class="h-right">
+            <a href="#" class="h7">Skip</a>
+        </div>
+    </div>
+    <div class="app-content style-3">
+        <div class="tf-container">
+            <div class="box-profile-setup">
+                <div class="avatar">
+                    <span class="icon icon-profile"></span>
+                    <div class="upload-box"><span class="icon-camera"></span></div>
+                </div>
+                <div class="head-profile text-center">
+                    <h4>Personal Information</h4>
+                </div>
+                <form action="index.html" class="mt-24">
+                    <div class="form-field">
+                        <h6 class="label">Full Name</h6>
+                        <fieldset class="input-icon mt-12">
+                            <span class="icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                    <path d="M10.1334 9.05817C10.05 9.04984 9.95005 9.04984 9.85838 9.05817C7.87505 8.9915 6.30005 7.3665 6.30005 5.3665C6.30005 3.32484 7.95005 1.6665 10 1.6665C12.0417 1.6665 13.7 3.32484 13.7 5.3665C13.6917 7.3665 12.1167 8.9915 10.1334 9.05817Z" stroke="#121927" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.96685 12.1335C3.95018 13.4835 3.95018 15.6835 5.96685 17.0252C8.25851 18.5585 12.0168 18.5585 14.3085 17.0252C16.3252 15.6752 16.3252 13.4752 14.3085 12.1335C12.0252 10.6085 8.26685 10.6085 5.96685 12.1335Z" stroke="#121927" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>                                                              
+                            </span>
+                            <input type="text" placeholder="Type your full name" class="form-control">
+                        </fieldset>
+                    </div>
+                    <div class="mt-20 form-field">
+                        <h6 class="label">Contact Number</h6>
+                        <fieldset class="input-icon mt-12">
+                            <span class="icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                    <path d="M18.3084 15.2748C18.3084 15.5748 18.2417 15.8832 18.1001 16.1832C17.9584 16.4832 17.7751 16.7665 17.5334 17.0332C17.1251 17.4832 16.6751 17.8082 16.1667 18.0165C15.6667 18.2248 15.1251 18.3332 14.5417 18.3332C13.6917 18.3332 12.7834 18.1332 11.8251 17.7248C10.8667 17.3165 9.90842 16.7665 8.95842 16.0748C8.00008 15.3748 7.09175 14.5998 6.22508 13.7415C5.36675 12.8748 4.59175 11.9665 3.90008 11.0165C3.21675 10.0665 2.66675 9.1165 2.26675 8.17484C1.86675 7.22484 1.66675 6.3165 1.66675 5.44984C1.66675 4.88317 1.76675 4.3415 1.96675 3.8415C2.16675 3.33317 2.48341 2.8665 2.92508 2.44984C3.45841 1.92484 4.04175 1.6665 4.65841 1.6665C4.89175 1.6665 5.12508 1.7165 5.33341 1.8165C5.55008 1.9165 5.74175 2.0665 5.89175 2.28317L7.82508 5.00817C7.97508 5.2165 8.08341 5.40817 8.15841 5.5915C8.23341 5.7665 8.27508 5.9415 8.27508 6.09984C8.27508 6.29984 8.21675 6.49984 8.10008 6.6915C7.99175 6.88317 7.83341 7.08317 7.63341 7.28317L7.00008 7.9415C6.90841 8.03317 6.86675 8.1415 6.86675 8.27484C6.86675 8.3415 6.87508 8.39984 6.89175 8.4665C6.91675 8.53317 6.94175 8.58317 6.95842 8.63317C7.10842 8.90817 7.36675 9.2665 7.73341 9.69984C8.10841 10.1332 8.50841 10.5748 8.94175 11.0165C9.39175 11.4582 9.82508 11.8665 10.2667 12.2415C10.7001 12.6082 11.0584 12.8582 11.3417 13.0082C11.3834 13.0248 11.4334 13.0498 11.4917 13.0748C11.5584 13.0998 11.6251 13.1082 11.7001 13.1082C11.8417 13.1082 11.9501 13.0582 12.0417 12.9665L12.6751 12.3415C12.8834 12.1332 13.0834 11.9748 13.2751 11.8748C13.4667 11.7582 13.6584 11.6998 13.8667 11.6998C14.0251 11.6998 14.1917 11.7332 14.3751 11.8082C14.5584 11.8832 14.7501 11.9915 14.9584 12.1332L17.7167 14.0915C17.9334 14.2415 18.0834 14.4165 18.1751 14.6248C18.2584 14.8332 18.3084 15.0415 18.3084 15.2748Z" stroke="#121927" stroke-width="1.25" stroke-miterlimit="10"/>
+                                    <path d="M15.4169 7.49967C15.4169 6.99967 15.0252 6.23301 14.4419 5.60801C13.9086 5.03301 13.2002 4.58301 12.5002 4.58301" stroke="#121927" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.3336 7.49984C18.3336 4.27484 15.7252 1.6665 12.5002 1.6665" stroke="#121927" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                                                                                                 
+                            </span>
+                            <input type="text" placeholder="Type your phone" class="form-control">
+                        </fieldset>
+                    </div>
+
+                    <button class="mt-40 tf-btn primary">Sign In</button>
+                </form>
+            </div>
+           
+        </div>
+
+    </div>
+
+
+
+
+    <div class="offcanvas offcanvas-bottom" id="share">
+        <div class="offcanvas-body">
+            <h2 class="text-center">Share</h2>
+            <ul class="mt-28 box-share-social">
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 copyLink">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.92348 17.8736C6.77571 17.8736 5.02759 16.1255 5.02759 13.9778V4.58203H3.42348C2.03287 4.58203 0.902588 5.71214 0.902588 7.10275V19.4778C0.902588 20.8684 2.03287 21.9986 3.42348 21.9986H14.8817C16.2723 21.9986 17.4026 20.8684 17.4026 19.4778V17.8736H8.92348Z"
+                                    fill="#7D7E93" />
+                                <path
+                                    d="M21.069 2.52089C21.069 1.12843 19.9405 0 18.5482 0H8.92323C7.53078 0 6.40234 1.12843 6.40234 2.52089V13.9791C6.40234 15.3716 7.53078 16.5 8.92323 16.5H18.5482C19.9405 16.5 21.069 15.3716 21.069 13.9791V2.52089Z"
+                                    fill="#9B9CA8" />
+                            </svg>
+                        </div>
+                        <span>Copy Link</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 whatsApp">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.333252 24.6667L2.04064 18.4559C0.718815 16.1716 0.190987 13.517 0.538986 10.9037C0.886985 8.29037 2.09137 5.86434 3.96542 4.00171C5.83946 2.13908 8.27848 0.94391 10.9043 0.601491C13.5302 0.259071 16.1962 0.788534 18.489 2.10779C20.7818 3.42705 22.5733 5.4624 23.5858 7.89829C24.5983 10.3342 24.7752 13.0345 24.0891 15.5807C23.403 18.1269 21.8922 20.3766 19.7909 21.9811C17.6897 23.5856 15.1153 24.4552 12.4671 24.4552H12.4628C10.454 24.4536 8.47738 23.9525 6.71255 22.9973L0.333252 24.6667ZM7.00765 20.8328L7.37273 21.0485C9.47875 22.2894 11.9687 22.7187 14.3713 22.2552C16.7739 21.7917 18.9225 20.4676 20.4104 18.5334C21.8982 16.5992 22.6221 14.1891 22.4451 11.7594C22.2681 9.32968 21.2024 7.04884 19.4497 5.3486C17.697 3.64835 15.379 2.64667 12.9343 2.53314C10.4897 2.41961 8.08801 3.20211 6.18392 4.73254C4.27983 6.26296 3.00542 8.43512 2.6019 10.8379C2.19837 13.2407 2.69373 15.7073 3.99422 17.771L4.23283 18.147L3.22105 21.8215L7.00596 20.8328H7.00765ZM15.5943 18.231C15.1996 18.2331 14.807 18.1736 14.4308 18.0547C13.8486 17.8749 13.2764 17.6645 12.7166 17.4244C10.6585 16.4154 8.90499 14.8825 7.63411 12.9812L7.58437 12.9081C6.87342 12.0208 6.44478 10.9425 6.35336 9.81115C6.34252 9.35943 6.42502 8.91031 6.59572 8.49162C6.76643 8.07294 7.02172 7.69363 7.34575 7.3772L7.40477 7.31341C7.50492 7.19893 7.62795 7.1065 7.76602 7.04204C7.90409 6.97759 8.05415 6.94252 8.20661 6.93909C8.39969 6.93909 8.60374 6.93909 8.78249 6.95H8.87776C9.06326 6.95 9.26055 6.98944 9.45954 7.46281C9.54385 7.655 9.65599 7.93701 9.77994 8.23663V8.24503C10.0388 8.87282 10.3322 9.5837 10.3828 9.68526C10.4309 9.76357 10.4584 9.85265 10.4628 9.94432C10.4672 10.036 10.4484 10.1273 10.4081 10.2098L10.3668 10.2937C10.3015 10.4454 10.2143 10.5868 10.1079 10.7134C10.0573 10.7721 10.0051 10.8351 9.95278 10.8989C9.8516 11.0223 9.74705 11.1507 9.65683 11.2346C9.51181 11.379 9.3474 11.5426 9.52446 11.8456C9.97553 12.6155 10.5393 13.3142 11.1973 13.9187C11.853 14.5057 12.6039 14.9779 13.4181 15.3152C13.5025 15.3513 13.5665 15.379 13.6154 15.4034C13.7155 15.4603 13.8275 15.4934 13.9426 15.4999C14.0057 15.4979 14.0676 15.4817 14.1237 15.4527C14.1797 15.4236 14.2285 15.3824 14.2664 15.332C14.4046 15.1742 15.0092 14.4709 15.2183 14.157C15.2518 14.0913 15.3022 14.0357 15.3645 13.9959C15.4267 13.9561 15.4985 13.9335 15.5724 13.9304C15.6836 13.938 15.7928 13.9641 15.8953 14.0076C16.166 14.1067 17.6061 14.81 17.9492 14.9812L18.1179 15.0651C18.2757 15.118 18.4171 15.2105 18.5285 15.3337C18.6116 15.8161 18.5507 16.3123 18.3531 16.7605C18.1325 17.1254 17.8382 17.4407 17.4886 17.6864C17.1391 17.932 16.7421 18.1026 16.3228 18.1873C16.0815 18.2207 15.838 18.2361 15.5943 18.2335V18.231Z"
+                                    fill="#FDFDFD" />
+                            </svg>
+                        </div>
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 facebook">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8082 9.3008L13.0827 14.1871H9.26942V25H4.15528V14.1871H0V9.3008H4.15528V6.57666C4.15528 2.34076 6.59731 0 10.337 0C12.1269 0 14 0.330154 14 0.330154V4.49009H11.9352C9.90228 4.49009 9.26942 5.79423 9.26942 7.13132V9.3008H13.8082Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 messenger">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.88083 24.304V20.0348C3.53383 19.0384 2.43689 17.7425 1.67661 16.2494C0.916327 14.7563 0.513525 13.1069 0.5 11.4315C0.5 5.30232 5.825 0.333984 12.3942 0.333984C18.9633 0.333984 24.2875 5.30315 24.2875 11.4315C24.2875 17.5598 18.9625 22.529 12.3933 22.529C11.2024 22.5301 10.0171 22.3638 8.8725 22.0348L4.88083 24.304ZM4.70919 15.1831L11.1259 8.3914L14.2017 11.5381L19.975 8.3914L13.5967 15.1822L10.5467 11.9797L4.70919 15.1831Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Messenger</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 twitter-2">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.53924 17.5C4.13225 17.5 1.88852 16.7841 0 15.5488C1.60342 15.6549 4.43309 15.4008 6.19314 13.6841C3.54544 13.5598 2.35139 11.4833 2.19564 10.5958C2.42061 10.6846 3.49353 10.7911 4.09921 10.5426C1.0535 9.76166 0.586256 7.0284 0.690087 6.19422C1.26116 6.60243 2.23025 6.74442 2.61096 6.70892C-0.227089 4.63235 0.793918 1.50862 1.29577 0.834179C3.33246 3.71964 6.38482 5.34022 10.161 5.43036C10.0898 5.11103 10.0522 4.77858 10.0522 4.43712C10.0522 1.98657 11.9891 0 14.3785 0C15.6269 0 16.7518 0.542313 17.5414 1.40977C18.3757 1.20986 19.6312 0.741899 20.245 0.337221C19.9356 1.47312 18.9724 2.4207 18.3898 2.77191C18.3851 2.75991 18.3946 2.78385 18.3898 2.77191C18.9016 2.69274 20.2863 2.42061 20.8333 2.04107C20.5628 2.67921 19.5417 3.74023 18.7037 4.33423C18.8596 11.3659 13.5986 17.5 6.53924 17.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 instagram">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0001 21.8327C8.08439 21.8327 7.6993 21.82 6.53302 21.7675C5.63444 21.7484 4.74548 21.5782 3.9034 21.2639C3.18033 20.9921 2.52547 20.5655 1.98472 20.0139C1.43339 19.4727 1.00703 18.8176 0.735498 18.0943C0.421276 17.2523 0.251038 16.3633 0.231917 15.4647C0.179443 14.3001 0.166748 13.9142 0.166748 10.9993C0.166748 8.10397 0.179443 7.71465 0.231917 6.53229C0.250056 5.63368 0.420031 4.7446 0.734652 3.90267C1.0074 3.17988 1.43425 2.52516 1.98556 1.98398C2.52636 1.43263 3.18123 1.00626 3.90425 0.734766C4.74626 0.420326 5.63526 0.25008 6.53387 0.231185C7.6993 0.178711 8.08524 0.166016 11.0001 0.166016C13.9149 0.166016 14.3009 0.178711 15.4646 0.231185C16.364 0.250246 17.2538 0.420482 18.0968 0.734766C18.8191 1.00655 19.4734 1.4329 20.0138 1.98398C20.5651 2.52516 20.9919 3.17988 21.2647 3.90267C21.5771 4.74525 21.7472 5.6339 21.7682 6.53229C21.8207 7.69857 21.8334 8.08789 21.8334 10.9993C21.8334 13.9108 21.8207 14.3001 21.7691 15.4664C21.748 16.3645 21.5778 17.2529 21.2655 18.0952C20.9868 18.8147 20.5611 19.4682 20.0157 20.0139C19.4702 20.5596 18.817 20.9857 18.0976 21.2648C17.2549 21.5789 16.3654 21.7492 15.4663 21.7684C14.3009 21.8208 13.9149 21.8327 11.0001 21.8327ZM10.0293 2.11263C8.01584 2.11263 7.63413 2.12786 6.62358 2.17357C5.93645 2.18145 5.25584 2.30801 4.6118 2.54766C4.14116 2.72145 3.71545 2.99851 3.36597 3.35846C3.00601 3.70795 2.72895 4.13366 2.55516 4.6043C2.31618 5.2482 2.18992 5.92846 2.18192 6.61523C2.13029 7.75189 2.11929 8.09381 2.11929 10.9917C2.11929 13.8896 2.13029 14.2333 2.18192 15.3691C2.18992 16.0558 2.31618 16.7361 2.55516 17.38C2.72901 17.8504 3.00607 18.2758 3.36597 18.625C3.71545 18.985 4.14116 19.262 4.6118 19.4358C5.25621 19.674 5.93662 19.8002 6.62358 19.809C7.77378 19.8615 8.1174 19.8725 11.0009 19.8725C13.8845 19.8725 14.2272 19.8615 15.3783 19.809C16.065 19.801 16.7453 19.6748 17.3892 19.4358C17.8562 19.2555 18.2803 18.9795 18.6343 18.6256C18.9883 18.2717 19.2645 17.8477 19.445 17.3809C19.684 16.7369 19.8102 16.0567 19.8182 15.3699C19.8707 14.2197 19.8817 13.8761 19.8817 10.9943C19.8817 8.11243 19.8707 7.76881 19.8182 6.61862C19.8102 5.93185 19.684 5.25158 19.445 4.60768C19.271 4.13716 18.9939 3.7115 18.6342 3.36185C18.2849 3.00184 17.8591 2.72502 17.3884 2.55189C16.7445 2.31291 16.0642 2.18665 15.3774 2.17865C14.2408 2.12702 13.8988 2.11602 11.0001 2.11602H10.0293V2.11263ZM11.0001 16.5616C9.89977 16.5616 8.82417 16.2353 7.90931 15.624C6.99445 15.0127 6.28141 14.1438 5.86038 13.1272C5.43935 12.1106 5.32923 10.992 5.54395 9.91289C5.75867 8.83373 6.28859 7.84248 7.06668 7.06451C7.84478 6.28653 8.83611 5.75676 9.9153 5.54221C10.9945 5.32765 12.1131 5.43794 13.1296 5.85912C14.1461 6.28031 15.0149 6.99348 15.626 7.90843C16.2372 8.82339 16.5633 9.89904 16.5632 10.9993C16.5611 12.4741 15.9744 13.8878 14.9315 14.9305C13.8886 15.9732 12.4748 16.5598 11.0001 16.5616ZM11.0001 7.38796C10.2861 7.38829 9.58823 7.60031 8.99472 7.99721C8.40121 8.3941 7.9387 8.95806 7.66566 9.61778C7.39262 10.2775 7.32131 11.0034 7.46075 11.7036C7.60018 12.4039 7.9441 13.047 8.44903 13.5518C8.95396 14.0567 9.59722 14.4004 10.2975 14.5397C10.9978 14.679 11.7236 14.6075 12.3833 14.3343C13.0429 14.0611 13.6068 13.5985 14.0035 13.0049C14.4003 12.4113 14.6122 11.7133 14.6123 10.9993C14.6112 10.0418 14.2302 9.12386 13.553 8.44695C12.8757 7.77003 11.9576 7.38947 11.0001 7.3888V7.38796ZM16.7832 6.51367C16.526 6.5135 16.2746 6.43703 16.0609 6.29393C15.8471 6.15084 15.6806 5.94754 15.5825 5.70979C15.4843 5.47203 15.4589 5.2105 15.5094 4.95829C15.5599 4.70608 15.6841 4.47452 15.8663 4.29294C16.0485 4.11135 16.2805 3.98789 16.5328 3.93818C16.7852 3.88847 17.0467 3.91475 17.2841 4.01368C17.5215 4.11262 17.7243 4.27977 17.8667 4.49398C18.0091 4.70819 18.0847 4.95983 18.0841 5.21706C18.0829 5.56133 17.9454 5.89112 17.7016 6.13416C17.4577 6.3772 17.1275 6.51367 16.7832 6.51367Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 skype">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.85429 0.164062C8.06746 0.164062 9.20522 0.467942 10.1863 0.999238C10.5145 0.967493 10.8472 0.951249 11.1838 0.951249C16.8354 0.951249 21.417 5.53282 21.417 11.1845C21.417 11.6893 21.3804 12.1856 21.3098 12.6708C21.8777 13.6167 22.2042 14.724 22.2042 15.9075C22.2042 19.3855 19.3848 22.2049 15.9068 22.2049C14.7233 22.2049 13.616 21.8784 12.6701 21.3106C12.1848 21.3812 11.6886 21.4177 11.1838 21.4177C5.53209 21.4177 0.950517 16.8361 0.950517 11.1845C0.950517 10.6547 0.990775 10.1343 1.0684 9.62624C0.492954 8.69635 0.16333 7.61512 0.16333 6.46144C0.16333 2.98349 3.15898 0.164062 6.85429 0.164062ZM14.5651 7.51106C15.1197 6.4615 12.9015 5.67432 11.2379 5.67432C9.57434 5.67432 7.35619 6.72389 7.35619 8.56062C7.35619 10.3974 8.7425 11.0533 10.1289 11.7093C10.4061 11.8405 10.7181 11.9553 11.03 12.0701C11.9658 12.4145 12.9015 12.7589 12.9015 13.546C12.9015 14.5956 11.7925 14.858 10.6834 14.858C10.2865 14.858 9.82922 14.6698 9.37639 14.4834C8.56389 14.1491 7.7657 13.8206 7.35621 14.5956C6.80168 15.6452 8.44801 16.6947 10.6834 16.6947C13.1788 16.6947 15.1197 15.6452 15.1197 13.546C15.1197 11.5786 12.9276 10.7637 11.5111 10.2371C11.4162 10.2018 11.3249 10.1679 11.2379 10.135C9.85161 9.61018 9.57434 9.0854 9.57434 8.56062C9.57434 8.03584 10.1289 7.51106 11.2379 7.51106C11.6076 7.51106 12.0163 7.67045 12.425 7.82985C13.2424 8.14863 14.0598 8.46742 14.5651 7.51106Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Skype</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-share-item">
+                        <div class="box-icon w-40 massage">
+                            <svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.6562 21.0937C19.6461 21.0937 25.3125 16.3718 25.3125 10.5469C25.3125 4.722 19.6461 0 12.6562 0C5.6664 0 0 4.722 0 10.5469C0 14.239 2.27656 17.488 5.72372 19.3722C5.60832 20.31 5.26144 21.5616 4.21875 22.5C6.19048 22.1451 7.7641 21.4319 8.93962 20.6317C10.1148 20.9321 11.3629 21.0937 12.6562 21.0937Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>Massage</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="mt-32 text-uppercase tf-btn disabled-primary" data-bs-dismiss="offcanvas">CANCEL</a>
+        </div>
+    </div>
+
+    <!-- filter -->
+    <div class="offcanvas offcanvas-end full" id="filter">
+        <div class="header fixed-top">
+            <div class="left">
+                <a href="javascript:void(0);" data-bs-dismiss="offcanvas" class="icon fs-12"><i
+                        class="icon-close2"></i></a>
+            </div>
+            <h3>Filter Options</h3>
+        </div>
+        <div class="overflow-auto app-content style-2">
+            <div class="tf-container">
+                <div class="wrap-slider-tab">
+                    <div class="wrapper-tab-nft style-2">
+                        <ul class="nav nav-tabs tab-1" role="tablist">
+                            <li class="nav-item active" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab"
+                                    data-bs-target="#status">Status</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#price">Price</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#quantity">Quantity</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chains">Chains</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#category">Category</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#currency">Currency</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content mt-24">
+                        <div class="tab-pane fade active show" id="status" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#status-accordion" aria-expanded="true"
+                                    aria-controls="status-accordion">
+                                    <h6 class="flex-grow-1">Status</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="status-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="status-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-1">
+                                            <label for="check-status-1" class="button-2 text-dark-3">Buy Now</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-2" checked>
+                                            <label for="check-status-2" class="button-2 text-dark-3">New</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-3" checked>
+                                            <label for="check-status-3" class="button-2 text-dark-3">Has Offers</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-4">
+                                            <label for="check-status-4" class="button-2 text-dark-3">On Auction</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-status-5">
+                                            <label for="check-status-5" class="button-2 text-dark-3">Buy with
+                                                Card</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="price" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#price-accordion" aria-expanded="true"
+                                    aria-controls="price-accordion">
+                                    <h6 class="flex-grow-1">Price</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="price-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="price-accordion">
+                                    <div class="card-body">
+                                        <div class="nice-select tf-select-v3 icon" tabindex="0"><span
+                                                class="current">ETH</span>
+                                            <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.74998 7.58294L9.72494 5.81628C9.89994 5.74128 10.1 5.74128 10.2666 5.81628L14.2416 7.58294C14.5916 7.74128 14.9166 7.31628 14.6749 7.01628L10.5083 1.92461C10.2249 1.57461 9.75829 1.57461 9.47495 1.92461L5.30829 7.01628C5.07495 7.31628 5.39998 7.74128 5.74998 7.58294Z"
+                                                    fill="#1A1528" />
+                                                <path
+                                                    d="M5.75006 12.4171L9.73336 14.1837C9.90836 14.2587 10.1084 14.2587 10.2751 14.1837L14.2584 12.4171C14.6084 12.2587 14.9334 12.6837 14.6917 12.9837L10.525 18.0754C10.2417 18.4254 9.77505 18.4254 9.49171 18.0754L5.32505 12.9837C5.07505 12.6837 5.39172 12.2587 5.75006 12.4171Z"
+                                                    fill="#1A1528" />
+                                                <path
+                                                    d="M9.81672 7.90898L6.37505 9.62565C6.06672 9.77565 6.06672 10.2173 6.37505 10.3673L9.81672 12.084C9.93339 12.1423 10.075 12.1423 10.1917 12.084L13.6333 10.3673C13.9417 10.2173 13.9417 9.77565 13.6333 9.62565L10.1917 7.90898C10.0667 7.85065 9.93339 7.85065 9.81672 7.90898Z"
+                                                    fill="#1A1528" />
+                                            </svg>
+                                            <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.6 7.45898L11.1667 12.8923C10.525 13.534 9.47503 13.534 8.83336 12.8923L3.40002 7.45898"
+                                                    stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                            <ul class="list">
+                                                <li data-value="last-month" class="option selected">ETH</li>
+                                                <li data-value="last-week" class="option">Polygon</li>
+                                                <li data-value="last-week" class="option">Klaytn</li>
+                                                <li data-value="last-week" class="option">Solana</li>
+                                                <li data-value="last-week" class="option">USDT</li>
+                                                <li data-value="last-week" class="option">USDC</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mt-20 d-flex align-items-center gap-14">
+                                            <input type="text" class="form-control" value="0.09">
+                                            <span class="body-1">To</span>
+                                            <input type="text" class="form-control" value="1.00">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="quantity" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#quantity-accordion" aria-expanded="true"
+                                    aria-controls="quantity-accordion">
+                                    <h6 class="flex-grow-1">Quantity</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="quantity-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="quantity-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty1" checked>
+                                            <label for="check-qty1" class="button-2 text-dark-3">All Items</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty2">
+                                            <label for="check-qty2" class="button-2 text-dark-3">Single Items</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="radio" name="radio2" class="tf-radio" id="check-qty3">
+                                            <label for="check-qty3" class="button-2 text-dark-3">Bundles</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chains" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#chain-accordion" aria-expanded="true"
+                                    aria-controls="chain-accordion">
+                                    <h6 class="flex-grow-1">Chains</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="chain-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="chain-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-1">
+                                            <label for="check-chain-1" class="d-flex align-items-center gap-8">
+                                                <svg class="icon-eth" width="18" height="18" viewBox="0 0 18 18"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.17509 6.82484L8.75256 5.23484C8.91006 5.16734 9.09008 5.16734 9.24008 5.23484L12.8176 6.82484C13.1326 6.96734 13.4251 6.58484 13.2076 6.31484L9.45756 1.73234C9.20256 1.41734 8.78257 1.41734 8.52757 1.73234L4.77757 6.31484C4.56757 6.58484 4.86009 6.96734 5.17509 6.82484Z"
+                                                        fill="#1A1528" />
+                                                    <path
+                                                        d="M5.17493 11.1754L8.7599 12.7654C8.9174 12.8329 9.09742 12.8329 9.24742 12.7654L12.8324 11.1754C13.1474 11.0329 13.4399 11.4154 13.2224 11.6854L9.47241 16.2679C9.21741 16.5829 8.79742 16.5829 8.54242 16.2679L4.79242 11.6854C4.56742 11.4154 4.85243 11.0329 5.17493 11.1754Z"
+                                                        fill="#1A1528" />
+                                                    <path
+                                                        d="M8.83493 7.1175L5.73742 8.6625C5.45992 8.7975 5.45992 9.195 5.73742 9.33L8.83493 10.875C8.93993 10.9275 9.06739 10.9275 9.17239 10.875L12.2699 9.33C12.5474 9.195 12.5474 8.7975 12.2699 8.6625L9.17239 7.1175C9.05989 7.065 8.93993 7.065 8.83493 7.1175Z"
+                                                        fill="#1A1528" />
+                                                </svg>
+                                                <span class="button-2 text-dark-3">Ethereum</span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-2">
+                                            <label for="check-chain-2" class="d-flex align-items-center gap-8">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.935 6.36462C12.6553 6.20483 12.2958 6.20483 11.9762 6.36462L9.73913 7.6829L8.22112 8.5218L6.02399 9.84008C5.74435 9.99987 5.38482 9.99987 5.06524 9.84008L3.34749 8.80144C3.06785 8.64165 2.86811 8.32206 2.86811 7.96253V5.96514C2.86811 5.64556 3.0279 5.32598 3.34749 5.12624L5.06524 4.12755C5.34488 3.96775 5.70441 3.96775 6.02399 4.12755L7.74174 5.16619C8.02138 5.32598 8.22112 5.64556 8.22112 6.00509V7.32337L9.73913 6.44452V5.08629C9.73913 4.76671 9.57934 4.44713 9.25976 4.24739L6.06394 2.36984C5.7843 2.21005 5.42477 2.21005 5.10519 2.36984L1.82947 4.28734C1.50989 4.44713 1.3501 4.76671 1.3501 5.08629V8.84138C1.3501 9.16097 1.50989 9.48055 1.82947 9.68029L5.06524 11.5578C5.34488 11.7176 5.70441 11.7176 6.02399 11.5578L8.22112 10.2795L9.73913 9.40065L11.9363 8.12232C12.2159 7.96253 12.5754 7.96253 12.895 8.12232L14.6128 9.12102C14.8924 9.28081 15.0921 9.60039 15.0921 9.95992V11.9573C15.0921 12.2769 14.9323 12.5965 14.6128 12.7962L12.935 13.7949C12.6553 13.9547 12.2958 13.9547 11.9762 13.7949L10.2585 12.7962C9.97882 12.6364 9.77908 12.3168 9.77908 11.9573V10.679L8.26106 11.5578V12.8761C8.26106 13.1957 8.42086 13.5153 8.74044 13.715L11.9762 15.5926C12.2558 15.7524 12.6154 15.7524 12.935 15.5926L16.1707 13.715C16.4504 13.5552 16.6501 13.2356 16.6501 12.8761V9.08107C16.6501 8.76149 16.4903 8.44191 16.1707 8.24217L12.935 6.36462Z"
+                                                        fill="#8247E5" />
+                                                </svg>
+                                                <span class="button-2 text-dark-3">Polygon</span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-3" checked>
+                                            <label for="check-chain-3" class="d-flex align-items-center gap-8">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.77788 8.65685L14.434 3.04119L9.22175 0.900391L4.05078 13.3839L8.77788 8.65685ZM14.9189 14.3527L9.38428 8.85855L14.9189 3.3644C17.8276 6.44964 17.8276 11.2675 14.9189 14.3527ZM3.52637 14.6353L8.98002 9.2221L14.4337 14.6353L8.98002 16.8976L3.52637 14.6353ZM3.08122 14.3527C1.6767 12.8688 0.895868 10.9022 0.899918 8.85858L8.49438 1.30381L3.08122 14.3527Z"
+                                                        fill="url(#paint0_linear_81_3936)" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_81_3936" x1="17.1002"
+                                                            y1="0.90039" x2="0.900191" y2="17.1007"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="#FF9000" />
+                                                            <stop offset="0.515625" stop-color="#FF3600" />
+                                                            <stop offset="1" stop-color="#780000" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                <span class="button-2 text-dark-3">Klaytn</span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-4" checked>
+                                            <label for="check-chain-4" class="d-flex align-items-center gap-8">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.83586 3.29657C3.93203 3.20424 4.05897 3.15039 4.18976 3.15039H16.3993C16.6224 3.15039 16.734 3.41966 16.5762 3.57738L14.1643 5.98928C14.072 6.0816 13.9451 6.13545 13.8104 6.13545H1.60091C1.3778 6.13545 1.26625 5.86618 1.42396 5.70847L3.83586 3.29657ZM3.83586 12.3018C3.92818 12.2095 4.05513 12.1557 4.18976 12.1557H16.3993C16.6224 12.1557 16.734 12.4249 16.5762 12.5827L14.1643 14.9946C14.072 15.0869 13.9451 15.1407 13.8104 15.1407H1.60091C1.3778 15.1407 1.26625 14.8715 1.42396 14.7137L3.83586 12.3018ZM13.8104 7.62402C13.9451 7.62402 14.072 7.67788 14.1643 7.7702L16.5762 10.1821C16.734 10.3398 16.6224 10.6091 16.3993 10.6091H4.18976C4.05513 10.6091 3.92818 10.5552 3.83586 10.4629L1.42396 8.05101C1.26625 7.89329 1.3778 7.62402 1.60091 7.62402H13.8104Z"
+                                                        fill="url(#paint0_linear_81_3946)" />
+                                                    <defs>
+                                                        <linearGradient id="paint0_linear_81_3946" x1="13.3738"
+                                                            y1="0.738838" x2="4.9238" y2="16.9239"
+                                                            gradientUnits="userSpaceOnUse">
+                                                            <stop stop-color="#00FFA3" />
+                                                            <stop offset="1" stop-color="#DC1FFF" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                <span class="button-2 text-dark-3">Solana</span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-5" checked>
+                                            <label for="check-chain-5" class="d-flex align-items-center gap-8">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.86597 2.31922L0.912047 8.52394C0.900806 8.54702 0.897244 8.57309 0.901881 8.59833C0.906519 8.62358 0.919112 8.64668 0.93782 8.66426L8.91566 16.309C8.93832 16.3307 8.9685 16.3428 8.9999 16.3428C9.0313 16.3428 9.06148 16.3307 9.08414 16.309L17.062 8.66474C17.0807 8.64716 17.0933 8.62406 17.0979 8.59881C17.1026 8.57356 17.099 8.54749 17.0878 8.52442L14.1338 2.31969C14.1243 2.29885 14.109 2.2812 14.0897 2.26885C14.0704 2.25649 14.0479 2.24995 14.025 2.25001H3.97575C3.95272 2.24972 3.93011 2.2561 3.91063 2.26838C3.89115 2.28066 3.87564 2.29832 3.86597 2.31922Z"
+                                                        fill="#50AF95" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.0246 9.16091C9.96731 9.1652 9.67139 9.18286 9.0113 9.18286C8.48629 9.18286 8.11353 9.16711 7.98275 9.16091C5.95381 9.07165 4.43938 8.71846 4.43938 8.29559C4.43938 7.87271 5.95381 7.51999 7.98275 7.42931V8.80915C8.11544 8.81869 8.49536 8.84112 9.02037 8.84112C9.65039 8.84112 9.96588 8.81487 10.0227 8.80962V7.43027C12.0473 7.52047 13.5584 7.87366 13.5584 8.29559C13.5584 8.71751 12.0478 9.0707 10.0227 9.16043L10.0246 9.16091ZM10.0246 7.28756V6.05282H12.8501V4.16992H5.15722V6.05282H7.98228V7.28708C5.68605 7.39256 3.95923 7.84741 3.95923 8.39247C3.95923 8.93754 5.68605 9.39191 7.98228 9.49787V13.4546H10.0241V9.49644C12.3151 9.39096 14.039 8.93658 14.039 8.392C14.039 7.84741 12.3165 7.39304 10.0241 7.28708L10.0246 7.28756Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <span class="button-2 text-dark-3">USDT</span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-chain-6">
+                                            <label for="check-chain-6" class="d-flex align-items-center gap-8">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_81_3966)">
+                                                        <path
+                                                            d="M8.9999 17.1004C13.4887 17.1004 17.0999 13.4892 17.0999 9.00039C17.0999 4.51161 13.4887 0.900391 8.9999 0.900391C4.51113 0.900391 0.899902 4.51161 0.899902 9.00039C0.899902 13.4892 4.51113 17.1004 8.9999 17.1004Z"
+                                                            fill="#2775CA" />
+                                                        <path
+                                                            d="M11.2276 10.2826C11.2276 9.10135 10.5188 8.69635 9.1013 8.52763C8.0888 8.3926 7.8863 8.12263 7.8863 7.65008C7.8863 7.17752 8.22383 6.87385 8.8988 6.87385C9.5063 6.87385 9.84383 7.07635 10.0126 7.5826C10.0463 7.68385 10.1476 7.75133 10.2488 7.75133H10.7888C10.9238 7.75133 11.0251 7.65008 11.0251 7.51513V7.48135C10.89 6.73883 10.2825 6.1651 9.5063 6.09763V5.28763C9.5063 5.15261 9.40505 5.05136 9.23633 5.01758H8.73008C8.59505 5.01758 8.4938 5.11883 8.46002 5.28763V6.06386C7.44752 6.19888 6.80633 6.87385 6.80633 7.71763C6.80633 8.83138 7.4813 9.27008 8.8988 9.43888C9.84383 9.6076 10.1476 9.8101 10.1476 10.3501C10.1476 10.8902 9.67502 11.2614 9.03383 11.2614C8.15627 11.2614 7.85252 10.8901 7.75127 10.3838C7.71758 10.2489 7.61633 10.1813 7.51508 10.1813H6.94127C6.80633 10.1813 6.70508 10.2826 6.70508 10.4176V10.4514C6.84002 11.2951 7.38005 11.9026 8.4938 12.0714V12.8814C8.4938 13.0163 8.59505 13.1176 8.76377 13.1514H9.27002C9.40505 13.1514 9.5063 13.0501 9.54008 12.8814V12.0714C10.5526 11.9026 11.2276 11.1938 11.2276 10.2826Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M7.27843 13.8264C4.64593 12.8814 3.2959 9.9452 4.27471 7.34639C4.78096 5.92889 5.89471 4.84892 7.27843 4.34267C7.41346 4.2752 7.48093 4.17395 7.48093 4.00514V3.53267C7.48093 3.39764 7.41346 3.29639 7.27843 3.2627C7.24465 3.2627 7.17718 3.2627 7.1434 3.29639C3.93718 4.30889 2.18215 7.7177 3.19465 10.9239C3.80215 12.8139 5.25343 14.2652 7.1434 14.8727C7.27843 14.9401 7.41346 14.8727 7.44715 14.7376C7.48093 14.7039 7.48093 14.6702 7.48093 14.6027V14.1301C7.48093 14.0289 7.37968 13.8939 7.27843 13.8264ZM10.856 3.29639C10.7209 3.22892 10.5859 3.29639 10.5522 3.43142C10.5184 3.4652 10.5184 3.49889 10.5184 3.56645V4.03892C10.5184 4.17395 10.6197 4.30889 10.7209 4.37645C13.3534 5.32139 14.7035 8.25764 13.7247 10.8564C13.2184 12.2739 12.1047 13.3539 10.7209 13.8602C10.5859 13.9276 10.5184 14.0289 10.5184 14.1977V14.6702C10.5184 14.8052 10.5859 14.9064 10.7209 14.9401C10.7547 14.9401 10.8222 14.9401 10.856 14.9064C14.0622 13.8939 15.8172 10.4851 14.8047 7.27892C14.1972 5.35517 12.7122 3.90389 10.856 3.29639Z"
+                                                            fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_81_3966">
+                                                            <rect width="18" height="18" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="button-2 text-dark-3">USDC</span>
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="category" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#category-accordion" aria-expanded="true"
+                                    aria-controls="category-accordion">
+                                    <h6 class="flex-grow-1">Category</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="category-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="category-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-1" checked>
+                                            <label for="check-category-1" class="button-2 text-dark-3">Art</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-2" checked>
+                                            <label for="check-category-2"
+                                                class="button-2 text-dark-3">Collectibles</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-3">
+                                            <label for="check-category-3" class="button-2 text-dark-3">Domain
+                                                Names</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-4">
+                                            <label for="check-category-4" class="button-2 text-dark-3">Music</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-5">
+                                            <label for="check-category-5"
+                                                class="button-2 text-dark-3">Photography</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-6" checked>
+                                            <label for="check-category-6" class="button-2 text-dark-3">Sports</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-7">
+                                            <label for="check-category-7" class="button-2 text-dark-3">Trading
+                                                Cards</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-8" checked>
+                                            <label for="check-category-8" class="button-2 text-dark-3">Utility</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-category-9">
+                                            <label for="check-category-9" class="button-2 text-dark-3">Virtual
+                                                Worlds</label>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="currency" role="tabpanel">
+                            <div class="card-nft-1">
+                                <div class="card-header gap-12" data-bs-toggle="collapse"
+                                    data-bs-target="#currency-accordion" aria-expanded="true"
+                                    aria-controls="currency-accordion">
+                                    <h6 class="flex-grow-1">Currency</h6>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+                                            stroke="#1A1528" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div id="currency-accordion" class="accordion-collapse collapse show"
+                                    aria-labelledby="currency-accordion">
+                                    <div class="card-body">
+                                        <fieldset class="d-flex align-items-center gap-12">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-1" checked>
+                                            <label for="check-currency-1" class="button-2 text-dark-3">ETH</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-2" checked>
+                                            <label for="check-currency-2" class="button-2 text-dark-3">WETH</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-3" checked>
+                                            <label for="check-currency-3" class="button-2 text-dark-3">APE</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-4">
+                                            <label for="check-currency-4" class="button-2 text-dark-3">ASH</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-5">
+                                            <label for="check-currency-5" class="button-2 text-dark-3">BAT</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-6" checked>
+                                            <label for="check-currency-6" class="button-2 text-dark-3">CUBE</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-7">
+                                            <label for="check-currency-7" class="button-2 text-dark-3">DAI</label>
+                                        </fieldset>
+                                        <fieldset class="d-flex align-items-center gap-12 mt-20">
+                                            <input type="checkbox" class="tf-checkbox" id="check-currency-8">
+                                            <label for="check-currency-8" class="button-2 text-dark-3">GALA</label>
+                                        </fieldset>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="btn-fixed style-2">
+            <div class="grid-2 gap-15">
+                <a href="javascript:void(0);" class="tf-btn disabled-primary btn-reset">RESET</a>
+                <a href="search-result-collection.html" class="tf-btn primary">APPLY</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/countto.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
