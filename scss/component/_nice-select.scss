@@ -1,3 +1,4 @@
+@use "../abstracts/index" as *;
 .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: var(--white);
@@ -204,19 +205,10 @@
     color: var(--primary);
 }
 
-.nice-select .option:hover,
-.nice-select .option.focus,
-.nice-select .option.selected.focus {
-    background-color: var(--white);
-    color: var(--primary);
-}
 .nice-select .option.selected {
-    font-weight: 600;
-    // color: $white !important;
-    // background-color: $primary !important;
+    color: var(--black);
 }
 .nice-select .option.disabled {
-    // background-color: transparent;
     color: var(--black);
     cursor: default;
 }
@@ -238,15 +230,15 @@
     }
 }
 
-.tf-select-v2 {
+.tf-select {
     border-radius: 6px;
     padding: 4px 8px;
     padding-right: 26px;
     display: inline-flex;
-    width: auto;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 500;
+    color: var(--rgba-black-3);
     &::after {
         width: 6px;
         height: 6px;
@@ -254,41 +246,15 @@
         right: 14px;
     }
     .option {
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 24px;
         font-weight: 500;
         padding: 4px 8px;
         min-height: 30px;
+        color: var(--rgba-black-3);
+    }
+    .list{
+        padding: 10px;
     }
 }
-.tf-select-v3 {
-    color: var(--black);
-    border-color: var(--line-2) !important;
-    padding: 14px 16px;
-    padding-right: 30px;
-    position: relative;
-    border-radius: 16px;
-    .option {
-        font-weight: 600;
-        color: var(--black) !important;
-    }
-    &::after {
-        // border-color: ;
-        display: none;
-    }
-    .arrow {
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    &.icon {
-        padding-left: 44px;
-        .icon {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
-}
+

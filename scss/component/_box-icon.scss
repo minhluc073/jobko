@@ -1,5 +1,4 @@
-// ------- box icon ---------
-
+@use "../abstracts/index" as *;
 .box-icon {
     @include flex(center, center);
     @include transition3;

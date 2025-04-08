@@ -1,4 +1,4 @@
-// input
+@use "../abstracts/index" as *;
 .form-control {
     border-color: transparent;
     background-color: transparent;
@@ -30,10 +30,20 @@
     }
     .icon {
         position: absolute;
-        top: 15px;
+        top: 50%;
         left: 20px;
+        transform: translateY(-50%);
         font-size: 20px;
+        display: flex;
         color: rgba(49, 57, 79, 0.6);
+    }
+    .icon-right {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        display: flex;
     }
     .box-view-hide {
         .show-pass,
@@ -46,6 +56,41 @@
     }
     .ip-textarea {
         padding-left: 20px;
+    }
+}
+.input-date {
+    .ip-datepicker {
+        background-color: transparent;
+        position: relative;
+        z-index: 1;
+        &:focus {
+            background-color: transparent;
+        }
+    }
+}
+
+.ip-select {
+    position: relative;
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        display: flex;
+        z-index: -1;
+    }
+    .icon-right {
+        right: 20px;
+        left: auto;
+    }
+    .tf-select {
+        padding-left: 52px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border: 1px solid var(--line);
+        background-color: transparent;
+        border-radius: 16px;
     }
 }
 
@@ -576,10 +621,10 @@
         margin: 0;
         opacity: 0;
     }
-    .text{
+    .text {
         margin-top: 16px;
     }
-    .file{
+    .file {
         margin-top: 2px;
     }
 }

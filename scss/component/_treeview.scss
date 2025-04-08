@@ -1,15 +1,4 @@
-// .dz-tree .jstree-open > a .jstree-themeicon:after {
-//     content: "\e930";
-//     font-weight: 700;
-//     color: var(--warning);
-//     font-family: $fontIcon;
-//     font-size: 20px;
-// }
-
-// .dz-tree .jstree-themeicon {
-//     background-image: none;
-//     font-style: unset;
-// }
+@use "../abstracts/index" as *;
 .jstree-default {
     li,
     a {

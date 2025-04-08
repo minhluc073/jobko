@@ -109,6 +109,52 @@
 }
 
 /*---------- Reset css styles ----------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1170,6 +1216,52 @@ select {
 
 /*------------ Settings ----------------- */
 /*------------ theme settings -------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .modal-themes-color {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1353,6 +1445,52 @@ select {
   color: var(--black);
 }
 
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .dark-theme {
   --black: #ffffff;
   --white: #0a0711;
@@ -1582,6 +1720,52 @@ select {
 
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .header {
   display: flex;
   justify-content: center;
@@ -1798,6 +1982,52 @@ select {
 }
 
 /*------------ tabs ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .menu-tab-job {
   display: flex;
   border-radius: 18px;
@@ -1822,6 +2052,52 @@ select {
 }
 
 /*------------ button ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .tf-btn {
   padding: 16px;
   border-radius: 16px;
@@ -2208,6 +2484,52 @@ select {
 }
 
 /*------------ dropdown ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .dropdown-menu {
   padding: 15px;
   background: var(--white);
@@ -2373,6 +2695,52 @@ select {
 }
 
 /*------------ range slider ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .noUi-horizontal {
   height: 6px;
 }
@@ -2440,6 +2808,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ form ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .form-control {
   border-color: transparent;
   background-color: transparent;
@@ -2471,13 +2885,57 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .input-icon .icon {
   position: absolute;
-  top: 15px;
+  top: 50%;
   left: 20px;
+  transform: translateY(-50%);
   font-size: 20px;
+  display: flex;
   color: rgba(49, 57, 79, 0.6);
+}
+.input-icon .icon-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  display: flex;
 }
 .input-icon .ip-textarea {
   padding-left: 20px;
+}
+
+.input-date .ip-datepicker {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.input-date .ip-datepicker:focus {
+  background-color: transparent;
+}
+
+.ip-select {
+  position: relative;
+}
+.ip-select .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  display: flex;
+  z-index: -1;
+}
+.ip-select .icon-right {
+  right: 20px;
+  left: auto;
+}
+.ip-select .tf-select {
+  padding-left: 52px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid var(--line);
+  background-color: transparent;
+  border-radius: 16px;
 }
 
 .input-fill .form-control {
@@ -3009,6 +3467,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ footer ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .footer-fixed {
   position: fixed;
   bottom: 0;
@@ -3154,6 +3658,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ carousel ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .dots-tes .swiper-pagination-bullet {
   margin: 0px 2px !important;
   width: 6px;
@@ -3230,6 +3780,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ alert ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .alert {
   color: #fff;
   margin-bottom: 0px;
@@ -3355,6 +3951,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ avatar ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .avatar img {
   width: 100%;
   min-width: 100%;
@@ -3568,6 +4210,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ switch ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .tf-switch-check {
   position: relative;
   width: 17px;
@@ -3618,6 +4306,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ radio button ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .tf-radio {
   position: relative;
   border: 1.5px solid var(--primary);
@@ -3787,6 +4521,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ card ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .card {
   padding: 16px;
   border-radius: 16px;
@@ -3807,6 +4587,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ badge ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .badge {
   border-radius: 12px;
   border: 1px solid transparent;
@@ -3962,6 +4788,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ modal ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .modal .modal-dialog .modal-content {
   border-radius: 32px;
   border: 0;
@@ -4037,6 +4909,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ off canvas ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .offcanvas {
   background-color: var(--white);
 }
@@ -4143,6 +5061,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ progressbar ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .progress {
   height: 12px;
   border-radius: 99px;
@@ -4207,6 +5171,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   }
 }
 /*------------ stepper ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .tf-stepper {
   width: 164px;
   text-align: center;
@@ -4299,6 +5309,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ spinner ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .spinner-circle {
   width: 40px;
   height: 40px;
@@ -4576,6 +5632,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ chart ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .apexcharts-legend {
   padding: 0 !important;
 }
@@ -4586,6 +5688,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ box icon ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .box-icon {
   display: flex;
   align-items: center;
@@ -4742,8 +5890,53 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   box-shadow: 0px 6px 12px 0px rgba(29, 197, 54, 0.2);
 }
 
-/*------------ list view ---------------- */
 /*------------ nice select ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: var(--white);
@@ -4943,15 +6136,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--primary);
 }
 
-.nice-select .option:hover,
-.nice-select .option.focus,
-.nice-select .option.selected.focus {
-  background-color: var(--white);
-  color: var(--primary);
-}
-
 .nice-select .option.selected {
-  font-weight: 600;
+  color: var(--black);
 }
 
 .nice-select .option.disabled {
@@ -4972,62 +6158,81 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-right: 40px;
 }
 
-.tf-select-v2 {
+.tf-select {
   border-radius: 6px;
   padding: 4px 8px;
   padding-right: 26px;
   display: inline-flex;
-  width: auto;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 500;
+  color: var(--rgba-black-3);
 }
-.tf-select-v2::after {
+.tf-select::after {
   width: 6px;
   height: 6px;
   margin-top: -4px;
   right: 14px;
 }
-.tf-select-v2 .option {
-  font-size: 12px;
-  line-height: 30px;
+.tf-select .option {
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 500;
   padding: 4px 8px;
   min-height: 30px;
+  color: var(--rgba-black-3);
 }
-
-.tf-select-v3 {
-  color: var(--black);
-  border-color: var(--line-2) !important;
-  padding: 14px 16px;
-  padding-right: 30px;
-  position: relative;
-  border-radius: 16px;
-}
-.tf-select-v3 .option {
-  font-weight: 600;
-  color: var(--black) !important;
-}
-.tf-select-v3::after {
-  display: none;
-}
-.tf-select-v3 .arrow {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.tf-select-v3.icon {
-  padding-left: 44px;
-}
-.tf-select-v3.icon .icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+.tf-select .list {
+  padding: 10px;
 }
 
 /*------------ preloader ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .preload {
   overflow: hidden;
 }
@@ -5123,6 +6328,52 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /*--------------- widget ---------------- */
 /*--------------- section ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 .fl-title a {
   color: var(--rgba-black-2);
 }

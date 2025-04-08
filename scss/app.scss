@@ -1,3 +1,4 @@
+
 /* ---------------------------------------------------------
     * Name: Taskose
     * Version: 1.0.0
@@ -45,19 +46,19 @@
  ------------------------------------------------------------------------------ */
 
 /*--------- Abstracts variable ---------- */
-@import "./abstracts/index";
+@use "./abstracts/index" as abstract;
 
 /*---------- Reset css styles ----------- */
-@import "reset";
+@use "reset";
 
 /*------------ Settings ----------------- */
-@import "./setting/index";
+@use "./setting/index" as setting;
 
 /*------------ Components ---------------- */
-@import "./component/index";
+@use "./component/index" as component;
 
 /*--------------- widget ---------------- */
-@import "widgets";
+@use "widgets";
 
 /*--------------- section ---------------- */
-@import "section";
+@use "section";
