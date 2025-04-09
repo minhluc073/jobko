@@ -75,17 +75,15 @@
         .button-3 {
             color: var(--black);
         }
-        
+
         .active {
             background-color: rgba(255, 255, 255, 0.12) !important;
         }
-        .item{
-            &:has(.show){
-            background-color: rgba(255, 255, 255, 0.12) !important;
-
+        .item {
+            &:has(.show) {
+                background-color: rgba(255, 255, 255, 0.12) !important;
             }
         }
-
     }
     .body-3 {
         color: var(--black);
@@ -138,7 +136,7 @@
             }
             .content-left {
                 .icon {
-                    color: var(--primary);
+                    color: var(--blue);
                 }
             }
         }
@@ -152,7 +150,7 @@
         background-color: rgba(255, 255, 255, 0.12);
     }
     .footer-fixed {
-        background-color: var(--primary);
+        background-color: var(--blue);
     }
     .menubar-footer .inner-bar .action-add-wallet a {
         background-color: rgba(26, 21, 40, 0.32);
@@ -257,30 +255,30 @@
     .apexcharts-grid-borders line {
         stroke: var(--line-3) !important;
     }
-    
+
     .text-1,
     .text-2,
     .text-5 {
         color: var(--black);
     }
-    label{
+    label {
         color: var(--black);
     }
-    .apexcharts-legend-text{
+    .apexcharts-legend-text {
         color: var(--black) !important;
     }
-    .text-black{
+    .text-black {
         color: var(--black) !important;
     }
-    .list-view-v3{
-        .item{
-            svg path{
+    .list-view-v3 {
+        .item {
+            svg path {
                 stroke: var(--black);
             }
         }
     }
-    .icon-arr-dark{
-        path{
+    .icon-arr-dark {
+        path {
             stroke: var(--black);
         }
     }

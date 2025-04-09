@@ -150,6 +150,12 @@
     $(".flat-cb-list").on("click", ".cb-item", function () {
       $(this).toggleClass("active");
     });
+    $(".tf-select").on("click", ".option", function () {
+      $(this)
+        .closest(".tf-select")
+        .find(".current")
+        .addClass("active");
+    });
   };
 
   if ($(".nice-select").length > 0) {

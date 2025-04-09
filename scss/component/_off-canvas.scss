@@ -85,10 +85,10 @@
     &.active {
         position: relative;
         .icon {
-            color: --primary;
+            color: --blue;
         }
         .title {
-            color: --primary;
+            color: --blue;
         }
         &::after {
             position: absolute;
@@ -97,11 +97,10 @@
             bottom: 10px;
             content: "";
             width: 6px;
-            background-color: --primary;
+            background-color: --blue;
             border-top-right-radius: 100px;
             border-bottom-right-radius: 100px;
             transform: translateX(-50%);
         }
     }
 }
-

@@ -1,7 +1,7 @@
 @use "../abstracts/index" as *;
 .tf-radio {
     position: relative;
-    border: 1.5px solid var(--primary);
+    border: 1.5px solid var(--blue);
     border-radius: 50%;
     background: none;
     cursor: pointer;
@@ -11,7 +11,7 @@
     // @include flex(center,center);
     -webkit-appearance: none;
     &:checked {
-        border-color: var(--primary);
+        border-color: var(--blue);
 
         &::before {
             opacity: 1;
@@ -25,7 +25,7 @@
         left: 2px;
         width: 14px;
         height: 14px;
-        background-color: var(--primary);
+        background-color: var(--blue);
         opacity: 0;
     }
 
@@ -48,8 +48,8 @@
     }
     &.circle-2 {
         &:checked {
-            background-color: --primary;
-            border-color: --primary;
+            background-color: --blue;
+            border-color: --blue;
         }
         &::before {
             content: "";
@@ -64,8 +64,8 @@
     }
     &.circle-3 {
         &:checked {
-            background-color: --primary;
-            border-color: --primary;
+            background-color: --blue;
+            border-color: --blue;
         }
         &::before {
             content: "";
@@ -92,7 +92,7 @@
 
 .tf-checkbox {
     position: relative;
-    border: 1.5px solid var(--primary);
+    border: 1.5px solid var(--blue);
     border-radius: 5px;
     background: none;
     cursor: pointer;
@@ -109,7 +109,7 @@
         color: var(--white);
     }
     &:checked {
-        background-color: var(--primary);
+        background-color: var(--blue);
     }
     &.sm {
         width: 16px;
@@ -122,7 +122,7 @@
 }
 .cb-rounded {
     position: relative;
-    border: 1px solid --primary;
+    border: 1px solid --blue;
     background: none;
     cursor: pointer;
     outline: 0;
@@ -141,7 +141,7 @@
             height: 12px;
             left: 2px;
             top: 2px;
-            background-color: --primary;
+            background-color: --blue;
         }
     }
 }
@@ -167,7 +167,7 @@
     }
     &:checked {
         border-color: red;
-        background-color: --primary;
+        background-color: --blue;
         &::before {
             color: --white;
         }

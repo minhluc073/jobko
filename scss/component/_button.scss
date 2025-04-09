@@ -46,7 +46,7 @@
         }
     }
     &.disabled-primary2 {
-        background-color: rgba(40, 105, 254, 0.10);
+        background-color: rgba(40, 105, 254, 0.1);
         color: var(--blue);
         box-shadow: var(--shadow-8);
         &:hover {
@@ -56,25 +56,25 @@
     }
     &.white {
         background-color: var(--white);
-        color: var(--primary);
+        color: var(--blue);
     }
     &.surface {
         background-color: rgba(175, 179, 255);
         border: 1px solid transparent;
         color: rgba(255, 255, 255, 0.9);
         // &:hover {
-        //     color: var(--primary);
+        //     color: var(--blue);
         //     background: var(--white);
         // }
     }
     &.secondary {
         background: var(--white);
         border: 1px solid var(--line);
-        color: var(--primary);
+        color: var(--blue);
         &:hover {
             color: var(--white);
-            background: var(--primary);
-            border-color: var(--primary);
+            background: var(--blue);
+            border-color: var(--blue);
         }
     }
     &.success {
@@ -137,14 +137,14 @@
     // &.disable {
     //     background: $disable;
     //     border: 1px solid transparent;
-    //     color: var(--primary);
+    //     color: var(--blue);
     // }
     &.light-btn-primary {
         background: var(--rgba-primary);
         border: 1px solid transparent;
-        color: var(--primary);
+        color: var(--blue);
         &:hover {
-            background: var(--primary);
+            background: var(--blue);
             color: var(--white);
         }
     }
@@ -195,10 +195,10 @@
     }
     &.outline-btn-primary {
         background: var(--white);
-        border: 1px solid var(--primary);
-        color: var(--primary);
+        border: 1px solid var(--blue);
+        color: var(--blue);
         &:hover {
-            background: var(--primary);
+            background: var(--blue);
             color: var(--white);
             svg path {
                 fill: var(--white);
@@ -363,8 +363,8 @@
     line-height: 24px;
     font-weight: 600;
     &.active {
-        background-color: var(--primary);
-        border-color: var(--primary);
+        background-color: var(--blue);
+        border-color: var(--blue);
         color: var(--white);
     }
 }
@@ -417,8 +417,6 @@ $slideTextColor: #ffffff;
     border-radius: 50%;
     @include center;
 }
-
-
 
 .fixed-button {
     position: fixed;

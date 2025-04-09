@@ -336,9 +336,9 @@ h5,
 h6 {
     color: var(--black);
     a {
-        // color: --primary;
+        // color: --blue;
         &:hover {
-            // color: --primary;
+            // color: --blue;
         }
     }
 }
@@ -351,7 +351,7 @@ input[type="submit"] {
     border-radius: 16px;
     @include flex(center, center);
     font-weight: 700;
-    background-color: var(--primary);
+    background-color: var(--blue);
     color: var(--black);
     width: 100%;
     @include transition3;
@@ -359,7 +359,7 @@ input[type="submit"] {
     font-size: 14px;
     line-height: 24px;
     &:hover {
-        background-color: var(--primary);
+        background-color: var(--blue);
     }
 }
 
@@ -463,7 +463,7 @@ dl dt {
     font-weight: 700;
 }
 code {
-    color: var(--primary-btn);
+    color: var(--blue-btn);
 }
 select {
     -webkit-appearance: none;
@@ -825,7 +825,7 @@ select {
 .p-20 {
     padding: 20px;
 }
-.pb-113{
+.pb-113 {
     padding-bottom: 113px !important;
 }
 

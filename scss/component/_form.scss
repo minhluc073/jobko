@@ -93,7 +93,8 @@
         border-radius: 16px;
     }
 }
-
+.tf-select:not(.open) .current {
+}
 .input-fill {
     .form-control {
         background: var(--bg-ip);
@@ -217,7 +218,7 @@
         border-bottom-right-radius: 12px;
     }
     &:focus-within {
-        border-color: var(--primary);
+        border-color: var(--blue);
     }
     .inner-group-ip {
         position: relative;
@@ -245,9 +246,9 @@
         z-index: 10;
     }
     &:focus-within {
-        color: var(--primary-btn);
+        color: var(--blue-btn);
         label {
-            color: var(--primary-btn);
+            color: var(--blue-btn);
         }
     }
 }
@@ -293,7 +294,7 @@
 
         .forgot-link {
             font-weight: 700;
-            color: var(--primary-btn);
+            color: var(--blue-btn);
         }
         .show-pass {
             position: unset;
@@ -319,7 +320,7 @@
 
     &:focus {
         box-shadow: unset;
-        border-color: var(--primary-btn) !important;
+        border-color: var(--blue-btn) !important;
     }
 }
 
@@ -337,9 +338,9 @@
         .tf-checkbox {
             border-color: var(--line);
             &:checked {
-                border-color: var(--primary);
+                border-color: var(--blue);
                 &::before {
-                    color: var(--primary);
+                    color: var(--blue);
                 }
             }
         }
@@ -433,7 +434,7 @@
         position: relative;
         overflow: hidden;
         display: inline-flex;
-        background-color: var(--primary);
+        background-color: var(--blue);
         border-radius: 8px;
         width: 48px;
         cursor: pointer;
@@ -449,8 +450,8 @@
             content: "Add";
             display: flex;
             align-items: center;
-            border: 1px solid var(--primary);
-            background-color: var(--primary);
+            border: 1px solid var(--blue);
+            background-color: var(--blue);
             color: var(--white);
         }
         &::after {
@@ -476,7 +477,7 @@
     .icon {
         margin-bottom: 16px;
         font-size: 60px;
-        color: var(--primary);
+        color: var(--blue);
         opacity: 0.6;
     }
     .btn-upload {

@@ -93,7 +93,7 @@
     .spinner-circle {
         .spinner-child {
             &::before {
-                background-color: var(--primary);
+                background-color: var(--blue);
             }
         }
     }
@@ -102,11 +102,11 @@
             fill: var(--black);
         }
         rect {
-            fill: var(--primary);
+            fill: var(--blue);
         }
         path:not(.text) {
             fill: var(--white);
-            stroke: var(--primary);
+            stroke: var(--blue);
         }
     }
 }

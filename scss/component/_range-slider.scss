@@ -13,7 +13,7 @@
     }
 }
 .noUi-connect {
-    background-color: var(--primary);
+    background-color: var(--blue);
 }
 
 .noUi-horizontal .noUi-handle,
@@ -21,7 +21,7 @@
     height: 24px;
     width: 24px;
     border-radius: 50px;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--blue);
     background-color: var(--white);
     box-shadow: unset;
     top: -10px;
@@ -71,3 +71,39 @@
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     right: -8px;
 }
+.slider-salary{
+    .noUi-tooltip{
+        border: none;
+        background-color: transparent;
+        top: auto;
+        bottom: -24px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 0;
+    }
+}
+
+.salary-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 47px;
+    padding: 0;
+    gap: 0; /* Xoá khoảng cách */
+    overflow: hidden;
+  }
+.salary-chart span {
+    display: inline-block;
+    flex: 1;
+    margin: 0;
+    background: var(--rgba-black-4); 
+    border-radius: 2px 2px 0 0;
+    transition: background 0.3s;
+    height: 20px;
+  }
+.salary-chart span.active {
+    background: linear-gradient(to top, #dee8ff, #aacbff); 
+  }
+  
+  
+  

@@ -2,7 +2,7 @@
 .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: var(--white);
-    border: 1px solid var(--primary);
+    border: 1px solid var(--blue);
     border-radius: 12px;
     padding: 8px 20px;
     box-sizing: border-box;
@@ -21,18 +21,18 @@
     user-select: none;
     white-space: nowrap;
     width: 100%;
-    color: var(--primary);
+    color: var(--blue);
 }
 
 .nice-select:active,
 .nice-select.open,
 .nice-select:focus {
-    border-color: var(--primary);
+    border-color: var(--blue);
 }
 
 .nice-select:after {
-    border-bottom: 1.7px solid var(--primary);
-    border-right: 1.7px solid var(--primary);
+    border-bottom: 1.7px solid var(--blue);
+    border-right: 1.7px solid var(--blue);
     content: "";
     height: 8px;
     width: 8px;
@@ -202,7 +202,7 @@
     text-align: left;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: var(--primary);
+    color: var(--blue);
 }
 
 .nice-select .option.selected {
@@ -253,8 +253,12 @@
         min-height: 30px;
         color: var(--rgba-black-3);
     }
-    .list{
+    .list {
         padding: 10px;
     }
+    .current {
+        &.active {
+            color: var(--black);
+        }
+    }
 }
-

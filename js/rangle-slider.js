@@ -206,38 +206,73 @@
 
   
  
-  var rangePrice = function () {
-    if ($("#price-val").length > 0) {
-      var skipSlider = document.getElementById("price-val");
+  var rangeSalary = function () {
+    if ($("#salary-val").length > 0) {
+      var skipSlider = document.getElementById("salary-val");
       var skipValues = [
-        document.getElementById("price-val-lower"),
-        document.getElementById("price-val-upper"),
+        document.getElementById("salary-val-lower"),
+        document.getElementById("salary-val-upper"),
       ];
-
+  
+      const chart = document.getElementById("salary-chart");
+      const totalBars = 40;
+      const minValue = 0;
+      const maxValue = 200;
+      const stepValue = (maxValue - minValue) / totalBars;
+  
+      // Render bars (giữ chiều cao đẹp, không quá thấp)
+      for (let i = 0; i < totalBars; i++) {
+        const bar = document.createElement("span");
+      
+        // Random chiều cao nhưng không quá thấp hay quá cao
+        const minHeight = 40; // chiều cao tối thiểu (40%)
+        const maxHeight = 100; // chiều cao tối đa (100%)
+        const height = Math.floor(Math.random() * (maxHeight - minHeight + 1)) + minHeight;
+      
+        bar.style.height = `${height}%`;
+        chart.appendChild(bar);
+      }
+  
+      const bars = chart.querySelectorAll("span");
+  
       noUiSlider.create(skipSlider, {
-        start: [12000, 15000],
+        start: [0, 200],
         connect: true,
-        tooltips: [false, false],
+        tooltips: [true, true],
         step: 1,
         range: {
-          min: 10000,
-          max: 17000,
+          min: 0,
+          max: 200,
         },
         format: {
           from: function (value) {
-            return parseInt(value);
+            return Number(value.replace('$', '', 'K'));
           },
           to: function (value) {
-            return parseInt(value);
-          },
+            return '$' + parseInt(value) + 'K';
+          }
         },
       });
-
-      skipSlider.noUiSlider.on("update", function (val, e) {
-        skipValues[e].value = val[e] + "$";
+  
+      // Update bar state
+      skipSlider.noUiSlider.on("update", function (values) {
+        const lower = parseInt(values[0].replace(/\$|K/g, ""));
+        const upper = parseInt(values[1].replace(/\$|K/g, ""));
+  
+        bars.forEach((bar, i) => {
+          const value = i * stepValue;
+          if (value >= lower && value <= upper) {
+            bar.classList.add("active");
+          } else {
+            bar.classList.remove("active");
+          }
+        });
       });
     }
   };
+  
+  
+  
 
   $(function () {
     rangeSliderOne();
@@ -248,6 +283,6 @@
     rangeSoftLimit();
     rangePips();
     rangeDirection();
-    rangePrice();
+    rangeSalary();
   });
 })(jQuery);

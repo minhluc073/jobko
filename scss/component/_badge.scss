@@ -20,13 +20,13 @@
         padding: 4px 10px;
     }
     &.primary {
-        background: var(--primary);
-        border-color: var(--primary);
+        background: var(--blue);
+        border-color: var(--blue);
         color: --white;
     }
     &.secondary {
         border-color: var(--secondary);
-        color: var(--primary);
+        color: var(--blue);
     }
     &.success {
         border-color: #54b24c;
@@ -41,7 +41,7 @@
 
     &.light-primary {
         background: var(--rgba-primary);
-        color: var(--primary);
+        color: var(--blue);
     }
     &.light-success {
         background: var(--rgba-success);
@@ -78,7 +78,7 @@
         line-height: 30px;
         &.primary {
             background-color: var(--white);
-            color: var(--primary);
+            color: var(--blue);
         }
         &.success {
             background-color: var(--white);

@@ -2,7 +2,7 @@
 .tf-divider {
     position: relative;
     width: 100%;
-    border-color: var(--primary);
+    border-color: var(--blue);
     border-width: 2px 0 0 0;
     border-style: solid;
     z-index: 1;
@@ -13,7 +13,7 @@
         width: 25px;
         height: 25px;
         color: --white;
-        background-color: var(--primary);
+        background-color: var(--blue);
         border-radius: 50%;
         @include flex(center, center);
         font-size: 14px;
@@ -114,14 +114,14 @@
     .text {
         padding: 5px 10px;
         border-radius: 8px;
-        background-color: var(--primary);
+        background-color: var(--blue);
         color: --white;
         top: -18px;
     }
     &.transparent {
         .text {
             background-color: var(--white);
-            color: var(--primary);
+            color: var(--blue);
         }
         &.success {
             .text {
@@ -167,7 +167,7 @@
             content: "";
             width: 6px;
             height: 6px;
-            background-color: --primary;
+            background-color: --blue;
             border-radius: 50%;
         }
     }
