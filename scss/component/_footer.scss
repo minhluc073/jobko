@@ -53,17 +53,6 @@
                     left: 50%;
                     transform: translateX(-50%);
                 }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 50%;
-                    background-color: var(--blue);
-                    bottom: -66px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
             }
         }
         .action-add {

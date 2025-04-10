@@ -203,9 +203,6 @@
   };
 
   
-
-  
- 
   var rangeSalary = function () {
     if ($("#salary-val").length > 0) {
       var skipSlider = document.getElementById("salary-val");
@@ -215,18 +212,16 @@
       ];
   
       const chart = document.getElementById("salary-chart");
-      const totalBars = 40;
+      const totalBars = 30;
       const minValue = 0;
-      const maxValue = 200;
+      const maxValue = 206;
       const stepValue = (maxValue - minValue) / totalBars;
   
-      // Render bars (giữ chiều cao đẹp, không quá thấp)
       for (let i = 0; i < totalBars; i++) {
         const bar = document.createElement("span");
-      
-        // Random chiều cao nhưng không quá thấp hay quá cao
-        const minHeight = 40; // chiều cao tối thiểu (40%)
-        const maxHeight = 100; // chiều cao tối đa (100%)
+    
+        const minHeight = 40; 
+        const maxHeight = 100;
         const height = Math.floor(Math.random() * (maxHeight - minHeight + 1)) + minHeight;
       
         bar.style.height = `${height}%`;
@@ -254,7 +249,6 @@
         },
       });
   
-      // Update bar state
       skipSlider.noUiSlider.on("update", function (values) {
         const lower = parseInt(values[0].replace(/\$|K/g, ""));
         const upper = parseInt(values[1].replace(/\$|K/g, ""));

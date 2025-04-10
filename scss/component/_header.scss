@@ -96,6 +96,11 @@
             color: $white;
         }
     }
+    .box-right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
 .header-avt {
     display: flex;
@@ -123,6 +128,10 @@
                 display: flex;
                 align-items: center;
                 gap: 4px;
+            }
+            .icon{
+                width: 16px;
+                height: 16px;
             }
         }
     }

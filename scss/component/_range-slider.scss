@@ -1,6 +1,6 @@
 @use "../abstracts/index" as *;
 .noUi-horizontal {
-    height: 6px;
+    height: 4px;
 }
 .noUi-target {
     border: 0;
@@ -18,14 +18,14 @@
 
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-    height: 24px;
-    width: 24px;
-    border-radius: 50px;
-    border: 2px solid var(--blue);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 4px solid var(--yellow);
     background-color: var(--white);
     box-shadow: unset;
-    top: -10px;
     cursor: pointer;
+    top: -9px;
     &::before,
     &::after {
         content: none;
@@ -76,7 +76,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         border: none;
         background-color: transparent;
         top: auto;
-        bottom: -24px;
+        bottom: -30px;
         font-size: 14px;
         line-height: 24px;
         font-weight: 600;
@@ -89,7 +89,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     align-items: flex-end;
     height: 47px;
     padding: 0;
-    gap: 0; /* Xoá khoảng cách */
+    gap: 0; 
     overflow: hidden;
   }
 .salary-chart span {
@@ -105,5 +105,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     background: linear-gradient(to top, #dee8ff, #aacbff); 
   }
   
+html:not([dir=rtl]){
+    .slider-salary{
+        .noUi-handle-lower{
+            right: -12px;
+        }
+        .noUi-handle-upper{
+            right: -3px;
+        }
+    }
+}
+
+
   
   

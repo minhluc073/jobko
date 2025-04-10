@@ -104,3 +104,37 @@
         }
     }
 }
+
+.canvas-attachment {
+    .close-popup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+        border: 1.5px solid var(--black);
+        opacity: 0.6;
+    }
+    &.offcanvas-bottom {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        .offcanvas-header{
+            padding: 24px 24px 21px;
+        }
+    }
+    .offcanvas-body{
+        padding: 0px 24px 40px;
+    }
+    .img-latest {
+        border-radius: 16px;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    .box-latest{
+        padding: 20px 0px 24px;
+        border-top: 1px solid var(--rgba-black-4);
+        border-bottom: 1px solid var(--rgba-black-4);
+    }
+}

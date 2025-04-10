@@ -86,8 +86,8 @@
 }
 
 .nice-select.wide .list {
-    left: 0 !important;
-    right: 0 !important;
+    left: 0;
+    right: 0;
 }
 
 .nice-select.right {
@@ -244,6 +244,7 @@
         height: 6px;
         margin-top: -4px;
         right: 14px;
+        content: none;
     }
     .option {
         font-size: 14px;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ---------------------------------------------------------
     * Name: Taskose
     * Version: 1.0.0
@@ -988,6 +987,10 @@ select {
   margin-top: 40px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 .mb-4 {
   margin-bottom: 4px !important;
 }
@@ -1855,6 +1858,11 @@ select {
 .header.header-white .title {
   color: #ffffff;
 }
+.header .box-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .header-avt {
   display: flex;
@@ -1885,6 +1893,10 @@ select {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+.header-avt .box-avt .content .icon {
+  width: 16px;
+  height: 16px;
 }
 .header-avt .right {
   display: flex;
@@ -2744,7 +2756,7 @@ select {
  ------------------------------------------------------------------------------ */
 /*--------- Abstracts variable ---------- */
 .noUi-horizontal {
-  height: 6px;
+  height: 4px;
 }
 
 .noUi-target {
@@ -2762,14 +2774,14 @@ select {
 
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-  height: 24px;
-  width: 24px;
-  border-radius: 50px;
-  border: 2px solid var(--blue);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 4px solid var(--yellow);
   background-color: var(--white);
   box-shadow: unset;
-  top: -10px;
   cursor: pointer;
+  top: -9px;
 }
 .noUi-horizontal .noUi-handle::before, .noUi-horizontal .noUi-handle::after,
 .noUi-vertical .noUi-handle::before,
@@ -2813,7 +2825,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: none;
   background-color: transparent;
   top: auto;
-  bottom: -24px;
+  bottom: -30px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
@@ -2825,7 +2837,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: flex-end;
   height: 47px;
   padding: 0;
-  gap: 0; /* Xoá khoảng cách */
+  gap: 0;
   overflow: hidden;
 }
 
@@ -2841,6 +2853,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .salary-chart span.active {
   background: linear-gradient(to top, #dee8ff, #aacbff);
+}
+
+html:not([dir=rtl]) .slider-salary .noUi-handle-lower {
+  right: -12px;
+}
+html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
+  right: -3px;
 }
 
 /*------------ form ---------------- */
@@ -3595,17 +3614,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: 9.6px;
   color: var(--black);
   font-weight: 600;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.menubar-footer .inner-bar li.active::after {
-  content: "";
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: var(--blue);
-  bottom: -66px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -5096,6 +5104,38 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   transform: translateX(-50%);
 }
 
+.canvas-attachment .close-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1.5px solid var(--black);
+  opacity: 0.6;
+}
+.canvas-attachment.offcanvas-bottom {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.canvas-attachment.offcanvas-bottom .offcanvas-header {
+  padding: 24px 24px 21px;
+}
+.canvas-attachment .offcanvas-body {
+  padding: 0px 24px 40px;
+}
+.canvas-attachment .img-latest {
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.canvas-attachment .box-latest {
+  padding: 20px 0px 24px;
+  border-top: 1px solid var(--rgba-black-4);
+  border-bottom: 1px solid var(--rgba-black-4);
+}
+
 /*------------ progressbar ---------------- */
 /* ---------------------------------------------------------
     * Name: Taskose
@@ -6060,8 +6100,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .nice-select.wide .list {
-  left: 0 !important;
-  right: 0 !important;
+  left: 0;
+  right: 0;
 }
 
 .nice-select.right {
@@ -6209,6 +6249,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 6px;
   margin-top: -4px;
   right: 14px;
+  content: none;
 }
 .tf-select .option {
   font-size: 14px;
@@ -6366,7 +6407,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*--------------- widget ---------------- */
-/*--------------- section ---------------- */
 /* ---------------------------------------------------------
     * Name: Taskose
     * Version: 1.0.0
@@ -7302,6 +7342,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 6px;
   flex-grow: 1;
 }
+.message-box .info .icon {
+  width: 12px;
+  height: 12px;
+}
 .message-box .status {
   display: grid;
   gap: 8px;
@@ -7561,6 +7605,65 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .boarding-sec {
   padding-top: 32px;
   padding-bottom: 192px;
+}
+
+.list-type {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 12px;
+}
+.list-type .type-item {
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--rgba-black-4);
+  color: var(--rgba-black);
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.list-type .type-item.active {
+  background-color: var(--pest-1);
+  color: var(--white);
+  border-color: var(--pest-1);
+  font-weight: 600;
+}
+
+.list-file-mess .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.list-file-mess .item .icon {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+.list-file-mess .item .icon-document-download {
+  color: var(--pest-1);
+}
+.list-file-mess .item .icon-task-square {
+  color: var(--pink);
+}
+.list-file-mess .item .icon-document-text {
+  color: var(--green);
+}
+.list-file-mess .item .icon-video-square {
+  color: var(--yellow);
+}
+.list-file-mess .item .content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-file-mess .item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
