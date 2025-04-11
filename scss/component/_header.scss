@@ -165,7 +165,6 @@
     background-color: var(--white);
 }
 
-//
 .header-profile {
     padding: 22px 24px 22px;
     display: flex;
@@ -232,5 +231,47 @@
                 opacity: 0.7;
             }
         }
+    }
+}
+
+.header-mess{
+    justify-content: flex-start;
+    gap: 18px;
+    height: auto;
+    .back-btn{
+        width: 23px;
+        height: 23px;
+        border-radius: 8px;
+    }
+    .content{
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box-right{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .box-avt{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .avatar{
+            border: 1px solid var(--blue);
+            .status{
+                border-width: 2px;
+                width: 12px;
+                min-width: 12px;
+                height: 12px;
+                right: 0;
+            }
+        }
+        .info{
+            display: grid;
+            gap: 2px;
+        }
+        
     }
 }

@@ -74,6 +74,8 @@
   --rgba-blue: rgba(40, 105, 254, 0.08);
   --rgba-blue-2: rgba(40, 105, 254, 0.9);
   --rgba-blue-3: rgba(40, 105, 254, 0.1);
+  --rgba-blue-4: rgba(40, 105, 254, 0.04);
+  --rgba-blue-5: rgba(40, 105, 254, 0.05);
   --rgba-black: rgba(18, 25, 39, 0.8);
   --rgba-black-2: rgba(18, 25, 39, 0.6);
   --rgba-black-3: rgba(18, 25, 39, 0.5);
@@ -86,6 +88,7 @@
   --rgba-black-10: rgba(18, 25, 39, 0.2);
   --rgba-black-11: rgba(18, 25, 39, 0.04);
   --rgba-black-12: rgba(18, 25, 39, 0.32);
+  --rgba-black-13: rgba(18, 25, 39, 0.92);
   --rgba-violet: rgba(165, 95, 255, 0.1);
   --rgba-pink: rgba(255, 95, 191, 0.1);
   --rgba-red: rgba(250, 72, 72, 0.06);
@@ -733,7 +736,7 @@ select {
 
 .button-2 {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 20px;
   font-weight: 600;
 }
 
@@ -1045,14 +1048,6 @@ select {
   margin-top: 100px;
 }
 
-.pt-0 {
-  padding-top: 0 !important;
-}
-
-.pb-0 {
-  padding-bottom: 0 !important;
-}
-
 .p-16 {
   padding: 16px;
 }
@@ -1090,6 +1085,16 @@ select {
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .pb-12 {
@@ -1993,6 +1998,47 @@ select {
 }
 .header-profile.style-1 .content p {
   opacity: 0.7;
+}
+
+.header-mess {
+  justify-content: flex-start;
+  gap: 18px;
+  height: auto;
+}
+.header-mess .back-btn {
+  width: 23px;
+  height: 23px;
+  border-radius: 8px;
+}
+.header-mess .content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-mess .box-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-mess .box-avt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-mess .box-avt .avatar {
+  border: 1px solid var(--blue);
+}
+.header-mess .box-avt .avatar .status {
+  border-width: 2px;
+  width: 12px;
+  min-width: 12px;
+  height: 12px;
+  right: 0;
+}
+.header-mess .box-avt .info {
+  display: grid;
+  gap: 2px;
 }
 
 /*------------ tabs ---------------- */
@@ -5761,6 +5807,241 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
   flex-wrap: wrap;
   gap: 10px !important;
+}
+
+/*------------ chat ---------------- */
+/* ---------------------------------------------------------
+    * Name: Taskose
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * treeview
+
+    * widget
+
+    * Pages
+        * boarding
+        * account
+        * home 
+        * profile
+        * chat
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
+.mh-mess {
+  min-height: 100vh;
+  background-color: var(--rgba-blue-4);
+}
+.mh-mess .time-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--rgba-black-2);
+}
+.mh-mess .time-now::after, .mh-mess .time-now::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 42%;
+  background: var(--rgba-black-4);
+}
+.mh-mess .time-now::before {
+  left: 0;
+}
+.mh-mess .time-now::after {
+  right: 0;
+}
+
+.message-box-bottom {
+  position: relative;
+}
+.message-box-bottom input {
+  padding: 24px;
+  padding-left: 99px;
+  padding-right: 80px;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 0;
+  color: var(--rgba-black-2);
+}
+.message-box-bottom input:focus {
+  border-color: var(--white);
+  background-color: var(--white);
+}
+.message-box-bottom .btn-message {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: var(--rgba-blue-5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 20px;
+  top: 12px;
+  font-size: 22px;
+  color: var(--pest-1);
+}
+.message-box-bottom .box-left {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bubble .text-item {
+  padding: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 100px;
+  width: fit-content;
+  font-weight: 500;
+}
+.bubble .time {
+  color: var(--rgba-black-2);
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 500;
+}
+.bubble.bubble-you {
+  margin-bottom: 20px;
+}
+.bubble.bubble-you .text-item {
+  color: var(--rgba-black-13);
+  background-color: var(--white);
+  border-bottom-left-radius: 30px;
+  padding-right: 31px;
+  padding-left: 16px;
+}
+.bubble.bubble-you .time {
+  margin-left: 24px;
+}
+.bubble.bubble-me {
+  margin-bottom: 20px;
+}
+.bubble.bubble-me .content {
+  text-align: right;
+}
+.bubble.bubble-me .content .text-item {
+  background-color: var(--pest-1);
+  color: var(--white);
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 31px;
+}
+.bubble.bubble-me .content .time {
+  margin-right: 16px;
+}
+
+.box-buble-me .start {
+  border-bottom-right-radius: 30px;
+}
+.box-buble-me .middle {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.box-buble-me .end {
+  border-top-right-radius: 30px;
+}
+
+.box-buble-you {
+  display: flex;
+  gap: 8px;
+}
+.box-buble-you .box-avt {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+}
+.box-buble-you .box-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.box-buble-you .box-info .dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+.box-buble-you .text-item.end {
+  border-radius: 100px;
+  border-top-left-radius: 30px;
+}
+.box-buble-you .box-file {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.box-buble-you .box-file .icon {
+  font-size: 32px;
+  color: var(--green);
+}
+.box-buble-you .box-file .desc {
+  display: grid;
+  gap: 2px;
+}
+.box-buble-you .box-file .file-name {
+  color: var(--rgba-black-13);
+}
+
+.fixed-chat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.img-latest-chat {
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
 
 /*------------ box icon ---------------- */

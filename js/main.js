@@ -208,6 +208,42 @@
     }
   };
 
+   /* message
+  ------------------------------------------------------------------------------------- */
+  var handleMessage = function () {
+    $(".btn-message").on("click", function () {
+      var ipMessage = $(".val-message");
+      var messValue = ipMessage.val();
+      var currentTime = new Date();
+      var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
+      var realTime =
+        (currentTime.getHours() % 12) +
+        ":" +
+        currentTime.getMinutes() +
+        " " +
+        hours;
+
+      var domMessage =
+        '<div class="bubble bubble-me box-buble-me">' +
+        '<div class="content">' +
+        '<span class="time">' +
+        realTime +
+        "</span>" +
+        '<p class="text-item start">' +
+        messValue +
+        "</p>" +
+        "</div>" +
+        "</div>";
+
+      if (messValue.length > 0) {
+        $(".chat-area").append(domMessage);
+      }
+
+      window.scrollTo(0, document.body.scrollHeight);
+      ipMessage.val("");
+    });
+  };
+
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -306,6 +342,7 @@
     datePicker();
     inputUpload();
     toggleTheme();
+    handleMessage();
     preloader();
   });
 })(jQuery);

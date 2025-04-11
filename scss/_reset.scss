@@ -563,7 +563,7 @@ select {
 }
 .button-2 {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 20px;
     font-weight: 600;
 }
 
@@ -813,12 +813,6 @@ select {
 }
 
 // padding
-.pt-0 {
-    padding-top: 0 !important;
-}
-.pb-0 {
-    padding-bottom: 0 !important;
-}
 .p-16 {
     padding: 16px;
 }
@@ -849,6 +843,14 @@ select {
 .py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 .pb-12 {
     padding-bottom: 12px;
@@ -957,3 +959,4 @@ select {
         gap: 20px;
     }
 }
+
