@@ -107,6 +107,10 @@
         align-items: center;
         gap: 20px;
     }
+    &.bg-gradient-1{
+        background: var(--pest-1) ;
+    }
+
 }
 .header-avt {
     display: flex;
@@ -168,7 +172,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .header-profile {

@@ -782,7 +782,7 @@
         border-radius: 50%;
         width: 18px;
         height: 18px;
-        border: 1px solid var(--black);
+        border: 1px solid var(--rgba-black-3);
         box-sizing: border-box;
         position: relative;
         @include transition3;
@@ -1058,6 +1058,29 @@
         .info-box {
             margin-bottom: 0;
             gap: 12px;
+        }
+        background-color: $white;
+        .text-dark{
+            color: #121927 !important;
+        }
+        .text-dark-4{
+            color: rgba(18, 25, 39, 0.6) !important;
+        }
+    }
+    .content{
+        flex-grow: 1;
+    }
+    .box-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .box-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box-map-date{
+            margin-top: 0;
         }
     }
 }

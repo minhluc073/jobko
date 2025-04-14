@@ -9,6 +9,7 @@
     --line-3: rgba(255, 255, 255, 0.08);
     --shadow-1: 0px 3px 40px 0px rgba(26, 21, 40, 0.04);
     --rgba-blue: rgba(255, 255, 255, 0.2);
+    // --rgba-blue-4: rgba(18, 25, 39, 0.96);
     --rgba-black: rgba(255, 255, 255, 0.7);
     --rgba-black-2: rgba(255, 255, 255, 0.5);
     --rgba-black-3: rgba(255, 255, 255, 0.5);
@@ -21,6 +22,50 @@
     --rgba-black-11: rgba(255, 255, 255, 0.04);
     --rgba-primary: rgba(255, 255, 255, 0.12);
 
+    --backdrop: rgba(18, 25, 39, 0.2);
+
+    .boarding-img {
+        .img {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .bubble.bubble-you {
+        .text-item {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.92);
+        }
+    }
+    .box-bubble-you .box-file .file-name {
+        color: rgba(255, 255, 255, 0.92);
+    }
+    .message-box-bottom {
+        .box-left {
+            svg path {
+                stroke: #ffffff;
+            }
+            svg circle {
+                stroke: #ffffff;
+            }
+        }
+        .btn-message {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    .box-question-answer {
+        &::before {
+            background-color: #323474;
+        }
+        &::after {
+            background-color: rgba(17, 29, 57, 0.4);
+        }
+    }
+    .canvas-attachment {
+        .close-popup {
+            svg path {
+                stroke: #ffffff;
+            }
+        }
+    }
     .tf-btn {
         &.disabled-primary,
         &.disabled-primary2 {
@@ -67,9 +112,28 @@
             }
         }
     }
+    .box-app {
+        background-color: rgba(255, 255, 255, 0.08);
+        .box-top {
+            svg path {
+                stroke: #ffffff;
+            }
+        }
+        .btn-app {
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+    }
     .list-jobs {
         .job-item {
             background-color: rgba(255, 255, 255, 0.08);
+        }
+    }
+    .message-box {
+        background-color: rgba(255, 255, 255, 0.08);
+        .check-disable {
+            svg path {
+                stroke: #ffffff;
+            }
         }
     }
     .card-review {
@@ -141,8 +205,8 @@
         }
     }
     .list-recent-search {
-        .item{
-            svg path{
+        .item {
+            svg path {
                 stroke: #ffffff;
             }
         }

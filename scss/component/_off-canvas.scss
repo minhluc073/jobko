@@ -32,9 +32,11 @@
 }
 
 .offcanvas-backdrop {
-    background-color: var(--black);
+    background-color: var(--backdrop);
     &.show {
-        opacity: 0.4;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        opacity: 1;
     }
 }
 .icon-close-popup {
@@ -106,6 +108,7 @@
 }
 
 .canvas-attachment {
+    color: var(--black);
     .close-popup {
         display: flex;
         align-items: center;
@@ -119,11 +122,11 @@
     &.offcanvas-bottom {
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
-        .offcanvas-header{
+        .offcanvas-header {
             padding: 24px 24px 21px;
         }
     }
-    .offcanvas-body{
+    .offcanvas-body {
         padding: 0px 24px 40px;
     }
     .img-latest {
@@ -132,7 +135,7 @@
         height: 100px;
         overflow: hidden;
     }
-    .box-latest{
+    .box-latest {
         padding: 20px 0px 24px;
         border-top: 1px solid var(--rgba-black-4);
         border-bottom: 1px solid var(--rgba-black-4);

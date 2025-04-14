@@ -82,8 +82,10 @@
     }
 }
 .modal-backdrop {
-    background-color: var(--black);
+    background-color: var(--backdrop);
     &.show {
-        opacity: 0.4;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        opacity: 1;
     }
 }

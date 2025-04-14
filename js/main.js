@@ -188,15 +188,18 @@
         $("body").toggleClass("dark-theme", true);
         localStorage.toggled = "dark-theme";
         toggle.prop("checked", true);
+        $('.logo-account img').attr('src', '../images/logo/logo-dark.png');
       } else {
         $("body").toggleClass("dark-theme", false);
         localStorage.toggled = "";
         toggle.prop("checked", false);
+        $('.logo-account img').attr('src', '../images/logo/logo-light.png');
       }
     });
     if (localStorage.toggled === "dark-theme") {
       $("body").toggleClass("dark-theme", true);
       toggle.prop("checked", true);
+      $('.logo-account img').attr('src', '../images/logo/logo-dark.png');
     }
   };
 

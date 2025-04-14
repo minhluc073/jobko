@@ -590,6 +590,9 @@
         width: 24px;
         height: 24px;
     }
+    svg path{
+        fill: var(--black);
+    }
 }
 .cb-signup {
     display: flex;

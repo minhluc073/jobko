@@ -106,7 +106,7 @@
             text-align: right;
             .text-item {
                 background-color: var(--pest-1);
-                color: var(--white);
+                color: $white;
                 margin-left: auto;
                 padding-right: 16px;
                 padding-left: 31px;
@@ -130,7 +130,7 @@
         border-top-right-radius: 30px;
     }
 }
-.box-buble-you {
+.box-bubble-you {
     display: flex;
     gap: 8px;
     .box-avt {
@@ -152,29 +152,28 @@
             background-color: var(--yellow);
         }
     }
-    .text-item{
+    .text-item {
         &.end {
             border-radius: 100px;
             border-top-left-radius: 30px;
         }
     }
-    .box-file{
+    .box-file {
         display: flex;
         gap: 12px;
         align-items: center;
-        .icon{
+        .icon {
             font-size: 32px;
             color: var(--green);
         }
-        .desc{
+        .desc {
             display: grid;
             gap: 2px;
         }
-        .file-name{
+        .file-name {
             color: var(--rgba-black-13);
         }
     }
-    
 }
 
 .fixed-chat {
