@@ -55,6 +55,10 @@
         width: 34px;
         height: 34px;
         background-color: var(--rgba-black-11);
+        opacity: 1;
+        svg {
+            opacity: 0.7;
+        }
     }
     .noti-box {
         border-color: transparent;
@@ -69,6 +73,8 @@
         justify-content: center;
         width: 30px;
         height: 30px;
+        opacity: 0.7;
+
     }
     &.absolute {
         position: absolute;
@@ -149,7 +155,7 @@
         &:hover {
             background-color: var(--blue-2);
             svg path {
-                stroke: var(--white);
+                stroke: $white;
             }
         }
     }

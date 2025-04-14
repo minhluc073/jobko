@@ -4,6 +4,7 @@ $font-2: "Saira", sans-serif;
 $fontIcon: "icomoon";
 
 $white: #ffffff;
+$black: #121927;
 
 :root {
     // primary
@@ -63,7 +64,6 @@ $white: #ffffff;
 
     --rgba-red: rgba(250, 72, 72, 0.06);
 
-
     --rgba-white: rgba(255, 255, 255, 0.6);
     --rgba-white-2: rgba(255, 255, 255, 0.16);
     --rgba-white-3: rgba(255, 255, 255, 0.9);
@@ -86,9 +86,7 @@ $white: #ffffff;
     --shadow-7: 0px 8px 44px 0px rgba(18, 25, 39, 0.05);
     --shadow-8: 0px 6px 22px 0px rgba(18, 25, 39, 0.04);
 
-
-
     // --shadow-blue: 0px 6px 22px 0px rgba(40, 105, 254, 0.4);
 
-    --gradient: linear-gradient(0deg, #7c66ff 0%, #7c66ff 100%);
+    --gradient: linear-gradient(180deg, #7c66ff 0%, rgba(124, 102, 255, 0) 444.05%);
 }

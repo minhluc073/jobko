@@ -17,7 +17,7 @@
         text-transform: capitalize;
         &.active {
             background-color: var(--blue);
-            color: var(--white);
+            color: $white;
         }
     }
 }

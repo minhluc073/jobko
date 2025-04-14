@@ -333,14 +333,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h7 {
     color: var(--black);
-    a {
-        // color: --blue;
-        &:hover {
-            // color: --blue;
-        }
-    }
 }
 
 button,
@@ -424,13 +419,13 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: var(--black);
+    border-color: var(--rgba-black-3);
     background-color: var(--white);
 }
 
 textarea::placeholder,
 input::placeholder {
-    color: var(--rgba-black-3);
+    color: var(--rgba-black-2);
     font-weight: 500;
 }
 
@@ -629,6 +624,12 @@ select {
     background: var(--gradient);
 }
 
+.text-primary {
+    color: var(--blue) !important;
+}
+.text-primary-violet {
+    color: var(--pest-1) !important;
+}
 .text-white-default {
     color: $white;
 }
@@ -959,4 +960,3 @@ select {
         gap: 20px;
     }
 }
-

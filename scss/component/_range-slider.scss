@@ -4,16 +4,21 @@
 }
 .noUi-target {
     border: 0;
+    background: rgba(18, 25, 39, 0.2);
+    box-shadow: none;
 }
 
 .noUi-base {
     .noUi-connects {
         border-radius: 999px;
-        background-color: var(--line);
+        background-color: transparent;
     }
 }
 .noUi-connect {
     background-color: var(--blue);
+}
+.noUi-tooltip{
+    color: var(--black);
 }
 
 .noUi-horizontal .noUi-handle,
@@ -22,7 +27,7 @@
     width: 20px;
     border-radius: 50%;
     border: 4px solid var(--yellow);
-    background-color: var(--white);
+    background-color: $white;
     box-shadow: unset;
     cursor: pointer;
     top: -9px;
@@ -71,8 +76,8 @@
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     right: -8px;
 }
-.slider-salary{
-    .noUi-tooltip{
+.slider-salary {
+    .noUi-tooltip {
         border: none;
         background-color: transparent;
         top: auto;
@@ -89,33 +94,29 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     align-items: flex-end;
     height: 47px;
     padding: 0;
-    gap: 0; 
+    gap: 0;
     overflow: hidden;
-  }
+}
 .salary-chart span {
     display: inline-block;
     flex: 1;
     margin: 0;
-    background: var(--rgba-black-4); 
+    background: var(--rgba-black-4);
     border-radius: 2px 2px 0 0;
     transition: background 0.3s;
     height: 20px;
-  }
+}
 .salary-chart span.active {
-    background: linear-gradient(to top, #dee8ff, #aacbff); 
-  }
-  
-html:not([dir=rtl]){
-    .slider-salary{
-        .noUi-handle-lower{
+    background: linear-gradient(to top, #dee8ff, #aacbff);
+}
+
+html:not([dir="rtl"]) {
+    .slider-salary {
+        .noUi-handle-lower {
             right: -12px;
         }
-        .noUi-handle-upper{
+        .noUi-handle-upper {
             right: -3px;
         }
     }
 }
-
-
-  
-  

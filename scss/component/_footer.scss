@@ -68,63 +68,13 @@
                 background-color: var(--blue);
                 width: 60px;
                 height: 60px;
-                border: 1px solid var(--white);
+                border: 1px solid $white;
                 i {
                     font-size: 20px;
                     color: #fff;
                 }
             }
         }
-    }
-
-    &.style-1 {
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-    &.style-2 {
-        padding: 14px 19px 19px;
-        border-radius: 16px;
-        li {
-            width: 25%;
-        }
-    }
-    &.red {
-        li {
-            &.active {
-                position: relative;
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -18px;
-                    left: 50%;
-                    width: 56px;
-                    height: 4px;
-                    background: var(--blue-btn);
-                    border-radius: 20px 20px 0px 0px;
-                    transform: translateX(-50%);
-                }
-            }
-        }
-    }
-    &.style-3 {
-        padding: 18px 19px;
-        border-radius: 16px;
-        li {
-            width: 25%;
-        }
-    }
-    &.style-4 {
-        padding: 18px 19px;
-        border-radius: 16px;
-        li {
-            width: 20%;
-        }
-    }
-    &.style-5 {
-        padding: 18px 19px;
-        border-radius: 16px;
     }
 }
 

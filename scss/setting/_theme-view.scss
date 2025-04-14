@@ -1,285 +1,150 @@
 @use "../abstracts/index" as *;
 .dark-theme {
     --black: #ffffff;
-    --white: #0a0711;
+    --white: #111d39;
     --rgba-black-1: #ffffff;
+    --bg-black: rgba(255, 255, 255, 0.04);
     --line: rgba(255, 255, 255, 0.12);
     --line-2: rgba(255, 255, 255, 0.12);
     --line-3: rgba(255, 255, 255, 0.08);
     --shadow-1: 0px 3px 40px 0px rgba(26, 21, 40, 0.04);
-    --rgba-black-2: rgba(255, 255, 255, 0.12);
-    --rgba-black-3: rgba(255, 255, 255, 0.6);
-    --rgba-black-4: rgba(255, 255, 255, 0.04);
+    --rgba-blue: rgba(255, 255, 255, 0.2);
+    --rgba-black: rgba(255, 255, 255, 0.7);
+    --rgba-black-2: rgba(255, 255, 255, 0.5);
+    --rgba-black-3: rgba(255, 255, 255, 0.5);
+    --rgba-black-4: rgba(255, 255, 255, 0.15);
+    --rgba-black-5: rgba(255, 255, 255, 0.7);
+    --rgba-black-6: rgba(255, 255, 255, 0.32);
     --rgba-black-7: rgba(255, 255, 255, 0.92);
+    --rgba-black-8: rgba(255, 255, 255, 0.2);
+    --rgba-black-10: rgba(255, 255, 255, 0.2);
+    --rgba-black-11: rgba(255, 255, 255, 0.04);
     --rgba-primary: rgba(255, 255, 255, 0.12);
-    .logo-dark {
-        display: block;
-    }
-    .logo-light {
-        display: none;
-    }
 
-    .body-1 {
-        color: var(--black);
-    }
-    .card-nft {
-        .name {
-            color: var(--black);
-        }
-    }
-    .h5 {
-        color: var(--black);
-    }
-    .wrapper-tab {
-        background-color: var(--line);
-    }
-    .card-nft,
-    .card-nft-1,
-    .card {
-        background-color: var(--line);
-        .form-control {
-            background-color: transparent;
-        }
-        .nice-select {
-            background-color: transparent;
-        }
-        .card-header {
-            .icon {
-                color: var(--black);
-            }
-        }
-    }
-
-    .box-wallet-1,
-    .card-wallet-1,
-    .box-wallet-2,
-    .box-wallet-3 {
-        background-color: var(--rgba-primary);
-    }
-    .box-ip-field-val,
-    .box-field-datetime {
-        svg path {
-            stroke: var(--rgba-black-3);
-        }
-    }
-    .card-box {
-        background-color: var(--line);
-    }
-    .dropdown-menu {
-        a {
-            color: var(--black);
-        }
-    }
-    .check-list {
-        .body-5,
-        .button-3 {
-            color: var(--black);
-        }
-
-        .active {
-            background-color: rgba(255, 255, 255, 0.12) !important;
-        }
-        .item {
-            &:has(.show) {
-                background-color: rgba(255, 255, 255, 0.12) !important;
-            }
-        }
-    }
-    .body-3 {
-        color: var(--black);
-    }
-
-    .card-banner-1 {
-        border: 1px solid var(--line);
-        h6 {
-            color: var(--black) !important;
-        }
-    }
-    .card-banner-2 {
-        .text-white {
-            color: var(--black) !important;
-        }
-    }
-    .list-view-v7 {
-        .button-3,
-        .body-3 {
-            color: var(--black);
-        }
-        .body-3 {
-            svg path {
-                fill: var(--black);
-            }
-        }
-    }
-    // .list-view li .item.active::before {
-    //     background-color: rgb(39, 37, 46);
-    //     border-radius: 16px;
-    // }
-    .header-style2 {
-        svg path {
-            stroke: var(--black);
-        }
-    }
-
-    .card-nft-2 {
-        &:has(.show) {
-            background-color: var(--line);
-        }
-        svg path {
-            fill: var(--black);
-        }
-        .card-header {
-            .content-right {
-                span {
-                    color: var(--rgba-black-3);
-                }
-            }
-            .content-left {
-                .icon {
-                    color: var(--blue);
-                }
-            }
-        }
-        .button-3,
-        .body-5 {
-            color: var(--black);
-        }
-    }
-
-    .list-view-v2 li .item {
-        background-color: rgba(255, 255, 255, 0.12);
-    }
-    .footer-fixed {
-        background-color: var(--blue);
-    }
-    .menubar-footer .inner-bar .action-add-wallet a {
-        background-color: rgba(26, 21, 40, 0.32);
-    }
-    .menubar-footer .inner-bar .active svg path {
-        fill: var(--black);
-    }
-    .menubar-footer .inner-bar svg path {
-        stroke: var(--black);
-    }
-    .menubar-footer .inner-bar svg g {
-        opacity: 0.6;
-    }
-    .menubar-footer .inner-bar li:first-child:not(.active) svg {
-        opacity: 0.6;
-    }
-    .menubar-footer .inner-bar li.active {
-        &::after {
-            background-color: rgba(26, 21, 40, 0.32);
-        }
-        .text {
-            opacity: 0.8;
-        }
-    }
-    .svg-dark {
-        path {
-            stroke: var(--rgba-black-3);
-        }
-    }
-    .box-icon {
-        &.website {
-            background: rgba(255, 255, 255, 0.7);
-        }
-        &.social {
-            .icon {
-                color: var(--black);
-            }
-        }
-        &.icon-web {
-            svg path {
-                fill: rgba(255, 255, 255, 0.6);
-            }
-        }
-        &.icon-modify {
-            svg path {
-                fill: rgb(255, 255, 255);
-            }
-        }
-    }
-    .modal-backdrop,
-    .offcanvas-backdrop {
-        background: rgba(127, 82, 255, 0.2);
-        &.show {
-            -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-            opacity: 1;
+    .tf-btn {
+        &.disabled-primary,
+        &.disabled-primary2 {
+            background-color: rgba(255, 255, 255, 0.15);
+            box-shadow: none;
         }
     }
     .header {
         svg path {
-            stroke: var(--black);
+            stroke: #ffffff;
+        }
+    }
+    .header-avt {
+        .box-icon {
+            svg path {
+                stroke: #ffffff;
+            }
         }
     }
     .search-box {
-        .search-field {
-            border-color: rgba(255, 255, 255, 0.12);
-            color: rgba(255, 255, 255, 0.6);
-            &::placeholder {
-                color: rgba(255, 255, 255, 0.6);
-            }
-        }
-        svg path {
-            stroke: rgb(255, 255, 255);
-        }
-    }
-    .icon-eth {
-        path {
-            fill: var(--black);
-        }
-    }
-    .button-2,
-    .button-1 {
-        color: var(--black);
-    }
-    .nice-select {
-        svg path {
-            stroke: rgba(255, 255, 255, 0.4);
-        }
-    }
-    .apexcharts-text tspan {
-        fill: var(--rgba-black-3);
-    }
-    .apexcharts-tooltip {
-        background: var(--line-3) !important;
-    }
-    .apexcharts-tooltip .apexcharts-tooltip-title {
-        background: var(--line-3) !important;
-    }
-    .apexcharts-grid .apexcharts-gridlines-horizontal line {
-        stroke: var(--line-3) !important;
-    }
-    .apexcharts-grid-borders line {
-        stroke: var(--line-3) !important;
-    }
-
-    .text-1,
-    .text-2,
-    .text-5 {
-        color: var(--black);
-    }
-    label {
-        color: var(--black);
-    }
-    .apexcharts-legend-text {
-        color: var(--black) !important;
-    }
-    .text-black {
-        color: var(--black) !important;
-    }
-    .list-view-v3 {
-        .item {
+        .icon-left {
             svg path {
-                stroke: var(--black);
+                stroke: #ffffff;
             }
         }
     }
-    .icon-arr-dark {
-        path {
-            stroke: var(--black);
+    .footer-fixed {
+        background-color: var(--blue);
+    }
+    .menubar-footer {
+        .inner-bar {
+            .action-add {
+                background-color: #111d39;
+            }
+        }
+        li:not(.active) {
+            svg path {
+                stroke: #ffffff;
+            }
+        }
+        .active {
+            svg path {
+                fill: #ffffff;
+            }
+        }
+    }
+    .list-jobs {
+        .job-item {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+    }
+    .card-review {
+        background-color: rgba(255, 255, 255, 0.08);
+        .bar {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+    .job-item {
+        .more {
+            svg path {
+                stroke: #ffffff;
+            }
+        }
+    }
+    .box-noti {
+        background-color: rgba(255, 255, 255, 0.08);
+        .more svg path {
+            stroke: #ffffff;
+        }
+    }
+    .box-interest {
+        background-color: rgba(255, 255, 255, 0.08);
+        .check {
+            opacity: 1;
+            path {
+                stroke: #ffffff;
+            }
+        }
+    }
+    .menu-tab-job .tab-link {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .select-wrapper {
+        svg path {
+            stroke: #ffffff;
+        }
+    }
+    .list-review {
+        .review-item {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+    }
+    .box-uploadfile {
+        svg path {
+            stroke: #ffffff;
+        }
+    }
+    .box-success {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+    .input-icon,
+    .ip-select {
+        .icon {
+            svg path {
+                stroke: #ffffff;
+            }
+        }
+    }
+    .noUi-base {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .salary-chart {
+        span {
+            background: rgba(255, 255, 255, 0.1);
+            &.active {
+                background: linear-gradient(180deg, #2869fe 0%, rgba(40, 105, 254, 0) 100%);
+            }
+        }
+    }
+    .list-recent-search {
+        .item{
+            svg path{
+                stroke: #ffffff;
+            }
         }
     }
 }
