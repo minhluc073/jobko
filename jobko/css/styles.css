@@ -6616,6 +6616,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   right: 20px;
   top: 19px;
   z-index: 10;
+  left: auto;
 }
 .banner-box .img-box img {
   width: 100%;
