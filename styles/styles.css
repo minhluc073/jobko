@@ -727,7 +727,7 @@ input[type="radio"] {
 
 .btn-portfolio {
   display: flex;
-  gap: 12px;
+  gap: 4px;
   align-items: center;
   padding: 12px 30px;
   font-weight: 500;
@@ -745,9 +745,9 @@ input[type="radio"] {
 }
 
 .btn-portfolio img {
-  width: 30px;
-  height: 30px;
-  margin-top: -6px;
+  width: 28px;
+  height: 28px;
+  margin-top: -3px;
 }
 
 .scan-qr {

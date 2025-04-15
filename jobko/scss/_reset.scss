@@ -254,6 +254,7 @@ a {
     color: inherit;
     cursor: pointer;
     @include transition3;
+    display: inline-block;
     &:hover,
     &:focus,
     &.active {
