@@ -368,7 +368,6 @@
 
         &:focus {
             color: var(--black);
-            // border-color: var(--blue);
         }
         &:valid {
             border-color: var(--black);
@@ -383,7 +382,8 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 20px;
+        right: 10px;
+        padding: 10px;
     }
     .icon-left {
         position: absolute;

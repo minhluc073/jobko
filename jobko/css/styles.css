@@ -3227,7 +3227,8 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 20px;
+  right: 10px;
+  padding: 10px;
 }
 .search-box .icon-left {
   position: absolute;
