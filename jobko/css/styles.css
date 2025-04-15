@@ -6620,7 +6620,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .banner-box .img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .banner-box .title {
   margin-bottom: 23px;
