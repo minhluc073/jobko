@@ -344,7 +344,7 @@
     handleTime();
     datePicker();
     inputUpload();
-    toggleTheme();
+    // toggleTheme();
     handleMessage();
     preloader();
   });
