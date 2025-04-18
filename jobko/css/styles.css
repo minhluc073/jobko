@@ -1419,10 +1419,6 @@ select {
   width: 280px;
 }
 
-.sub-menu .nav-link-item:not(.collapsed)::after {
-  transform: rotate(90deg);
-}
-
 .nav-link-item {
   display: flex;
   align-items: center;
@@ -1434,7 +1430,7 @@ select {
 .nav-link-item::after {
   position: absolute;
   font-family: "icomoon";
-  content: "\e947";
+  content: "\e917";
   right: 0;
   color: var(--black);
   font-size: 12px;
@@ -1449,7 +1445,7 @@ select {
 .nav-link-item .icon {
   font-size: 20px;
 }
-.nav-link-item.not-link::after {
+.nav-link-item.no-page::after {
   display: none;
 }
 
@@ -7461,6 +7457,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .box-success img {
   max-width: 220px;
   margin: auto;
+  object-fit: cover;
 }
 
 .box-noti-empty {

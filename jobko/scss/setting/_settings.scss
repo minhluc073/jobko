@@ -139,15 +139,6 @@
     width: 280px;
 }
 
-.sub-menu {
-    .nav-link-item {
-        &:not(.collapsed) {
-            &::after {
-                transform: rotate(90deg);
-            }
-        }
-    }
-}
 .nav-link-item {
     display: flex;
     align-items: center;
@@ -158,7 +149,7 @@
     &::after {
         position: absolute;
         font-family: $fontIcon;
-        content: "\e947";
+        content: "\e917";
         right: 0;
         color: var(--black);
         font-size: 12px;
@@ -175,7 +166,7 @@
     .icon {
         font-size: 20px;
     }
-    &.not-link {
+    &.no-page {
         &::after {
             display: none;
         }
