@@ -7455,7 +7455,8 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   box-shadow: var(--shadow-3);
 }
 .box-success img {
-  max-width: 220px;
+  width: 220px;
+  height: 220px;
   margin: auto;
   object-fit: cover;
 }
