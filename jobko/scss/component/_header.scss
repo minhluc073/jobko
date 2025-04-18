@@ -45,6 +45,15 @@
             font-size: 20px;
             font-weight: 700;
             color: var(--black);
+            transition: none;
+            &.active{
+                svg{
+                    path{
+                        stroke: var(--blue);
+                    }
+                }
+                border-color: var(--blue);
+            }
         }
         // .icon-home {
         //     font-size: 24px;

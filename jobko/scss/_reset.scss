@@ -297,14 +297,14 @@ h2,
 h3,
 .h3 {
     font-size: 20px;
-    line-height: auto;
+    line-height: 24px;
     font-weight: 700;
     margin-bottom: 0;
 }
 h4,
 .h4 {
     font-size: 18px;
-    line-height: auto;
+    line-height: 22px;
     font-weight: 700;
     margin-bottom: 0;
 }
@@ -319,13 +319,13 @@ h5,
 h6,
 .h6 {
     font-size: 16px;
-    line-height: auto;
+    line-height: 19px;
     font-weight: 700;
     margin-bottom: 0;
 }
 .h7 {
     font-size: 15px;
-    line-height: auto;
+    line-height: 18px;
     font-weight: 600;
 }
 
@@ -470,6 +470,7 @@ select {
 
 .tf-container {
     max-width: 1024px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
@@ -504,6 +505,9 @@ select {
 .line-t2 {
     border-top: 1px solid var(--line-3) !important;
 }
+.line-dark {
+    border: 1px solid var(--black) !important;
+}
 
 .app-content {
     padding: 70px 0px 100px;
@@ -534,7 +538,7 @@ select {
 }
 .body-3 {
     font-size: 12px;
-    line-height: auto;
+    line-height: 14px;
     font-weight: 500;
 }
 .body-4 {
@@ -689,32 +693,6 @@ select {
 }
 .text-orange {
     color: var(--orange) !important;
-}
-
-.text-gradient-1 {
-    background: var(--violet-linear);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-gradient-2 {
-    background: var(--orange-linear);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-gradient-3 {
-    background: var(--sky-blue-linear);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-gradient-4 {
-    background: var(--blue-linear);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-gradient-5 {
-    background: var(--red-linear);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .mt-2 {
