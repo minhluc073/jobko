@@ -1109,6 +1109,13 @@
             margin-top: 0;
         }
     }
+    .check-icon {
+        &.active {
+            svg path {
+                stroke: var(--blue);
+            }
+        }
+    }
 }
 
 .wrapper-track-app {

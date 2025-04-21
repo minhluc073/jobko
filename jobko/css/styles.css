@@ -7677,6 +7677,9 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .box-app .box-bottom .box-map-date {
   margin-top: 0;
 }
+.box-app .check-icon.active svg path {
+  stroke: var(--blue);
+}
 
 .wrapper-track-app {
   padding: 24px;
