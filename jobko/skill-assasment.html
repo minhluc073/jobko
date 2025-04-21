@@ -17,13 +17,18 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-
     <title>Skill Assasment</title>
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
 </head>
 
 <body class="bg-primary-pest">
 
-    <div class="header header-white fixed-top justify-content-between bg-gradient-1">
+    <div class="header header-white fixed-top justify-content-between">
         <div class="h-left">
             <a href="javascript:void(0);" class="icon back-btn">
                 <span class="icon-close2"></span>

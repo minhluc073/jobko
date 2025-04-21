@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
     <!-- font -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-
     <title>Reset Pass</title>
+    <!-- Apply dark theme early to avoid white flash -->
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
 </head>
 
 <body>
@@ -37,20 +45,26 @@
             <p class="body-2 text-dark-4">We’ve send you the verification code on </p>
             <p class="button-1 text-dark">themesflat@gmail.com</p>
             <div class="digit-group mt-24">
-                <input class="form-control" required type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" value="7">
-                <input class="form-control" required type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2">
-                <input class="form-control" required type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3">
-                <input class="form-control" required type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4">
+                <input class="form-control" required type="text" id="digit-2" name="digit-2" data-next="digit-3"
+                    data-previous="digit-1" value="7">
+                <input class="form-control" required type="text" id="digit-3" name="digit-3" data-next="digit-4"
+                    data-previous="digit-2">
+                <input class="form-control" required type="text" id="digit-4" name="digit-4" data-next="digit-5"
+                    data-previous="digit-3">
+                <input class="form-control" required type="text" id="digit-5" name="digit-5" data-next="digit-6"
+                    data-previous="digit-4">
             </div>
             <a href="new-pass.html" class="mt-32 tf-btn primary btn-md">Reset Now</a>
-            <p class="d-flex justify-content-center mt-48 text-center text-dark-5 body-2">Get Code in&nbsp;<span class="js-countdown" data-timer="60" data-labels=" :  ,  : , : , "></span>&nbsp;<a href="#" class="text-primary button-1">Resend</a></p>
+            <p class="d-flex justify-content-center mt-48 text-center text-dark-5 body-2">Get Code in&nbsp;<span
+                    class="js-countdown" data-timer="60" data-labels=" :  ,  : , : , "></span>&nbsp;<a href="#"
+                    class="text-primary button-1">Resend</a></p>
 
         </div>
 
     </div>
 
-   
-    
+
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/lazysize.min.js"></script>
@@ -59,4 +73,5 @@
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
+
 </html>

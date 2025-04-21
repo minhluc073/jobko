@@ -17,8 +17,14 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-
     <title>Search Job</title>
+    <!-- Apply dark theme early to avoid white flash -->
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
 </head>
 
 <body>

@@ -10,14 +10,20 @@
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jqueryui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/168.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
-
     <title>Confirm New Account</title>
+    <!-- Apply dark theme early to avoid white flash -->
+    <script>
+        if (localStorage.toggled === "dark-theme") {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
 </head>
 
 <body>
@@ -48,7 +54,7 @@
                     <a href="successfully-created-acount.html" class="tf-btn primary">Create My Account</a>
                 </div>
             </div>
-           
+
         </div>
 
     </div>

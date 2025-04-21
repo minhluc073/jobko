@@ -190,31 +190,32 @@
   ------------------------------------------------------------------------------------- */
   var toggleTheme = function () {
     var toggle = $(".toggle-theme");
-
+  
     if (localStorage.toggled === "dark-theme") {
-      $("body").addClass("dark-theme");
+      $("html").addClass("dark-theme");
       toggle.prop("checked", true);
       $('.logo-account img').attr('src', 'images/logo/logo-dark.png');
     } else {
-      $("body").removeClass("dark-theme");
+      $("html").removeClass("dark-theme");
       toggle.prop("checked", false);
       $('.logo-account img').attr('src', 'images/logo/logo-light.png');
     }
   
     toggle.on("click", function () {
       if (localStorage.toggled !== "dark-theme") {
-        $("body").addClass("dark-theme");
+        $("html").addClass("dark-theme");
         localStorage.toggled = "dark-theme";
         toggle.prop("checked", true);
         $('.logo-account img').attr('src', 'images/logo/logo-dark.png');
       } else {
-        $("body").removeClass("dark-theme");
+        $("html").removeClass("dark-theme");
         localStorage.toggled = "";
         toggle.prop("checked", false);
         $('.logo-account img').attr('src', 'images/logo/logo-light.png');
       }
     });
   };
+  
   
 
   /* touch spin

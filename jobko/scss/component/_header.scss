@@ -103,6 +103,7 @@
         }
     }
     &.header-white {
+        background: transparent;
         .icon {
             border-color: $white;
             color: $white;
@@ -115,9 +116,6 @@
         display: flex;
         align-items: center;
         gap: 20px;
-    }
-    &.bg-gradient-1{
-        background: var(--pest-1) ;
     }
     &.header-st2{
         .icon{

@@ -1781,6 +1781,9 @@ select {
 .header.absolute .right .icon {
   color: var(--white);
 }
+.header.header-white {
+  background: transparent;
+}
 .header.header-white .icon {
   border-color: #ffffff;
   color: #ffffff;
@@ -1792,9 +1795,6 @@ select {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-.header.bg-gradient-1 {
-  background: var(--pest-1);
 }
 .header.header-st2 .icon {
   opacity: 1;
