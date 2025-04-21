@@ -264,8 +264,10 @@
     .show-pass3,
     .show-pass4 {
         position: absolute;
-        right: 16px;
-        top: 16px;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-flex;
         cursor: pointer;
         .icon-view {
             display: none;
@@ -276,7 +278,7 @@
         }
         &.active {
             .icon-view {
-                display: inline-block;
+                display: inline-flex;
             }
             .icon-hide {
                 display: none;

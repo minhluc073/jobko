@@ -22,10 +22,11 @@
         position: absolute;
         bottom: 0;
         right: 20px;
-        top: 19px;
+        width: 114px;
+        height: 133px;
         z-index: 10;
         left: auto;
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -154,9 +155,9 @@
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.32);
         @include flex(center, center);
-        &.active{
-            svg{
-                path{
+        &.active {
+            svg {
+                path {
                     stroke: var(--blue);
                 }
             }
@@ -334,7 +335,7 @@
             border: 8px solid var(--rgba-white-2);
         }
     }
-    .title{
+    .title {
         color: $white;
     }
 }
@@ -602,12 +603,12 @@
     .avt-profile {
         border-radius: 16px;
     }
-    &.upload{
-        .avatar{
+    &.upload {
+        .avatar {
             border: 1px solid var(--blue);
         }
     }
-    .ip-file{
+    .ip-file {
         position: absolute;
         inset: 0;
         opacity: 0;
@@ -1085,26 +1086,26 @@
             gap: 12px;
         }
         background-color: $white;
-        .text-dark{
+        .text-dark {
             color: #121927 !important;
         }
-        .text-dark-4{
+        .text-dark-4 {
             color: rgba(18, 25, 39, 0.6) !important;
         }
     }
-    .content{
+    .content {
         flex-grow: 1;
     }
-    .box-top{
+    .box-top {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
     }
-    .box-bottom{
+    .box-bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .box-map-date{
+        .box-map-date {
             margin-top: 0;
         }
     }

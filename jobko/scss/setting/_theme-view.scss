@@ -23,7 +23,13 @@
     --rgba-primary: rgba(255, 255, 255, 0.12);
 
     --backdrop: rgba(127, 82, 255, 0.2);
-
+    .box-view-hide{
+        .icon-pass{
+            svg path {
+                stroke: var(--black);
+            }
+        }
+    }
     .boarding-img {
         .img {
             background-color: rgba(255, 255, 255, 0.8);

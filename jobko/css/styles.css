@@ -1510,6 +1510,9 @@ select {
   --rgba-primary: rgba(255, 255, 255, 0.12);
   --backdrop: rgba(127, 82, 255, 0.2);
 }
+.dark-theme .box-view-hide .icon-pass svg path {
+  stroke: var(--black);
+}
 .dark-theme .boarding-img .img {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -3086,8 +3089,10 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .box-view-hide .show-pass3,
 .box-view-hide .show-pass4 {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
   cursor: pointer;
 }
 .box-view-hide .show-pass .icon-view,
@@ -3107,7 +3112,7 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
 .box-view-hide .show-pass2.active .icon-view,
 .box-view-hide .show-pass3.active .icon-view,
 .box-view-hide .show-pass4.active .icon-view {
-  display: inline-block;
+  display: inline-flex;
 }
 .box-view-hide .show-pass.active .icon-hide,
 .box-view-hide .show-pass2.active .icon-hide,
@@ -6596,7 +6601,8 @@ html:not([dir=rtl]) .slider-salary .noUi-handle-upper {
   position: absolute;
   bottom: 0;
   right: 20px;
-  top: 19px;
+  width: 114px;
+  height: 133px;
   z-index: 10;
   left: auto;
 }
