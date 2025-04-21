@@ -650,12 +650,14 @@ input[type="radio"] {
 }
 
 .box-left .wrap-phone {
-  /* width: 375px;
-  height: 750px; */
   height: 750px;
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.box-left .wrap-phone.bg-theme {
+  background: #111d39;
 }
 
 .box-left .wrap-phone .frame {
