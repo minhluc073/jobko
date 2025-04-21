@@ -46,9 +46,9 @@
             font-weight: 700;
             color: var(--black);
             transition: none;
-            &.active{
-                svg{
-                    path{
+            &.active {
+                svg {
+                    path {
                         stroke: var(--blue);
                     }
                 }
@@ -83,7 +83,6 @@
         width: 30px;
         height: 30px;
         opacity: 0.7;
-
     }
     &.absolute {
         position: absolute;
@@ -112,19 +111,18 @@
             color: $white;
         }
     }
-    .box-right{
+    .box-right {
         display: flex;
         align-items: center;
         gap: 20px;
     }
-    &.header-st2{
-        .icon{
+    &.header-st2 {
+        .icon {
             opacity: 1;
             color: var(--black);
             font-size: 14px;
         }
     }
-
 }
 .header-avt {
     display: flex;
@@ -153,7 +151,7 @@
                 align-items: center;
                 gap: 4px;
             }
-            .icon{
+            .icon {
                 width: 16px;
                 height: 16px;
             }
@@ -187,6 +185,11 @@
     left: 0;
     right: 0;
     background: var(--white);
+}
+.header-white {
+    &.is-fixed {
+        background: var(--pest-1);
+    }
 }
 
 .header-profile {
@@ -258,33 +261,33 @@
     }
 }
 
-.header-mess{
+.header-mess {
     justify-content: flex-start;
     gap: 18px;
     height: auto;
-    .back-btn{
+    .back-btn {
         width: 23px;
         height: 23px;
         border-radius: 8px;
     }
-    .content{
+    .content {
         flex-grow: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .box-right{
+    .box-right {
         display: flex;
         align-items: center;
         gap: 12px;
     }
-    .box-avt{
+    .box-avt {
         display: flex;
         align-items: center;
         gap: 16px;
-        .avatar{
+        .avatar {
             border: 1px solid var(--blue);
-            .status{
+            .status {
                 border-width: 2px;
                 width: 12px;
                 min-width: 12px;
@@ -292,10 +295,9 @@
                 right: 0;
             }
         }
-        .info{
+        .info {
             display: grid;
             gap: 2px;
         }
-        
     }
 }

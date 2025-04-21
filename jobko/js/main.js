@@ -216,6 +216,31 @@
     });
   };
   
+   /* Header Fixed
+  ------------------------------------------------------------------------------------- */
+  var headerFixed = function () {
+    if ($(".header").hasClass("fixed-top")) {
+      var nav = $(".header");
+      if (nav.length) {
+        var offsetTop = nav.offset().top,
+          headerHeight = nav.height(),
+          injectSpace = $("<div>", {
+            height: headerHeight,
+          });
+        injectSpace.hide();
+
+        $(window).on("load scroll", function () {
+          if ($(window).scrollTop() > 0) {
+            nav.addClass("is-fixed");
+            injectSpace.show();
+          } else {
+            nav.removeClass("is-fixed");
+            injectSpace.hide();
+          }
+        });
+      }
+    }
+  };
   
 
   /* touch spin
@@ -360,6 +385,7 @@
     datePicker();
     inputUpload();
     toggleTheme();
+    headerFixed();
     handleMessage();
     preloader();
   });

@@ -1870,6 +1870,10 @@ select {
   background: var(--white);
 }
 
+.header-white.is-fixed {
+  background: var(--pest-1);
+}
+
 .header-profile {
   padding: 22px 24px 22px;
   display: flex;
