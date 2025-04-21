@@ -1,6 +1,6 @@
 
 /* ---------------------------------------------------------
-    * Name: Taskose
+    * Name: Jobko
     * Version: 1.0.0
     * Author: Themesflat
     * Author URI: http://themesflat.com 
@@ -8,10 +8,9 @@
 	* Abstracts variable
     
     * Reset css styles
-   
-    * Settings
-        * theme settings
 
+    * Settings
+   
     * Components
         * alert
         * avatar
@@ -32,18 +31,8 @@
         * stepper
         * switch
         * tabs
-        * treeview
 	
     * widget
-
-    * Pages
-        * boarding
-        * account
-        * home 
-        * profile
-        * chat
-
- ------------------------------------------------------------------------------ */
 
 /*--------- Abstracts variable ---------- */
 @use "./abstracts/index" as abstract;

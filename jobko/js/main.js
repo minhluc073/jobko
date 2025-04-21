@@ -1,26 +1,24 @@
 /*
- * delete Item 
- * check item
- * back Page
- * handle time
- * Datepicker 
- * active Suggestions
- * change value
- * touch spin
- * preloader 
- * modal click handle
- * tab slide 
- * toggle theme
- * Counter
- * Input file 
-*******************************
-
-
+    * Show Pass 
+    * Otp Input
+    * Back Page
+    * handle time
+    * Datepicker 
+    * Check Active
+    * Change Value
+    * Toggle Theme
+    * Header Fixed
+    * Touch Spin
+    * Message
+    * Modal Second
+    * Counter
+    * Input File
+    * Preloader 
  */
 (function ($) {
   "use strict";
 
-  /* show pass
+  /* Show Pass
   ------------------------------------------------------------------------------------- */
   var showPass = function () {
     $(".show-pass").on("click", function () {
@@ -42,7 +40,7 @@
     });
   };
 
-  /* otp input
+  /* Otp Input
   ------------------------------------------------------------------------------------- */
   var otpInput = function () {
     if ($(".digit-group").length > 0) {
@@ -85,24 +83,7 @@
     }
   };
 
-  /* delete Item 
-  ------------------------------------------------------------------------------------- */
-  var delItem = function () {
-    if ($("div").hasClass("delete-item")) {
-      $(".btn-del").on("click", function () {
-        this.closest(".delete-item").remove();
-      });
-    }
-  };
-  /* check item
-  -------------------------------------------------------------------------------- */
-  var resetCheck = function () {
-    $(".btn-reset").click(function () {
-      $("input").prop("checked", false);
-    });
-  };
-
-  /* back Page
+  /* Back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
     $(".back-btn").on("click", function (e) {
@@ -110,20 +91,6 @@
       e.preventDefault();
       window.history.go(-1);
     });
-  };
-
-  /* handle time
-  ------------------------------------------------------------------------------------- */
-  var handleTime = function () {
-    var currentTime = new Date();
-    var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
-    var realTime =
-      (currentTime.getHours() % 12) +
-      "." +
-      currentTime.getMinutes() +
-      " " +
-      hours;
-    $(".val-time").text(realTime);
   };
 
   /* Datepicker  
@@ -170,7 +137,7 @@
   if ($(".nice-select").length > 0) {
     $(".select_js").niceSelect();
   }
-  /* change value
+  /* Change Value
   ------------------------------------------------------------------------------------- */
   var changeValue = function () {
     $(".language-val").click(function () {
@@ -186,7 +153,8 @@
       $(".text-val-form").text($(this).find(".title-form").text());
     });
   };
-  /* toggle theme
+
+  /* Toggle Theme
   ------------------------------------------------------------------------------------- */
   var toggleTheme = function () {
     var toggle = $(".toggle-theme");
@@ -242,8 +210,7 @@
     }
   };
   
-
-  /* touch spin
+  /* Touch Spin
   ----------------------------------------------------------------------------------------- */
   var touchSpin = function () {
     if ($(".stepper").length > 0) {
@@ -251,7 +218,7 @@
     }
   };
 
-   /* message
+   /* Message
   ------------------------------------------------------------------------------------- */
   var handleMessage = function () {
     $(".btn-message").on("click", function () {
@@ -287,17 +254,7 @@
     });
   };
 
-  /* preloader 
-  ------------------------------------------------------------------------------------- */
-  var preloader = function () {
-    setTimeout(function () {
-      $(".preload").fadeOut("slow", function () {
-        $(this).remove();
-      });
-    }, 200);
-  };
-
-  /* modal click handle
+  /* Modal Second
   ------------------------------------------------------------------------------------- */
   var clickModalSecond = function () {
     $(".btn-choose-page").click(function () {
@@ -336,29 +293,7 @@
     }
   };
 
-  /* tab slide 
-  ------------------------------------------------------------------------------------- */
-  var tabSlide = function () {
-    if ($(".tab-slide").length > 0) {
-      var $1 = $(".tab-slide li.active").width();
-      var $2 = $(".tab-slide li.active").position().left;
-      $(".nav-item-slide").css({
-        width: $1,
-        transform: "translateX(" + $2 + "px)",
-      });
-      $(".tab-slide li").on("click", function () {
-        var itemTab = $(this).parent().find("li");
-        $(itemTab).removeClass("active");
-        $(this).addClass("active");
-        var $3 = $(this).width();
-        var $4 = $(this).position().left;
-        var sideEffect = $(this).parent().find(".item-slide-effect");
-        $(sideEffect).css({ width: $3, transform: "translateX(" + $4 + "px)" });
-      });
-    }
-  };
-
-  /* Input file 
+  /* Input File 
   -------------------------------------------------------------------------------------*/
   var inputUpload = function () {
     $("input[type=file]").change(function (e) {
@@ -369,24 +304,30 @@
     });
   };
 
+    /* Preloader 
+  ------------------------------------------------------------------------------------- */
+  var preloader = function () {
+    setTimeout(function () {
+      $(".preload").fadeOut("slow", function () {
+        $(this).remove();
+      });
+    }, 200);
+  };
+
   $(function () {
     showPass();
     otpInput();
-    delItem();
     backPage();
-    touchSpin();
-    changeValue();
-    resetCheck();
-    clickModalSecond();
-    checkClick();
-    tabSlide();
-    flatCounter();
-    handleTime();
     datePicker();
-    inputUpload();
+    checkClick();
+    changeValue();
     toggleTheme();
     headerFixed();
+    touchSpin();
     handleMessage();
+    clickModalSecond();
+    flatCounter();
+    inputUpload();
     preloader();
   });
 })(jQuery);
