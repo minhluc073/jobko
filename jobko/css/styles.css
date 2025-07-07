@@ -1602,6 +1602,14 @@ select {
   stroke: #ffffff;
 }
 
+.rtl .noUi-horizontal .noUi-handle {
+  left: auto;
+  right: -8px;
+}
+.rtl #salary-chart {
+  flex-direction: row-reverse;
+}
+
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
 /* ---------------------------------------------------------

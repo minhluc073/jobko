@@ -158,7 +158,7 @@
   ------------------------------------------------------------------------------------- */
   var toggleTheme = function () {
     var toggle = $(".toggle-theme");
-  
+
     if (localStorage.toggled === "dark-theme") {
       $("html").addClass("dark-theme");
       toggle.prop("checked", true);
@@ -168,7 +168,7 @@
       toggle.prop("checked", false);
       $('.logo-account img').attr('src', 'images/logo/logo-light.png');
     }
-  
+
     toggle.on("click", function () {
       if (localStorage.toggled !== "dark-theme") {
         $("html").addClass("dark-theme");
@@ -183,9 +183,31 @@
       }
     });
   };
-  
-   /* Header Fixed
+
+  /* Toggle RTL
   ------------------------------------------------------------------------------------- */
+  var RTL = function () {
+    var isRTL = $("body").hasClass("rtl") || localStorage.getItem("dir") === "rtl";
+
+    applyDir(isRTL ? "rtl" : "ltr");
+
+    $(".toggle-rtl")
+      .off("click")
+      .on("click", function () {
+        var nextRTL = !$("body").hasClass("rtl");
+        localStorage.setItem("dir", nextRTL ? "rtl" : "ltr");
+        applyDir(nextRTL ? "rtl" : "ltr");
+      });
+  }
+  function applyDir(dir) {
+    var useRTL = dir === "rtl";
+    $("html").attr("dir", dir);
+    $("body").toggleClass("rtl", useRTL);
+    $("#switchRTLTheme").prop("checked", useRTL);
+  }
+
+  /* Header Fixed
+ ------------------------------------------------------------------------------------- */
   var headerFixed = function () {
     if ($(".header").hasClass("fixed-top")) {
       var nav = $(".header");
@@ -209,7 +231,7 @@
       }
     }
   };
-  
+
   /* Touch Spin
   ----------------------------------------------------------------------------------------- */
   var touchSpin = function () {
@@ -218,8 +240,8 @@
     }
   };
 
-   /* Message
-  ------------------------------------------------------------------------------------- */
+  /* Message
+ ------------------------------------------------------------------------------------- */
   var handleMessage = function () {
     $(".btn-message").on("click", function () {
       var ipMessage = $(".val-message");
@@ -304,8 +326,8 @@
     });
   };
 
-    /* Preloader 
-  ------------------------------------------------------------------------------------- */
+  /* Preloader 
+------------------------------------------------------------------------------------- */
   var preloader = function () {
     setTimeout(function () {
       $(".preload").fadeOut("slow", function () {
@@ -328,6 +350,7 @@
     clickModalSecond();
     flatCounter();
     inputUpload();
+    RTL();
     preloader();
   });
 })(jQuery);

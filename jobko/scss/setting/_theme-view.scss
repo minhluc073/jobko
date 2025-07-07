@@ -23,8 +23,8 @@
     --rgba-primary: rgba(255, 255, 255, 0.12);
 
     --backdrop: rgba(127, 82, 255, 0.2);
-    .box-view-hide{
-        .icon-pass{
+    .box-view-hide {
+        .icon-pass {
             svg path {
                 stroke: var(--black);
             }
@@ -219,5 +219,15 @@
                 stroke: #ffffff;
             }
         }
+    }
+}
+
+.rtl {
+    .noUi-horizontal .noUi-handle {
+        left: auto;
+        right: -8px;
+    }
+    #salary-chart {
+        flex-direction: row-reverse;
     }
 }
