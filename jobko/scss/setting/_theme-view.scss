@@ -230,4 +230,130 @@
     #salary-chart {
         flex-direction: row-reverse;
     }
+    .nav-link-item::after {
+        left: 0;
+        right: auto;
+        transform: rotate(-180deg);
+    }
+    .header {
+        .left {
+            left: auto;
+            right: 24px;
+            svg,
+            .icon-arr-left {
+                transform: rotate(-180deg);
+            }
+        }
+        .right {
+            left: 24px;
+            right: auto;
+        }
+        .back-btn {
+            svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .search-box {
+        .icon-left {
+            left: auto;
+            right: 20px;
+        }
+        .right-icon {
+            left: 10px;
+            right: auto;
+        }
+    }
+    .banner-box {
+        .img-box {
+            left: 20px;
+            right: auto;
+        }
+        .circle {
+            left: -160px;
+            right: auto;
+        }
+    }
+    .ip-select {
+        .tf-select {
+            padding-right: 52px;
+            padding-left: 26px;
+        }
+        .icon {
+            right: 20px;
+            left: auto;
+        }
+        .icon-right {
+            left: 20px;
+            right: auto;
+        }
+    }
+    .box-noti {
+        padding-left: 32px;
+        padding-right: 16px;
+        .more {
+            left: 16px;
+            right: auto;
+        }
+    }
+    .card-job-2 {
+        .circle-box {
+            left: -43px;
+            right: auto;
+        }
+    }
+    .list-skill .item-skill {
+        padding-left: 0;
+        padding-right: 20px;
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+    .card-review {
+        .bar {
+            margin-left: 0;
+            margin-right: 8px;
+        }
+    }
+    .form-field {
+        &.form-2 {
+            .label {
+                padding-left: 0;
+                padding-right: 12px;
+                &::after {
+                    right: auto;
+                    left: -8px;
+                }
+            }
+        }
+    }
+    .list-profile {
+        .item {
+            svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .input-icon {
+        .form-control {
+            padding-left: 20px;
+            padding-right: 52px;
+        }
+        .icon {
+            left: auto;
+            right: 20px;
+        }
+        .icon-right{
+            left: 20px;
+            right: auto;
+        }
+    }
+    .box-view-hide {
+        .show-pass2,
+        .show-pass{
+            left: 20px;
+            right: auto;
+        }
+    }
 }
