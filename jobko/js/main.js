@@ -186,6 +186,7 @@
 
   /* Toggle RTL
   ------------------------------------------------------------------------------------- */
+
   var RTL = function () {
     var isRTL = $("body").hasClass("rtl") || localStorage.getItem("dir") === "rtl";
 

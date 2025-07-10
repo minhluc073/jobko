@@ -356,4 +356,10 @@
             right: auto;
         }
     }
+    .card-job{
+        direction: rtl;
+        .btn-apply svg {
+            transform: rotate(-180deg);
+        }
+    }
 }

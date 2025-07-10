@@ -78,6 +78,6 @@ if ($(".tf-sw-2").length > 0) {
       el: ".swiper-pagination",
       clickable: true,
     },
-  
+
   });
 }
